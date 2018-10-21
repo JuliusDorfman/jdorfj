@@ -52,7 +52,20 @@
 .contact-navbar-button {
   display: inline-block;
   position: absolute;
-  right: 30px;
+  border: 2px solid black;
+  right: 26px;
+}
+
+.contact-navbar-button>a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.contact-navbar-button>a>p {
+  margin: 0;
+  padding: 7px 7px;
 }
 
 /* Initials */
@@ -90,4 +103,8 @@
 
 .icon-card-initials-wrapper:hover>.icon-card-initials {
   color: rgba(50, 50, 50, 1);
+}
+
+.portfolio-active-route {
+  color: #f73859 !important;
 }

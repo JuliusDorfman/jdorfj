@@ -2,17 +2,36 @@ import React, { Component } from 'react'
 import './Navbar.css';
 
 export default class Navbar extends Component {
+
+
+  componentDidMount() {
+    if ((window.location.pathname === '/') || (window.location.pathname === '/portfolio')) {
+      const activeRoute = document.getElementsByClassName('nav-route-portfolio');
+      Array.from(document.getElementsByClassName('nav-route-portfolio')).forEach((element, index, array) => {
+        element.classList.add('portfolio-active-route')
+      });
+    }
+
+    if (window.location.pathname === '/aboutme') {
+      const activeRoute = document.getElementsByClassName('nav-route-aboutme');
+      Array.from(document.getElementsByClassName('nav-route-aboutme')).forEach((element, index, array) => {
+        element.classList.add('portfolio-active-route');
+      });
+    }
+  }
+
+
   render() {
     return (
       <div className="navbar-component">
         <div className="main-nav">
           <ul>
             <li>
-              <a href="/portfolio">Portfolio</a>
-              <a href="/portfolio">Portfolio</a>
+              <a className="nav-route-portfolio" href="/portfolio">Portfolio</a>
+              <a className="nav-route-portfolio" href="/portfolio">Portfolio</a>
             </li>
             <div className="initials-icon">
-              <a href="/" className="icon-card-initials-wrapper">
+              <a href="/homepage" className="icon-card-initials-wrapper">
                 <p className="icon-card-initials">
                   J
                 </p>
@@ -22,15 +41,17 @@ export default class Navbar extends Component {
               </a>
             </div>
             <li>
-              <a href="/aboutme">About Me</a>
-              <a href="/aboutme">About Me</a>
+              <a className="nav-route-aboutme" href="/aboutme">About Me</a>
+              <a className="nav-route-aboutme" href="/aboutme">About Me</a>
             </li>
           </ul>
         </div>
         <div className="contact-navbar-button">
-          <p>
-            Contact Me
-          </p>
+          <a href="/contact">
+            <p>
+              Contact Me
+            </p>
+          </a>
         </div>
       </div>
     )
