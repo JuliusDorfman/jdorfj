@@ -8,17 +8,18 @@
   max-height: 61px;
 }
 
-.navbar-component>ul {
+.main-nav>ul {
   display: inline-flex;
   position: relative;
   justify-content: space-between;
   align-items: center;
-  margin: 0;
-  padding: 20px 0;
+  margin: 0 0 20px 0;
+  padding: 20px 0 0 0;
   width: 325px;
+  transition-duration: .3s;
 }
 
-.navbar-component>ul>li {
+.main-nav>ul>li {
   display: inline-block;
   overflow: hidden;
   text-decoration: none;
@@ -26,7 +27,7 @@
   line-height: 16px;
 }
 
-.navbar-component>ul>li>a {
+.main-nav>ul>li>a {
   display: block;
   position: relative;
   transform: translateY(-16px);
@@ -38,12 +39,20 @@
   font-weight: 600;
 }
 
-.navbar-component>ul>li:hover a {
+.main-nav>ul>li:hover a {
   transform: translateY(0px);
 }
 
-.navbar-component>ul>li>a:nth-of-type(1) {
+.main-nav>ul>li>a:nth-of-type(1) {
   color: #f95959;
+}
+
+/* Contact Me */
+
+.contact-navbar-button {
+  display: inline-block;
+  position: absolute;
+  right: 30px;
 }
 
 /* Initials */
