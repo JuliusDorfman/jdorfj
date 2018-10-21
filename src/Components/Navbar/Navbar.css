@@ -49,7 +49,7 @@
 
 /* Contact Me */
 
-.contact-navbar-button {
+/* .contact-navbar-button {
   display: inline-block;
   position: absolute;
   border: 2px solid black;
@@ -66,7 +66,7 @@
 .contact-navbar-button>a>p {
   margin: 0;
   padding: 7px 7px;
-}
+} */
 
 /* Initials */
 
@@ -84,6 +84,16 @@
   transition: .45s;
 }
 
+/* .icon-card-initials-wrapper-large {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90px;
+  width: 90px;
+  border: 1.5px solid rgba(100, 100, 100, 1);
+  transition: .45s;
+} */
+
 .icon-card-initials {
   position: absolute;
   margin: 0;
@@ -94,6 +104,17 @@
   color: rgba(50, 50, 50, 1);
   transition: .55s;
 }
+/* 
+.icon-card-initials-large {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+  font-size: 70px;
+  font-family: 'Julius Sans One', sans-serif;
+  color: rgba(50, 50, 50, 1);
+  transition: .55s;
+} */
 
 .icon-card-initials-wrapper:hover {
   background: #eb7878;

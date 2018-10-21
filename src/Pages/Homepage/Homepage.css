@@ -1,158 +1,80 @@
-.homepage-component {
-  height: 100vh;
-}
-
-.homepage-component>Navbar {
-  height: 5vh;
-}
-
-.grid-container-homepage {
-  display: grid;
-  grid-template-columns: 2% 24% 24% 24% 24% 2%;
-  grid-template-areas:
-    "directional-left proj1 proj2 proj3 proj4 directional-right";
-  height: 95vh;
-}
-
-.grid-container-homepage>.column {
+.resume-intro {
   position: relative;
-  padding: 0 2em;
+  width: 100%;
+  height: 20vh;
+  background-color: #2c2727;
 }
 
-.proj4{
-  box-shadow: 15px 15px black;
-}
-
-.grid-container-homepage>.column a {
-  text-decoration: none;
-}
-
-.vertical-flip-container {
+.resume-intro:after {
+  content: " ";
+  display: inline-block;
   position: absolute;
-  display: flex;
+  width: 75px;
+  height: 75px;
+  background-color: #2c2727;
+  bottom: -35px;
   left: 0;
-  bottom: 20px;
-  width: 100%;
-  height: 50px;
+  right: 0;
+  margin: auto;
+  transform: rotateZ(45deg);
 }
 
-.vertical-flip-container>button {
-  margin: 0 auto;
-  -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
-  clip-path: polygon(100% 0, 0 0, 50% 100%);
-  background-color: black;
-  border-style: none;
-  height: 20px;
-  width: 20px;
+.resume-intro * {
+  color: #f0f0f0;
 }
 
-.project-intro {
-  color: white;
-  text-align: left;
-  margin-top: 50px;
-  height: 100%;
+.resume-intro>.intro {
+  position: relative;
+  display: block;
+  text-align: center;
+  padding-top: 20px;
 }
 
-.project-intro>p {
-  color: rgba(255, 255, 255, .6);
-  transition-duration: .2s
+.skills-container {
+  height: 110vh;
+  text-align: center;
 }
 
-.column h1 {
-  width: 100%;
-  font-size: 2em;
-  color: rgba(255, 255, 255, .6);
-  margin: 0;
-  font-size: 45px;
-  line-height: 45px;
-  min-height: 15%;
-  transition-duration: .2s
+.skills-container > .skills-intro {
+  margin-top: 150px;
 }
 
-.proj1 {
-  grid-area: "proj1";
-  background-color: #FF5959;
+.resume-footer{
+  position: relative;
+  background-color: #2c2727;
+  height: 20vh;
 }
 
-.proj1>h1 {
+.resume-footer:after {
+  content: " ";
   display: inline-block;
-  /* background-color: rgba(134, 117, 130, 1); */
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: #2c2727;
+  bottom: 105px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: rotateZ(45deg);
 }
 
-.proj2 {
-  grid-area: "proj2";
-  background-color: #ffad5a;
-}
-
-.proj2>h1 {
+.intro>h1 {
   display: inline-block;
-  /* background-color: rgba(149, 166, 153, 1); */
 }
 
-.proj3 {
-  grid-area: "proj3";
-  background-color: #4f9da6;
+.intro>a {
+  position: absolute;
+  text-align: initial;
+  cursor: pointer;
+  top: 46px;
+  margin-left: 20px;
+  font-size: 25px;
 }
 
-.proj3>h1 {
-  display: inline-block;
-  /* background-color: rgba(134, 117, 130, 1); */
-}
-
-.proj4 {
-  grid-area: "proj4";
-  background-color: #1a0841;
-}
-
-.proj4>h1 {
-  display: inline-block;
-  /* background-color: rgba(134, 117, 130, 1); */
-}
-
-.directional-left {
-  grid-area: "directional-left";
-}
-
-.directional-right {
-  grid-area: "directional-right";
-}
-
-.horizontal-flip-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.horizontal-flip-container>button {
-  height: 20px;
-  border-style: none;
-  background-color: black;
-}
-
-.horizontal-flip-left {
-  -webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
-  clip-path: polygon(100% 0, 0 50%, 100% 100%);
-}
-
-.horizontal-flip-right {
-  -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
-  clip-path: polygon(100% 50%, 0 0, 0 100%);
-}
-
-/* 1st flip */
-/* name and brief description 2 sentences max */
-
-/* 2nd flip  */
-/* image of the project */
-
-/* 3rd flip */
-/* Tech Used */
-
-/* 4th flip */
-/* Link to project */
-
-/* Panel CSS Hover */
-.grid-container-homepage>.column:hover h1,.grid-container-homepage>.column:hover p {
-  color: white;
+/* Skills Layout */
+.skills-zone {
+  border: black 1px solid;
+  margin-bottom: 50px;
+  height: 200px;
 }

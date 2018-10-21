@@ -6,18 +6,31 @@ export default class Navbar extends Component {
 
   componentDidMount() {
     if ((window.location.pathname === '/') || (window.location.pathname === '/portfolio')) {
-      const activeRoute = document.getElementsByClassName('nav-route-portfolio');
       Array.from(document.getElementsByClassName('nav-route-portfolio')).forEach((element, index, array) => {
         element.classList.add('portfolio-active-route')
       });
     }
 
-    if (window.location.pathname === '/aboutme') {
-      const activeRoute = document.getElementsByClassName('nav-route-aboutme');
-      Array.from(document.getElementsByClassName('nav-route-aboutme')).forEach((element, index, array) => {
+    if (window.location.pathname === '/contact') {
+      Array.from(document.getElementsByClassName('nav-route-contact')).forEach((element, index, array) => {
         element.classList.add('portfolio-active-route');
       });
     }
+
+    // if (window.location.pathname === '/homepage') {
+    //   var initialsElements = document.getElementsByClassName('icon-card-initials')
+    //   var wrapperElements = document.getElementsByClassName('icon-card-initials-wrapper')
+    //   for (var i in initialsElements) {
+    //     if (initialsElements.hasOwnProperty(i)) {
+    //       initialsElements[i].classList.add('icon-card-initials-large');
+    //     }
+    //   }
+    //   for (var i in wrapperElements) {
+    //     if (wrapperElements.hasOwnProperty(i)) {
+    //       wrapperElements[i].classList.add('icon-card-initials-wrapper-large');
+    //     }
+    //   }
+    // }
   }
 
 
@@ -41,18 +54,18 @@ export default class Navbar extends Component {
               </a>
             </div>
             <li>
-              <a className="nav-route-aboutme" href="/aboutme">About Me</a>
-              <a className="nav-route-aboutme" href="/aboutme">About Me</a>
+              <a className="nav-route-contact" href="/contact">Contact</a>
+              <a className="nav-route-contact" href="/contact">Contact</a>
             </li>
           </ul>
         </div>
-        <div className="contact-navbar-button">
+        {/* <div className="contact-navbar-button">
           <a href="/contact">
             <p>
               Contact Me
             </p>
           </a>
-        </div>
+        </div> */}
       </div>
     )
   }

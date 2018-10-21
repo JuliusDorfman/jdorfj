@@ -1,0 +1,156 @@
+.portfolio-component {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.grid-container-homepage {
+  display: grid;
+  grid-template-columns: 2% 24% 24% 24% 24% 2%;
+  grid-template-areas:
+    "directional-left proj1 proj2 proj3 proj4 directional-right";
+  height: 95vh;
+}
+
+.grid-container-homepage>.column {
+  position: relative;
+  padding: 0 2em;
+}
+
+.proj4 {
+  box-shadow: 15px 15px black;
+}
+
+.grid-container-homepage>.column a {
+  text-decoration: none;
+}
+
+.vertical-flip-container {
+  position: absolute;
+  display: flex;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  height: 50px;
+}
+
+.vertical-flip-container>button {
+  margin: 0 auto;
+  -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
+  clip-path: polygon(100% 0, 0 0, 50% 100%);
+  background-color: black;
+  border-style: none;
+  height: 20px;
+  width: 20px;
+}
+
+.project-intro {
+  color: white;
+  text-align: left;
+  margin-top: 50px;
+  height: 100%;
+}
+
+.project-intro>p {
+  color: rgba(255, 255, 255, .6);
+  transition-duration: .2s
+}
+
+.column h1 {
+  width: 100%;
+  font-size: 2em;
+  color: rgba(255, 255, 255, .6);
+  margin: 0;
+  font-size: 45px;
+  line-height: 45px;
+  min-height: 15%;
+  transition-duration: .2s
+}
+
+.proj1 {
+  grid-area: "proj1";
+  background-color: #FF5959;
+}
+
+.proj1>h1 {
+  display: inline-block;
+  /* background-color: rgba(134, 117, 130, 1); */
+}
+
+.proj2 {
+  grid-area: "proj2";
+  background-color: #ffad5a;
+}
+
+.proj2>h1 {
+  display: inline-block;
+  /* background-color: rgba(149, 166, 153, 1); */
+}
+
+.proj3 {
+  grid-area: "proj3";
+  background-color: #4f9da6;
+}
+
+.proj3>h1 {
+  display: inline-block;
+  /* background-color: rgba(134, 117, 130, 1); */
+}
+
+.proj4 {
+  grid-area: "proj4";
+  background-color: #1a0841;
+}
+
+.proj4>h1 {
+  display: inline-block;
+  /* background-color: rgba(134, 117, 130, 1); */
+}
+
+.directional-left {
+  grid-area: "directional-left";
+}
+
+.directional-right {
+  grid-area: "directional-right";
+}
+
+.horizontal-flip-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.horizontal-flip-container>button {
+  height: 20px;
+  border-style: none;
+  background-color: black;
+}
+
+.horizontal-flip-left {
+  -webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
+  clip-path: polygon(100% 0, 0 50%, 100% 100%);
+}
+
+.horizontal-flip-right {
+  -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
+  clip-path: polygon(100% 50%, 0 0, 0 100%);
+}
+
+/* 1st flip */
+/* name and brief description 2 sentences max */
+
+/* 2nd flip  */
+/* image of the project */
+
+/* 3rd flip */
+/* Tech Used */
+
+/* 4th flip */
+/* Link to project */
+
+/* Panel CSS Hover */
+.grid-container-homepage>.column:hover h1,
+.grid-container-homepage>.column:hover p {
+  color: white;
+}
