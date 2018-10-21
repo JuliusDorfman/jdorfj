@@ -1,0 +1,84 @@
+.navbar-component {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: gainsboro;
+  overflow: hidden;
+  max-height: 61px;
+}
+
+.navbar-component>ul {
+  display: inline-flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 20px 0;
+  width: 325px;
+}
+
+.navbar-component>ul>li {
+  display: inline-block;
+  overflow: hidden;
+  text-decoration: none;
+  height: 16px;
+  line-height: 16px;
+}
+
+.navbar-component>ul>li>a {
+  display: block;
+  position: relative;
+  transform: translateY(-16px);
+  text-decoration: none;
+  font-size: 18px;
+  color: #222831;
+  transition-duration: .2s;
+  transition-timing-function: ease;
+  font-weight: 600;
+}
+
+.navbar-component>ul>li:hover a {
+  transform: translateY(0px);
+}
+
+.navbar-component>ul>li>a:nth-of-type(1) {
+  color: #f95959;
+}
+
+/* Initials */
+
+.initials-icon {
+  display: inline-block;
+}
+
+.icon-card-initials-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border: 1.5px solid rgba(100, 100, 100, 1);
+  transition: .45s;
+}
+
+.icon-card-initials {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+  font-size: 30px;
+  font-family: 'Julius Sans One', sans-serif;
+  color: rgba(50, 50, 50, 1);
+  transition: .55s;
+}
+
+.icon-card-initials-wrapper:hover {
+  background: #eb7878;
+  cursor: pointer;
+  border: 1.5px solid rgba(50, 50, 50, 1);
+}
+
+.icon-card-initials-wrapper:hover>.icon-card-initials {
+  color: rgba(50, 50, 50, 1);
+}

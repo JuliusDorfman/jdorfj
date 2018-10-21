@@ -1,4 +1,16 @@
-.App {
+html, body{
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  background-color: gainsboro;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+/* .App {
   text-align: center;
 }
 
@@ -29,4 +41,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
