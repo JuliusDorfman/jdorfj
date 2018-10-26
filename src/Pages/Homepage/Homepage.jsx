@@ -18,28 +18,49 @@ export default class Homepage extends Component {
             <h1>
               Résumé
             </h1>
-            <a href="#"><i class="far fa-file-pdf"></i></a>
+            <a href="#"><i className="far fa-file-pdf"></i></a>
           </div>
         </div>
-        <div className="skills-container">
+        <section className="skills-container">
           <div className="skills-intro">
             <h1>Skills</h1>
           </div>
-          <div className="skills-list">
-            <div className="skills-zone">
-              <div className="skills-head">My Toolbox</div>
-              <div className="skills-details"></div>
-            </div>
-            <div className="skills-zone">
-              <div className="skills-head"></div>
-              <div className="skills-details"></div>
-            </div>
-            <div className="skills-zone">
-              <div className="skills-head"></div>
-              <div className="skills-details"></div>
-            </div>
-          </div>
-        </div>
+          <ul className="skill-list">
+            <li className="skill-item">
+              <div className="skills-head">Development</div>
+              <div className="skills-details">
+                <ul>
+                  <li>Lorem ipsum dolor sr adipisicing elit. Omnis autem </li>
+                  <li>cumque adwdadws vitaee?</li>
+                  <li> doloribus repros ist</li>
+                  <li>Lorem ipsum dolor sr adipisicing elit. Omnis autem </li>
+                </ul>
+              </div>
+            </li>
+            <li className="skill-item">
+              <div className="skills-head">UX</div>
+              <div className="skills-details">
+                <ul>
+                  <li>Lorem ipsum dolor sr adipisicing elit. Omnis autem </li>
+                  <li>cumque adwdadws vitaee?</li>
+                  <li> doloribus repros ist</li>
+                  <li>Lorem ipsum dolor sr adipisicing elit. Omnis autem </li>
+                </ul>
+              </div>
+            </li>
+            <li className="skill-item">
+              <div className="skills-head">DevOps</div>
+              <div className="skills-details">
+                <ul>
+                  <li>Lorem ipsum dolor sr adipisicing elit. Omnis autem </li>
+                  <li>cumque adwdadws vitaee?</li>
+                  <li> doloribus repros ist</li>
+                  <li>Lorem ipsum dolor sr adipisicing elit. Omnis autem </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </section>
         <div className="resume-footer">
         </div>
         <DigitalCard />

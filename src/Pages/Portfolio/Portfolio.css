@@ -154,3 +154,49 @@
 .grid-container-homepage>.column:hover p {
   color: white;
 }
+
+@media(max-width: 1050px) {
+  .column h1 {
+    font-size: 1.5em;
+    line-height: 1.2em;
+    margin-top: 1.2em;
+  }
+
+  .column p {
+    font-size: .8em;
+  }
+}
+
+@media(max-width: 700px) {
+  .portfolio-component {
+    overflow: auto;
+  }
+
+  .column {
+    height: 65vh;
+  }
+
+  .grid-container-homepage {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .column h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: white;
+  }
+
+  .column p {
+    width: 60%;
+    margin: 4em auto;
+    font-size: .9em;
+    color: white;
+  }
+}
+
+@media(max-width: 500px) {
+  .column p {
+    width: 90%;
+  }
+}

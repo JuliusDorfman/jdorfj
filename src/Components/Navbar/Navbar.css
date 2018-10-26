@@ -39,13 +39,18 @@
   font-weight: 600;
 }
 
-.main-nav>ul>li:hover a {
+.portfolio-hover-effect:hover a {
+  transform: translateY(0px);
+}
+
+.contact-hover-effect:hover a {
   transform: translateY(0px);
 }
 
 .main-nav>ul>li>a:nth-of-type(1) {
   color: #f95959;
 }
+
 
 /* Contact Me */
 
@@ -104,6 +109,7 @@
   color: rgba(50, 50, 50, 1);
   transition: .55s;
 }
+
 /* 
 .icon-card-initials-large {
   position: absolute;
@@ -126,6 +132,6 @@
   color: rgba(50, 50, 50, 1);
 }
 
-.portfolio-active-route {
+.active-route {
   color: #f73859 !important;
 }

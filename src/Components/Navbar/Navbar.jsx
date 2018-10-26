@@ -7,13 +7,19 @@ export default class Navbar extends Component {
   componentDidMount() {
     if ((window.location.pathname === '/') || (window.location.pathname === '/portfolio')) {
       Array.from(document.getElementsByClassName('nav-route-portfolio')).forEach((element, index, array) => {
-        element.classList.add('portfolio-active-route')
+        element.classList.add('active-route');
+      });
+      Array.from(document.getElementsByClassName('portfolio-hover-effect')).forEach((remEl) => {
+        remEl.classList.remove('portfolio-hover-effect');
       });
     }
 
     if (window.location.pathname === '/contact') {
       Array.from(document.getElementsByClassName('nav-route-contact')).forEach((element, index, array) => {
-        element.classList.add('portfolio-active-route');
+        element.classList.add('active-route');
+      });
+      Array.from(document.getElementsByClassName('contact-hover-effect')).forEach((remEl) => {
+        remEl.classList.remove('contact-hover-effect');
       });
     }
 
@@ -39,7 +45,7 @@ export default class Navbar extends Component {
       <div className="navbar-component">
         <div className="main-nav">
           <ul>
-            <li>
+            <li className="portfolio-hover-effect">
               <a className="nav-route-portfolio" href="/portfolio">Portfolio</a>
               <a className="nav-route-portfolio" href="/portfolio">Portfolio</a>
             </li>
@@ -53,7 +59,7 @@ export default class Navbar extends Component {
                 </p>
               </a>
             </div>
-            <li>
+            <li className="contact-hover-effect">
               <a className="nav-route-contact" href="/contact">Contact</a>
               <a className="nav-route-contact" href="/contact">Contact</a>
             </li>

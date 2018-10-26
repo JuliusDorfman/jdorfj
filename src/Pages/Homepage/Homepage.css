@@ -30,15 +30,6 @@
   padding-top: 20px;
 }
 
-.skills-container {
-  height: 110vh;
-  text-align: center;
-}
-
-.skills-container > .skills-intro {
-  margin-top: 150px;
-}
-
 .resume-footer{
   position: relative;
   background-color: #2c2727;
@@ -73,8 +64,51 @@
 }
 
 /* Skills Layout */
-.skills-zone {
+.skills-container {
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.skill-item {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
   border: black 1px solid;
   margin-bottom: 50px;
-  height: 200px;
+}
+
+.skills-head {
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid blue;
+  width: 38%;
+}
+
+.skills-details {
+  display: inherit;
+  border: 1px solid red;
+  width: 62%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.skills-details > ul {
+  display: flex;
+  height: 80%;
+  padding: 10px 0;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.skills-details > ul >li {
+  flex: 1 0 auto;
+  padding: 1em;
+  background-color: #2c2727;
+  margin: 0 1em 2em 1em;
+  color: gainsboro;
 }
