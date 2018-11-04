@@ -30,13 +30,21 @@
   padding-top: 20px;
 }
 
-.resume-footer{
+.seperator {
   position: relative;
   background-color: #2c2727;
   height: 20vh;
 }
 
-.resume-footer:after {
+.seperator>* {
+  position: relative;
+  display: block;
+  top: 30%;
+  text-align: center;
+  color: #f0f0f0;
+}
+
+.seperator:before {
   content: " ";
   display: inline-block;
   position: absolute;
@@ -44,6 +52,20 @@
   height: 75px;
   background-color: #2c2727;
   bottom: 105px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: rotateZ(45deg);
+}
+
+.seperator:after {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: #2c2727;
+  top: 105px;
   left: 0;
   right: 0;
   margin: auto;
@@ -66,8 +88,8 @@
 /* Skills Layout */
 .skills-container {
   text-align: center;
-  margin-top: 150px;
-  margin-bottom: 150px;
+  width: 70%;
+  margin: 150px auto;
 }
 
 .skill-item {
@@ -76,39 +98,107 @@
   flex-direction: row;
   justify-content: space-around;
   list-style: none;
-  border: black 1px solid;
   margin-bottom: 50px;
 }
 
 .skills-head {
   display: inherit;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid blue;
-  width: 38%;
+  width: 30%;
+}
+
+.skills-head>img {
+  width: 30%;
 }
 
 .skills-details {
   display: inherit;
-  border: 1px solid red;
   width: 62%;
   justify-content: space-around;
   align-items: center;
 }
 
-.skills-details > ul {
+.skills-details>ul {
   display: flex;
-  height: 80%;
+  align-items: center;
   padding: 10px 0;
   flex-wrap: wrap;
   justify-content: space-around;
   list-style: none;
 }
 
-.skills-details > ul >li {
+.skills-details>ul>li {
   flex: 1 0 auto;
   padding: 1em;
   background-color: #2c2727;
-  margin: 0 1em 2em 1em;
+  margin: 1em;
   color: gainsboro;
+  font-weight: 600;
+}
+
+ul.skill-list {
+  padding: 0;
+}
+
+/* Experience Layout */
+.experience-container {
+  text-align: center;
+  width: 60%;
+  margin: 150px auto;
+  background: gainsboro;
+}
+
+.experience-container>h1 {
+  text-align: center;
+}
+
+.exp-first-tier {
+  text-align: left;
+  margin: 50px;
+  position: relative;
+  padding-left: 1%;
+  border-left: 4px solid #614051;
+}
+
+
+.exp-first-tier:before {
+  content: '';
+  width: 1%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 4px solid #614051;
+}
+
+.exp-item {
+  margin: 50px 0;
+}
+
+.exp-item>header {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.exp-item>header>h4 {
+  margin: 12px 0;
+}
+
+.exp-item>p {
+  margin-bottom: 0;
+  padding-bottom: 16px;
+}
+
+.exp-item>header>h4:nth-child(even) {
+  text-align: right;
+}
+
+.exp-item>ul {
+  padding-left: 1%;
+}
+
+.exp-item>ul>li {
+  list-style-position: inside;
 }
