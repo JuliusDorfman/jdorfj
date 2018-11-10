@@ -128,6 +128,10 @@
   border: 1.5px solid rgba(50, 50, 50, 1);
 }
 
+.icon-fill {
+  background: #eb7878;
+}
+
 .icon-card-initials-wrapper:hover>.icon-card-initials {
   color: rgba(50, 50, 50, 1);
 }

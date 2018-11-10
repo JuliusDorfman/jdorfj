@@ -1,0 +1,60 @@
+.contact-form-wrapper {
+  position: relative;
+  display: flex;
+  padding: 55px 20px 75px 20px;
+  border-radius: 12px;
+  background: #333;
+  flex-direction: row;
+  max-width: 70%;
+  margin: 150px auto;
+  color: gainsboro;
+}
+
+.card-title {
+  width: 30%;
+}
+
+.card-title > h1 {
+  margin: 0 0 0 30px;
+}
+
+.card-title > h1 > span {
+  margin-left: 20px;
+  border: 2px solid red;
+  border-radius: 3px;
+}
+
+#contact-form {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#contact-form > * {
+  max-width: 200px;
+}
+
+#contact-form > input, textarea {
+  padding: 1%;
+  margin: 10px auto;
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  color: gainsboro;
+}
+
+.underline-input {
+  margin: auto;
+  border: 2px solid red;
+  border-radius: 3px;
+  min-width: 200px;
+}
+
+#message {
+margin: auto;
+padding-top: 15px;
+resize: vertical;
+overflow: auto;
+}

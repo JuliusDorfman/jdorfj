@@ -28,42 +28,42 @@ export default class Homepage extends Component {
           <ul className="skill-list">
             <li className="skill-item">
               <div className="skills-head">
-                <img src="/assets/images/development-icon-inverted.png" alt="Development Icon" />
+                <img src="/assets/images/development.svg" alt="Development Icon" />
                 <p>Development</p>
               </div>
               <div className="skills-details">
                 <ul>
-                  <li>html5 &amp; css3 </li>
-                  <li>javascript (es6)</li>
-                  <li>jquery</li>
-                  <li>react</li>
+                  <li className="colors1">html5 &amp; css3 </li>
+                  <li className="colors2">javascript (es6)</li>
+                  <li className="colors3">jquery</li>
+                  <li className="colors4">react</li>
                 </ul>
               </div>
             </li>
             <li className="skill-item">
               <div className="skills-head">
-                <img src='https://dummyimage.com/1080x1200.gif?text=Placeholder' alt='placeholder image' />
+                <img src='/assets/images/ux.svg' alt='placeholder image' />
                 <p>UX</p>
               </div>
               <div className="skills-details">
                 <ul>
-                  <li>accessibility</li>
-                  <li>user workflows</li>
-                  <li>wire framing</li>
-                  <li>client empathy</li>
+                  <li className="colors2">accessibility</li>
+                  <li className="colors1">user workflows</li>
+                  <li className="colors4">wire framing</li>
+                  <li className="colors3">client empathy</li>
                 </ul>
               </div>
             </li>
             <li className="skill-item">
               <div className="skills-head">
-                <img src='https://dummyimage.com/1080x1200.gif?text=Placeholder' alt='placeholder image' />
+                <img src='/assets/images/devops.svg' alt='placeholder image' />
                 <p>DevOps</p></div>
               <div className="skills-details">
                 <ul>
-                  <li>version control</li>
-                  <li>cloud services</li>
-                  <li>testing</li>
-                  <li>big picture project awareness</li>
+                  <li className="colors4">version control</li>
+                  <li className="colors3">cloud services</li>
+                  <li className="colors2">testing</li>
+                  <li className="colors1">big picture project awareness</li>
                 </ul>
               </div>
             </li>
@@ -73,7 +73,7 @@ export default class Homepage extends Component {
           <h1>
             Experience
           </h1>
-          <div className="exp-first-tier">
+          <div id="imatrix" className="exp-first-tier">
             <article className="exp-item">
               <header>
                 <h4>September 2018 &nbsp; - &nbsp; Current</h4>
@@ -81,10 +81,17 @@ export default class Homepage extends Component {
                 <h4>Support Coach</h4>
                 <h4>iMatrix</h4>
               </header>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio </p>
+              <p>My first technical position in the field! I began at iMatrix as a Support Coach. My role was to assist clients with website management. My patrons were not technically savvy and I became an expert explaining the field, both verbal and written. Essence of calls would include:
+                <ul>
+                  <li>Aesthetics</li>
+                  <li>SEO</li>
+                  <li>Domains</li>
+                  <li>Photoshop</li>
+                </ul>
+              </p>
             </article>
           </div>
-          <div className="exp-first-tier">
+          <div id="trilogy-bootcamp" className="exp-first-tier">
             <article className="exp-item">
               <header>
                 <h4>June 2017 &nbsp; - &nbsp; February 2018</h4>
@@ -95,7 +102,7 @@ export default class Homepage extends Component {
               <p>Extensive 6-month program dedicated to front and back-end web-development. Mastery includes: HTML5, CSS3, JavaScript, jQuery, Bootstrap, Firebase, NodeJS, MySQL, MongoDB, Express, HandlebarsJS, &amp; ReactJS.</p>
             </article>
           </div>
-          <div className="exp-first-tier">
+          <div id="alliant" className="exp-first-tier">
             <article className="exp-item">
               <header>
                 <h4>March 2018 &nbsp; - &nbsp; September 2017</h4>

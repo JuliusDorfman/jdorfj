@@ -23,20 +23,11 @@ export default class Navbar extends Component {
       });
     }
 
-    // if (window.location.pathname === '/homepage') {
-    //   var initialsElements = document.getElementsByClassName('icon-card-initials')
-    //   var wrapperElements = document.getElementsByClassName('icon-card-initials-wrapper')
-    //   for (var i in initialsElements) {
-    //     if (initialsElements.hasOwnProperty(i)) {
-    //       initialsElements[i].classList.add('icon-card-initials-large');
-    //     }
-    //   }
-    //   for (var i in wrapperElements) {
-    //     if (wrapperElements.hasOwnProperty(i)) {
-    //       wrapperElements[i].classList.add('icon-card-initials-wrapper-large');
-    //     }
-    //   }
-    // }
+    if (window.location.pathname === '/homepage') {
+      Array.from(document.getElementsByClassName('icon-card-initials-wrapper')).forEach((element, index, array) => {
+        element.classList.add('icon-fill');
+      });
+    }
   }
 
 
