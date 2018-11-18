@@ -1,60 +1,135 @@
+.contact-component {
+  height: 100vh;
+  overflow: hidden;
+}
+
 .contact-form-wrapper {
   position: relative;
-  display: flex;
-  padding: 55px 20px 75px 20px;
+  padding: 70px;
+  min-height: 350px;
   border-radius: 12px;
-  background: #333;
+  background: #0b2247;
   flex-direction: row;
-  max-width: 70%;
-  margin: 150px auto;
-  color: gainsboro;
+  color: ghostwhite;
+  height: 70%;
 }
 
-.card-title {
-  width: 30%;
+.card-title>h1 {
+  padding-left: 4%;
 }
 
-.card-title > h1 {
-  margin: 0 0 0 30px;
+#contact-form>input::placeholder,
+textarea::placeholder {
+  color: ghostwhite;
 }
 
-.card-title > h1 > span {
-  margin-left: 20px;
-  border: 2px solid red;
-  border-radius: 3px;
+.contact-form-body {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-form-body>* {
+  margin: 2%;
+  padding: 2%;
 }
 
 #contact-form {
   display: flex;
-  width: 70%;
+  width: 60%;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  border-right: 1.5px solid ghostwhite;
+}
+
+#contact-form > #message, input {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#contact-form>h2 {
+  font-weight: 500;
+}
+
+.contact-form-details {
+  width: 40%;
+}
+
+.contact-form-details {
+  font-style: italic;
+  font-weight: 100;
+}
+
+.contact-form-details>h3 {
+  font-weight: 400;
   text-align: center;
 }
 
-#contact-form > * {
-  max-width: 200px;
+.contact-form-details>h3:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  border-bottom: 1px solid ghostwhite;
+  height: 20px;
+  width: 60%;
 }
 
-#contact-form > input, textarea {
+.contact-form-details>ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.my-dealings {
+  line-height: 24px;
+  letter-spacing: 1.5px;
+}
+
+#contact-form>* {
+  max-width: 500px;
+}
+
+#contact-form>input,
+#message {
   padding: 1%;
-  margin: 10px auto;
   font-size: 20px;
   background: transparent;
   border: none;
   color: gainsboro;
+  margin-top: 20px;
+  border-bottom: 1.5px solid ghostwhite;
 }
 
-.underline-input {
-  margin: auto;
-  border: 2px solid red;
-  border-radius: 3px;
-  min-width: 200px;
+
+#contact-form>#message {
+  height: 100%;
 }
 
-#message {
-margin: auto;
-padding-top: 15px;
-resize: vertical;
-overflow: auto;
+
+@media (max-width: 750px) {
+  .contact-component {
+    height: initial;
+    overflow: initial;
+  }
+
+  .contact-form-body {
+    flex-direction: column-reverse;
+  }
+
+  .card-title {
+    text-align: center;
+  }
+
+  #contact-form {
+    border-right: none;
+    margin: auto;
+    width: 100%;
+  }
+
+  #contact-form > input, #message {
+    font-size: 16px;
+  }
+
+  .contact-form-details {
+    margin: auto;
+    width: 100%;
+  }
+  
 }

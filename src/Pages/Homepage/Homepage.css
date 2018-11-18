@@ -1,3 +1,7 @@
+.homepage-component {
+  background: ghostwhite;
+}
+
 .resume-intro {
   position: relative;
   width: 100%;
@@ -149,10 +153,12 @@
   padding: 1em;
   /* background-color: #888; */
   margin: 1em;
+  min-width: 150px;
   color: #eee;
   font-size: 1.1rem;
   font-weight: 600;
   font-family: 'Comfortaa', cursive;
+  cursor: pointer;
 }
 
 .skills-details>ul>li:after {
@@ -175,7 +181,7 @@ ul.skill-list {
   text-align: center;
   width: 70%;
   margin: 150px auto;
-  background: gainsboro;
+  background: ghostwhite;
 }
 
 .experience-container>h1 {

@@ -81,7 +81,7 @@ export default class Homepage extends Component {
                 <h4>Support Coach</h4>
                 <h4>iMatrix</h4>
               </header>
-              <p>My first technical position in the field! I began at iMatrix as a Support Coach. My role was to assist clients with website management. My patrons were not technically savvy and I became an expert explaining the field, both verbal and written. Essence of calls would include:
+              <p>My first technical position in the field! I began at iMatrix as a Support Coach. My role was to assist clients with website management. My patrons were not technically savvy and I became an expert in explaining the field, both verbal and written. Essence of calls would include:
                 <ul>
                   <li>Aesthetics</li>
                   <li>SEO</li>
@@ -99,7 +99,7 @@ export default class Homepage extends Component {
                 <h4>Student</h4>
                 <h4>Full Stack Bootcamp</h4>
               </header>
-              <p>Extensive 6-month program dedicated to front and back-end web-development. Mastery includes: HTML5, CSS3, JavaScript, jQuery, Bootstrap, Firebase, NodeJS, MySQL, MongoDB, Express, HandlebarsJS, &amp; ReactJS.</p>
+              <p>I enrolled at UCSD for an extensive 6-month program dedicated to front and back-end web-development. Mastery includes: HTML5, CSS3, JavaScript, jQuery, Bootstrap, Firebase, NodeJS, MySQL, MongoDB, Express, HandlebarsJS, &amp; ReactJS. This class was my first tangible step towards a career in web development.</p>
             </article>
           </div>
           <div id="alliant" className="exp-first-tier">
@@ -110,11 +110,7 @@ export default class Homepage extends Component {
                 <h4>Staff Accountant</h4>
                 <h4>Alliant Insurance Services, Inc.</h4>
               </header>
-              <ul>
-                <li>Lead team of 3-4 Accounts Receivable clerks.</li>
-                <li>Oversee recognition of revenue, quarterly and yearly up to $1million.</li>
-                <li>Reconcile company revenue accounts and bank accounts.</li>
-              </ul>
+              <p>Before persuing a career in tech, I had worked as a Staff Accountant for a fantastic company, Alliant Insurance Services. While I enjoyed the people and the work, I knew the field was not where my passion lay.</p>
             </article>
           </div>
         </section>
