@@ -5,12 +5,32 @@ import './Contact.css';
 export default class Contact extends Component {
   constructor(props) {
     super(props);
-    this.state = {}
+    this.state = {
+      render: 1,
+      name: "",
+      email: "",
+      message: ""
+    }
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  componentDidMount() { }
+  handleChange(e) {
+    this.setState({ [e.target.name]: e.target.value })
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    this.setState({ [e.target.value]: e.target.value }, () => {
+      console.log("handleSubmit", this.state);
+      this.setState({ render: 0 });
+    }
+    );
+  }
 
   render() {
+
+
     return (
       <div className="contact-component">
         <Navbar />
@@ -18,25 +38,41 @@ export default class Contact extends Component {
           <div className="card-title">
             <h1>Contact Me</h1>
           </div>
-          <div className="contact-form-body">
-            <form id="contact-form">
-            <h2>Drop Me A Line...</h2>
-              <input id="name" name="name" type="text" placeholder="Name" autoComplete="new-password" />
-              <input id="email" name="email" type="text" placeholder="Email" autoComplete="new-password" />
-              <textarea id="message" name="message" type="textarea" placeholder="Say Hi!" autoComplete="new-password" />
-            </form>
-            <div className="contact-form-details">
-              <h3>The Details</h3>
-              <p className="my-dealings">
-                Julius is a solo developer with a wide breadth of knowledge in all things web development. SEO, Visual Aesthetic, Edits by the Pixel, I've got you covered!
-              </p>
-              <ul>
-                <li>e. juliusgcd@gmail.com</li>
-                <li>w. jdorfj.herokuapp.com</li>
-                <li>p. contact me for phone #</li>
-              </ul>
-            </div>
-          </div>
+          {(this.state.render) ? (
+            <div className="contact-form-body">
+              <form id="contact-form" onSubmit={this.handleSubmit}>
+
+                <h2>Drop Me A Line...</h2>
+
+                <input id="name" name="name" type="text" placeholder="*Name" autoComplete="new-password" value={this.state.name} onChange={this.handleChange} required />
+
+                <input id="email" name="email" type="email" placeholder="*Email" autoComplete="new-password" value={this.state.email} onChange={this.handleChange} required />
+
+                <textarea id="message" name="message" type="textarea" placeholder="*Say Hi!" autoComplete="new-password" value={this.state.message} onChange={this.handleChange} required />
+
+                <input className="submit" type="submit" value="- Fire Away -" />
+
+              </form>
+              <div className="contact-form-details">
+                <h3>The Details</h3>
+                <p className="my-dealings">
+                  Julius is a solo developer with a wide breadth of knowledge in all things web development. SEO, Visual Aesthetic, Edits by the Pixel, I've got you covered!
+                </p>
+                <ul>
+                  <li>e. juliusgcd@gmail.com</li>
+                  <li>w. jdorfj.herokuapp.com</li>
+                  <li>p. contact me for phone #</li>
+                </ul>
+              </div>
+            </div>)
+            :
+            (<div className="thank-you-submit">
+              Thank you! 
+              <br />
+              Please expect to hear from me within the day!
+            </div>)
+          }
+
         </div>
       </div >
     )

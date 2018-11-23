@@ -8,7 +8,7 @@
   height: 20vh;
   background-color: #2c2727;
   box-shadow: 15px 15px;
-  font-family: 'Comfortaa', serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 .resume-intro:after {
@@ -27,7 +27,7 @@
 }
 
 .resume-intro * {
-  color: #f0f0f0;
+  color: ghostwhite;
 }
 
 .resume-intro>.intro {
@@ -37,12 +37,38 @@
   padding-top: 20px;
 }
 
+.resume-jump-menu {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.resume-jump-menu > li {
+  position: relative;
+  margin-top: 20px;
+  margin: 10px 20px;
+  cursor: pointer;
+}
+
+.resume-jump-menu > li:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 2px;
+  transition: width .5s;
+}
+
+.resume-jump-menu > li:hover:after {
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+
 .seperator {
   position: relative;
   background-color: #2c2727;
   height: 20vh;
   box-shadow: 15px 15px;
-
 }
 
 .seperator>* {
@@ -84,6 +110,7 @@
 
 .intro>h1 {
   display: inline-block;
+  font-size: 40px;
 }
 
 .intro>a {
@@ -92,19 +119,19 @@
   cursor: pointer;
   top: 46px;
   margin-left: 20px;
-  font-size: 25px;
+  font-size: 38px;
 }
 
 /* Skills Layout */
 .skills-container {
   text-align: center;
   width: 70%;
-  margin: 150px auto;
+  margin: 75px auto;
 }
 
 .skills-intro>h1 {
   font-size: 3rem;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Roboto Slab', serif;
 }
 
 .skill-item {
@@ -124,7 +151,7 @@
   width: 30%;
   font-size: 28px;
   font-weight: 600;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Roboto Slab', serif;
 }
 
 .skills-head>img {
@@ -154,10 +181,10 @@
   /* background-color: #888; */
   margin: 1em;
   min-width: 150px;
-  color: #eee;
+  color: ghostwhite;
   font-size: 1.1rem;
   font-weight: 600;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Roboto Slab', serif;
   cursor: pointer;
 }
 
@@ -180,14 +207,14 @@ ul.skill-list {
 .experience-container {
   text-align: center;
   width: 70%;
-  margin: 150px auto;
+  margin: 75px auto;
   background: ghostwhite;
 }
 
 .experience-container>h1 {
   text-align: center;
   font-size: 3rem;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Roboto Slab', serif;
 }
 
 .exp-first-tier {
@@ -260,6 +287,7 @@ ul.skill-list {
 
 .exp-item>ul {
   padding-left: 1%;
+  margin: 0;
 }
 
 .exp-item>ul>li {

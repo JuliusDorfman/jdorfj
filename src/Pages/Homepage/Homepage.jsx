@@ -9,6 +9,12 @@ export default class Homepage extends Component {
     this.state = {}
   }
 
+  componentDidMount() {
+    if (window.location.pathname.toLowerCase === "homepage" || "homepage#") {
+      document.getElementsByClassName('navbar-component')[0].style.background = "ghostwhite";
+    }
+  }
+
   render() {
     return (
       <div className="homepage-component">
@@ -18,9 +24,21 @@ export default class Homepage extends Component {
             <h1>
               Résumé
             </h1>
-            <a href="#"><i className="far fa-file-pdf"></i></a>
+            <a href="#"><i className="fas fa-file-download"></i></a>
           </div>
         </div>
+        <ul className="resume-jump-menu">
+          <li>
+            Skills
+          </li>
+          <li>
+            Experience
+          </li>
+          <li>
+            Download&nbsp;<i className="fas fa-download"></i>
+          </li>
+        </ul>
+
         <section className="skills-container">
           <div className="skills-intro">
             <h1>Skills</h1>
@@ -42,7 +60,7 @@ export default class Homepage extends Component {
             </li>
             <li className="skill-item">
               <div className="skills-head">
-                <img src='/assets/images/ux.svg' alt='placeholder image' />
+                <img src='/assets/images/ux.svg' alt='placeholder' />
                 <p>UX</p>
               </div>
               <div className="skills-details">
@@ -56,7 +74,7 @@ export default class Homepage extends Component {
             </li>
             <li className="skill-item">
               <div className="skills-head">
-                <img src='/assets/images/devops.svg' alt='placeholder image' />
+                <img src='/assets/images/devops.svg' alt='placeholder' />
                 <p>DevOps</p></div>
               <div className="skills-details">
                 <ul>
@@ -82,13 +100,13 @@ export default class Homepage extends Component {
                 <h4>iMatrix</h4>
               </header>
               <p>My first technical position in the field! I began at iMatrix as a Support Coach. My role was to assist clients with website management. My patrons were not technically savvy and I became an expert in explaining the field, both verbal and written. Essence of calls would include:
-                <ul>
-                  <li>Aesthetics</li>
-                  <li>SEO</li>
-                  <li>Domains</li>
-                  <li>Photoshop</li>
-                </ul>
               </p>
+              <ul>
+                <li>Aesthetics</li>
+                <li>SEO</li>
+                <li>Domains</li>
+                <li>Photoshop</li>
+              </ul>
             </article>
           </div>
           <div id="trilogy-bootcamp" className="exp-first-tier">

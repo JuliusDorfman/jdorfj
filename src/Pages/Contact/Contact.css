@@ -79,7 +79,7 @@ textarea::placeholder {
 
 .my-dealings {
   line-height: 24px;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
 }
 
 #contact-form>* {
@@ -97,11 +97,29 @@ textarea::placeholder {
   border-bottom: 1.5px solid ghostwhite;
 }
 
-
-#contact-form>#message {
-  height: 100%;
+#contact-form > .submit {
+  margin-top: 2%;
+  padding: 2%;
+  border: none;
+  background-color: ghostwhite;
+  color: black;
+  font-size: 28px;
+  font-style: italic;
 }
 
+.thank-you-submit {
+  position: relative;
+  display: flex;
+  height: 70%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 200px;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.75rem;
+  font-weight: 100;
+}
 
 @media (max-width: 750px) {
   .contact-component {
@@ -131,5 +149,5 @@ textarea::placeholder {
     margin: auto;
     width: 100%;
   }
-  
+
 }

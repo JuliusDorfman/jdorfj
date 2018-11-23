@@ -11,6 +11,7 @@ export default class DigitalCard extends Component {
     let lineWrapperBack = document.getElementsByClassName('line-wrappers-back')[0]
     let bluelineWrapperBack = document.getElementsByClassName("orange-line-flavor-back")[0]
     let orangelineWrapperBack = document.getElementsByClassName("blue-line-flavor-back")[0]
+    let digitalcardbackinfo = document.getElementsByClassName("digital-card-back-info")[0]
 
     digitalCardContainer.addEventListener('click', () => {
       if (digitalCard.style.transform === "scaleX(-1)") {
@@ -20,6 +21,8 @@ export default class DigitalCard extends Component {
         lineWrapperBack.style.transform = "scaleX(0)";
         bluelineWrapperBack.style.transform = "scaleX(0)";
         orangelineWrapperBack.style.transform = "scaleX(0)";
+        digitalcardbackinfo.style.transform = "scaleX(0)";
+        digitalcardbackinfo.style.color = "rgb(50, 50, 50)";
       } else {
         digitalCard.style.transform = "scaleX(-1)";
         digitalCardBack.style.transform = "scaleX(1)";
@@ -27,6 +30,8 @@ export default class DigitalCard extends Component {
         lineWrapperBack.style.transform = "scaleX(-1)";
         bluelineWrapperBack.style.transform = "scaleX(-1)";
         orangelineWrapperBack.style.transform = "scaleX(-1)";
+        digitalcardbackinfo.style.transform = "scaleX(-1)";
+        digitalcardbackinfo.style.color = "gainsboro";
       }
     })
   }
@@ -67,10 +72,14 @@ export default class DigitalCard extends Component {
           </div>
 
           <div className="digital-card-back">
+
             <div className="line-wrappers-back">
               <div className="blue-line-flavor-back"></div>
               <div className="orange-line-flavor-back"></div>
             </div>
+            <ul className="digital-card-back-info">
+              <li>&nbsp;&nbsp;&nbsp;juliusdorfman@gmail.com</li>
+            </ul>
           </div>
 
         </div>
