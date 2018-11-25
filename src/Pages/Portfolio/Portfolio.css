@@ -1,6 +1,7 @@
 .portfolio-component {
   height: 100vh;
   overflow: hidden;
+  background-color: gainsboro;
 }
 
 .grid-container-homepage {

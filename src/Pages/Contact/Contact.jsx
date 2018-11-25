@@ -50,13 +50,13 @@ export default class Contact extends Component {
 
                 <textarea id="message" name="message" type="textarea" placeholder="*Say Hi!" autoComplete="new-password" value={this.state.message} onChange={this.handleChange} required />
 
-                <input className="submit" type="submit" value="- Fire Away -" />
+                <input className="submit" type="submit" value="- Fire Away -" href="mailto: juliusgcd@gmail.com"/>
 
               </form>
               <div className="contact-form-details">
                 <h3>The Details</h3>
                 <p className="my-dealings">
-                  Julius is a solo developer with a wide breadth of knowledge in all things web development. SEO, Visual Aesthetic, Edits by the Pixel, I've got you covered!
+                  Julius is a solo developer with a wide breadth of knowledge in all things web development. SEO, visual aesthetic, edits by the pixel, I've got you covered!
                 </p>
                 <ul>
                   <li>e. juliusgcd@gmail.com</li>

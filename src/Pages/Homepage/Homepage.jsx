@@ -6,7 +6,12 @@ import './Homepage.css';
 export default class Homepage extends Component {
   constructor(props) {
     super(props);
-    this.state = {}
+    this.state = {
+      resumeIntro: 0,
+      experience: 1,
+      skills: 0
+    }
+    this.handleNavigate = this.handleNavigate.bind(this);
   }
 
   componentDidMount() {
@@ -15,33 +20,96 @@ export default class Homepage extends Component {
     }
   }
 
-  render() {
-    return (
-      <div className="homepage-component">
-        <Navbar />
-        <div className="resume-intro">
-          <div className="intro">
-            <h1>
-              Résumé
-            </h1>
-            <a href="#"><i className="fas fa-file-download"></i></a>
-          </div>
-        </div>
-        <ul className="resume-jump-menu">
-          <li>
-            Skills
-          </li>
-          <li>
-            Experience
-          </li>
-          <li>
-            Download&nbsp;<i className="fas fa-download"></i>
-          </li>
-        </ul>
+  handleNavigate(e) {
+    e.preventDefault();
+    if (e.target.getAttribute('value') === "experience") {
+      this.setState({ resumeIntro: 0 });
+      this.setState({ experience: 1 });
+      this.setState({ skills: 0 });
+    }
+    if (e.target.getAttribute('value') === "skills") {
+      this.setState({ resumeIntro: 0 });
+      this.setState({ experience: 0 });
+      this.setState({ skills: 1 });
+    }
+  }
 
-        <section className="skills-container">
+  render() {
+    let resumeComponent;
+    let jumpMenu = (
+      <ul className="resume-jump-menu">
+        <li>
+          <a onClick={this.handleNavigate} value="experience">Experience</a>
+        </li>
+        <li>
+          <a onClick={this.handleNavigate} value="skills">Skills</a>
+        </li>
+        <li>
+          Download Professional Ver.&nbsp;<i className="fas fa-download"></i>
+        </li>
+      </ul>
+    )
+    if (this.state.resumeIntro) {
+      resumeComponent = (
+        <section className="intro-container resume-container">Intro</section>
+      );
+    }
+    if (this.state.experience) {
+      resumeComponent = (
+        <section className="experience-container resume-container">
+        {jumpMenu}
+          <h1 id="experience">
+            Experience
+          </h1>
+          <div id="imatrix" className="exp-first-tier">
+            <article className="exp-item">
+              <header>
+                <h4>September 2018 &nbsp; - &nbsp; Current</h4>
+                <h4>San Diego, CA</h4>
+                <h4>Support Coach</h4>
+                <h4>iMatrix</h4>
+              </header>
+              <p>My first technical position in the field! I began at iMatrix as a Support Coach. My role was to assist clients with website management. My patrons were not technically savvy and I became an expert in explaining the field, both verbal and written on topics that included: Aesthetic, SEO, Domains, Photoshop.
+              </p>
+              {/* <ul>
+                <li>Aesthetics</li>
+                <li>SEO</li>
+                <li>Domains</li>
+                <li>Photoshop</li>
+              </ul> */}
+            </article>
+          </div>
+          <div id="trilogy-bootcamp" className="exp-first-tier">
+            <article className="exp-item">
+              <header>
+                <h4>June 2017 &nbsp; - &nbsp; February 2018</h4>
+                <h4>University of California, San Diego</h4>
+                <h4>Student</h4>
+                <h4>Full Stack Bootcamp</h4>
+              </header>
+              <p>I enrolled at UCSD for an extensive 6-month program dedicated to front and back-end web-development. Mastery includes: HTML5, CSS3, JavaScript, jQuery, Bootstrap, Firebase, NodeJS, MySQL, MongoDB, Express, HandlebarsJS, &amp; ReactJS. This class was my first tangible step towards a career in web development.</p>
+            </article>
+          </div>
+          <div id="alliant" className="exp-first-tier">
+            <article className="exp-item">
+              <header>
+                <h4>March 2018 &nbsp; - &nbsp; September 2017</h4>
+                <h4>San Diego, CA</h4>
+                <h4>Staff Accountant</h4>
+                <h4>Alliant Insurance Services, Inc.</h4>
+              </header>
+              <p>Before persuing a career in tech, I had worked as a Staff Accountant for a fantastic company, Alliant Insurance Services. While I enjoyed the people and the work, I knew the field was not where my passion lay.</p>
+            </article>
+          </div>
+        </section>
+      );
+    }
+    if (this.state.skills) {
+      resumeComponent = (
+        <section className="skills-container resume-container">
+        {jumpMenu}
           <div className="skills-intro">
-            <h1>Skills</h1>
+            <h1 id="skills">Skills</h1>
           </div>
           <ul className="skill-list">
             <li className="skill-item">
@@ -87,57 +155,14 @@ export default class Homepage extends Component {
             </li>
           </ul>
         </section>
-        <section className="experience-container">
-          <h1>
-            Experience
-          </h1>
-          <div id="imatrix" className="exp-first-tier">
-            <article className="exp-item">
-              <header>
-                <h4>September 2018 &nbsp; - &nbsp; Current</h4>
-                <h4>San Diego, CA</h4>
-                <h4>Support Coach</h4>
-                <h4>iMatrix</h4>
-              </header>
-              <p>My first technical position in the field! I began at iMatrix as a Support Coach. My role was to assist clients with website management. My patrons were not technically savvy and I became an expert in explaining the field, both verbal and written. Essence of calls would include:
-              </p>
-              <ul>
-                <li>Aesthetics</li>
-                <li>SEO</li>
-                <li>Domains</li>
-                <li>Photoshop</li>
-              </ul>
-            </article>
-          </div>
-          <div id="trilogy-bootcamp" className="exp-first-tier">
-            <article className="exp-item">
-              <header>
-                <h4>June 2017 &nbsp; - &nbsp; February 2018</h4>
-                <h4>University of California, San Diego</h4>
-                <h4>Student</h4>
-                <h4>Full Stack Bootcamp</h4>
-              </header>
-              <p>I enrolled at UCSD for an extensive 6-month program dedicated to front and back-end web-development. Mastery includes: HTML5, CSS3, JavaScript, jQuery, Bootstrap, Firebase, NodeJS, MySQL, MongoDB, Express, HandlebarsJS, &amp; ReactJS. This class was my first tangible step towards a career in web development.</p>
-            </article>
-          </div>
-          <div id="alliant" className="exp-first-tier">
-            <article className="exp-item">
-              <header>
-                <h4>March 2018 &nbsp; - &nbsp; September 2017</h4>
-                <h4>San Diego, CA</h4>
-                <h4>Staff Accountant</h4>
-                <h4>Alliant Insurance Services, Inc.</h4>
-              </header>
-              <p>Before persuing a career in tech, I had worked as a Staff Accountant for a fantastic company, Alliant Insurance Services. While I enjoyed the people and the work, I knew the field was not where my passion lay.</p>
-            </article>
-          </div>
-        </section>
+      );
+    }
 
-        <div className="seperator">
-
-        </div>
-
-        <DigitalCard />
+    return (
+      <div className="homepage-component">
+        <Navbar />
+        {resumeComponent}
+        {/* <DigitalCard /> */}
       </div>
     )
   }

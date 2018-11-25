@@ -1,6 +1,7 @@
 .contact-component {
   height: 100vh;
   overflow: hidden;
+  background-color: gainsboro;
 }
 
 .contact-form-wrapper {
@@ -105,6 +106,7 @@ textarea::placeholder {
   color: black;
   font-size: 28px;
   font-style: italic;
+  cursor: pointer;
 }
 
 .thank-you-submit {

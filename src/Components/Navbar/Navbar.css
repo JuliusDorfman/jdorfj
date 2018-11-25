@@ -123,13 +123,13 @@
 } */
 
 .icon-card-initials-wrapper:hover {
-  background: #eb7878;
+  background: ghostwhite;
   cursor: pointer;
   border: 1.5px solid rgba(50, 50, 50, 1);
 }
 
 .icon-fill {
-  background: #eb7878;
+  background: gainstboro;
 }
 
 .icon-card-initials-wrapper:hover>.icon-card-initials {
