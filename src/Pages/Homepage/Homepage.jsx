@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Navbar from '../../Components/Navbar';
-import DigitalCard from '../../Components/DigitalCard';
+// import DigitalCard from '../../Components/DigitalCard';
 import './Homepage.css';
 
 export default class Homepage extends Component {
@@ -39,13 +39,13 @@ export default class Homepage extends Component {
     let jumpMenu = (
       <ul className="resume-jump-menu">
         <li>
-          <a onClick={this.handleNavigate} value="experience">Experience</a>
+          <p onClick={this.handleNavigate} value="experience">Experience</p>
         </li>
         <li>
-          <a onClick={this.handleNavigate} value="skills">Skills</a>
+          <p onClick={this.handleNavigate} value="skills">Skills</p>
         </li>
         <li>
-          Download Professional Ver.&nbsp;<i className="fas fa-download"></i>
+          <a href="https://docs.google.com/document/d/1ZbzSmXuALwGpeg-Q3dKr6_nORTJO9zYK88fklaZUjE0/export?format=pdf">Download Professional Ver.&nbsp;<i className="fas fa-download"></i></a>
         </li>
       </ul>
     )

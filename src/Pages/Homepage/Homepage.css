@@ -45,9 +45,11 @@
   cursor: pointer;
 }
 
-.resume-jump-menu>li>a {
+.resume-jump-menu>li>p,
+a {
   text-decoration: none;
-  color: #202020
+  color: #202020;
+  margin: 0;
 }
 
 .resume-jump-menu>li:after {
@@ -93,6 +95,7 @@
   flex-direction: row;
   justify-content: space-around;
   list-style: none;
+  min-height: 150px;
 }
 
 .skills-head {
@@ -235,6 +238,7 @@ ul.skill-list {
 .exp-item>header>h4:nth-child(even) {
   text-align: right;
 }
+
 /* 
 .exp-item>ul {
   padding-left: 1%;
