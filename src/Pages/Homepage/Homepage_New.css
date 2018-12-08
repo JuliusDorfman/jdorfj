@@ -1,0 +1,309 @@
+.homepage-component {
+  background: ghostwhite;
+}
+
+
+.resume-jump-menu {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.resume-jump-menu li {
+  position: relative;
+  margin-top: 20px;
+  margin: 10px 20px;
+  cursor: pointer;
+}
+
+.resume-jump-menu>li>p,
+a {
+  text-decoration: none;
+  color: #202020;
+  margin: 0;
+}
+
+.resume-jump-menu>li:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 5px;
+  transition: .5s;
+  border-bottom: 1.5px solid;
+}
+
+.resume-jump-menu>li:hover:after {
+  border-bottom: 1.5px solid black;
+  width: 100%;
+}
+
+/* Experience Layout */
+
+.experience-header {
+  position: relative;
+  display: block;
+  background: linear-gradient(to right, #0b2247, 90%, #0b224700);
+  margin: 0;
+  color: ghostwhite;
+  padding: 20px 30px;
+}
+
+.experience-row {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.experience-flavor {
+  -webkit-clip-path: polygon(0 0, 18% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 18% 0, 100% 100%, 0% 100%);
+  background: url('/assets/images/fontana_de_trevi.jpg');
+  min-width: 50vw;
+}
+
+.experience-flavor:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #0b224750;
+}
+
+
+.experience-container>h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Roboto Slab', serif;
+  color: #020202;
+}
+
+.exp-first-tier {
+  text-align: left;
+  margin: 40px;
+  position: relative;
+  padding-left: 1%;
+}
+
+.exp-first-tier:nth-child(1) {
+  margin-left: -53%;
+}
+
+.exp-first-tier:nth-child(2) {
+  margin-left: -25%;
+}
+
+.exp-first-tier:nth-child(3) {
+  margin-left: 0;
+}
+
+
+.exp-first-tier:before {
+  content: '';
+  width: 1%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#imatrix {
+  border-left: 4px solid #2a5b72;
+}
+
+#imatrix:before {
+  border-top: 4px solid #2a5b72;
+}
+
+#trilogy-bootcamp {
+  border-left: 4px solid #47410b;
+}
+
+#trilogy-bootcamp:before {
+  border-top: 4px solid #47410b;
+}
+
+#alliant {
+  border-left: 4px solid #614051;
+}
+
+#alliant:before {
+  border-top: 4px solid #614051;
+}
+
+.exp-item {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+}
+
+.exp-item>header {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  letter-spacing: 1px;
+}
+
+.exp-item>header>h4 {
+  margin: -12px 0 18px 6px;
+}
+
+.exp-item>p {
+  margin: 0;
+  padding-left: 1%;
+  line-height: 1.2rem;
+  padding-bottom: 16px;
+}
+
+.exp-item>header>h4:nth-child(even) {
+  text-align: right;
+}
+
+
+
+/* Skills Layout */
+
+.skills-row {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.skills-header {
+  position: relative;
+  display: block;
+  background: linear-gradient(to right, #470b16, 90%, #470b1600);
+  margin: 0;
+  color: ghostwhite;
+  padding: 20px 30px;
+}
+
+.skills-container {
+  width: 50vw;
+}
+
+.skills-flavor {
+  -webkit-clip-path: polygon(100% 0, 82% 0, 0% 100%, 100% 100%);
+  clip-path: polygon(100% 0, 82% 0, 0% 100%, 100% 100%);
+  background: url('/assets/images/Jade_cabbage_closeup.jpg');
+  min-width: 50vw;
+  background-size: cover;
+  background-position-y: 100px;
+}
+
+.skills-flavor:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #0b224750;
+}
+
+.skills-flavor:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #470b1620;
+}
+
+.colors1 {
+  background: #2a5b72;
+}
+
+.colors2 {
+  background: #27742b
+}
+
+.colors3 {
+  background: #614051
+}
+
+.colors4 {
+  background: #6B6B00;
+}
+/* Copied Skill */
+.skills-intro>h1 {
+  font-size: 1.5rem;
+  font-family: 'Roboto Slab', serif;
+}
+
+.skill-item {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  min-height: 150px;
+}
+
+.skills-head {
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: 'Roboto Slab', serif;
+}
+
+.skills-head>p {
+  margin: 0;
+}
+
+.skills-head>img {
+  width: 60px;
+}
+
+.skills-details {
+  display: inherit;
+  width: 62%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.skills-details>ul {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.skills-details>ul>li {
+  position: relative;
+  flex: 1 0 auto;
+  padding: .8rem;
+  /* background-color: #888; */
+  margin: .8rem;
+  min-width: 100px;
+  color: ghostwhite;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Roboto Slab', serif;
+  cursor: pointer;
+}
+
+.skills-details>ul>li:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  content: " ";
+  box-shadow: 5px 5px black;
+  animation: floating-items 2s ease-in-out 0s infinite alternate;
+}
+
+ul.skill-list {
+  padding: 0;
+}

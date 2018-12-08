@@ -4,7 +4,8 @@
 
 .resume-container {
   text-align: center;
-  width: 70%;
+  padding: .5% 15%;
+  border-radius: 12px;
   margin: auto;
 }
 
@@ -269,7 +270,7 @@ ul.skill-list {
 
 @media (max-width: 850px) {
   .resume-container {
-    width: 85%;
+    padding: 2% 7%;
   }
 
   .skills-details {
