@@ -2,33 +2,6 @@
   background: ghostwhite;
 }
 
-.resume-container {
-  text-align: center;
-  padding: .5% 15%;
-  border-radius: 12px;
-  margin: auto;
-}
-
-.resume-intro {
-  position: relative;
-  width: 100%;
-  font-family: 'Roboto Slab', serif;
-  margin-top: 20px;
-}
-
-.resume-intro * {
-  color: #020202;
-}
-
-.resume-intro>.intro {
-  position: relative;
-  display: block;
-  text-align: center;
-}
-
-.intro>h1 {
-  margin: 0 auto;
-}
 
 .resume-jump-menu {
   position: relative;
@@ -68,23 +41,195 @@ a {
   width: 100%;
 }
 
-.intro>h1 {
-  display: inline-block;
-  font-size: 48px;
+/* Experience Layout */
+
+.experience-header {
+  position: relative;
+  display: block;
+  background: linear-gradient(to right, #0b2247, 90%, #0b224700);
+  margin: 0;
+  color: ghostwhite;
+  padding: 20px 30px;
 }
 
-.intro>a {
+.experience-row {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.experience-flavor {
+  -webkit-clip-path: polygon(0 0, 18% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 18% 0, 100% 100%, 0% 100%);
+  background: url('/assets/images/fontana_de_trevi.jpg');
+  min-width: 50vw;
+}
+
+.experience-flavor:after {
+  content: "";
   position: absolute;
-  text-align: initial;
-  cursor: pointer;
-  top: 46px;
-  margin-left: 20px;
-  font-size: 38px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #0b224750;
 }
 
-/* Intro Layout */
+
+.experience-container>h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Roboto Slab', serif;
+  color: #020202;
+}
+
+.exp-first-tier {
+  text-align: left;
+  margin: 40px;
+  position: relative;
+  padding-left: 1%;
+}
+
+.exp-first-tier:nth-child(1) {
+  margin-left: -53%;
+}
+
+.exp-first-tier:nth-child(2) {
+  margin-left: -25%;
+}
+
+.exp-first-tier:nth-child(3) {
+  margin-left: 0;
+}
+
+
+.exp-first-tier:before {
+  content: '';
+  width: 1%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#imatrix {
+  border-left: 4px solid #2a5b72;
+}
+
+#imatrix:before {
+  border-top: 4px solid #2a5b72;
+}
+
+#trilogy-bootcamp {
+  border-left: 4px solid #47410b;
+}
+
+#trilogy-bootcamp:before {
+  border-top: 4px solid #47410b;
+}
+
+#alliant {
+  border-left: 4px solid #614051;
+}
+
+#alliant:before {
+  border-top: 4px solid #614051;
+}
+
+.exp-item {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+}
+
+.exp-item>header {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  letter-spacing: 1px;
+}
+
+.exp-item>header>h4 {
+  margin: -12px 0 18px 6px;
+}
+
+.exp-item>p {
+  margin: 0;
+  padding-left: 1%;
+  line-height: 1.2rem;
+  padding-bottom: 16px;
+}
+
+.exp-item>header>h4:nth-child(even) {
+  text-align: right;
+}
+
+
 
 /* Skills Layout */
+
+.skills-row {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.skills-header {
+  position: relative;
+  display: block;
+  background: linear-gradient(to right, #470b16, 90%, #470b1600);
+  margin: 0;
+  color: ghostwhite;
+  padding: 20px 30px;
+}
+
+.skills-container {
+  width: 50vw;
+}
+
+.skills-flavor {
+  -webkit-clip-path: polygon(100% 0, 82% 0, 0% 100%, 100% 100%);
+  clip-path: polygon(100% 0, 82% 0, 0% 100%, 100% 100%);
+  background: url('/assets/images/Jade_cabbage_closeup.jpg');
+  min-width: 50vw;
+  background-size: cover;
+  background-position-x: 100px;
+}
+
+.skills-flavor:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #0b224750;
+}
+
+.skills-flavor:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #470b1620;
+}
+
+.colors1 {
+  background: #2a5b72;
+}
+
+.colors2 {
+  background: #27742b
+}
+
+.colors3 {
+  background: #614051
+}
+
+.colors4 {
+  background: #6B6B00;
+}
+/* Copied Skill */
 .skills-intro>h1 {
   font-size: 1.5rem;
   font-family: 'Roboto Slab', serif;
@@ -161,166 +306,4 @@ a {
 
 ul.skill-list {
   padding: 0;
-}
-
-/* Experience Layout */
-
-.experience-container>h1 {
-  text-align: center;
-  font-size: 1.5rem;
-  font-family: 'Roboto Slab', serif;
-  color: #020202;
-}
-
-.exp-first-tier {
-  text-align: left;
-  margin: 40px;
-  position: relative;
-  padding-left: 1%;
-}
-
-
-.exp-first-tier:before {
-  content: '';
-  width: 1%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-#imatrix {
-  border-left: 4px solid #614051;
-}
-
-#imatrix:before {
-  border-top: 4px solid #614051;
-}
-
-#trilogy-bootcamp {
-  border-left: 4px solid #27742b;
-}
-
-#trilogy-bootcamp:before {
-  border-top: 4px solid #27742b;
-}
-
-#alliant {
-  border-left: 4px solid #2a5b72;
-}
-
-#alliant:before {
-  border-top: 4px solid #2a5b72;
-
-}
-
-.exp-item {
-  font-family: 'Roboto Slab', serif;
-  font-weight: 300;
-}
-
-.exp-item>header {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  letter-spacing: 1px;
-}
-
-.exp-item>header>h4 {
-  margin: -12px 0 18px 6px;
-}
-
-.exp-item>p {
-  margin: 0;
-  padding-left: 1%;
-  line-height: 1.2rem;
-  padding-bottom: 16px;
-}
-
-.exp-item>header>h4:nth-child(even) {
-  text-align: right;
-}
-
-/* 
-.exp-item>ul {
-  padding-left: 1%;
-  margin: 0;
-}
-
-.exp-item>ul>li {
-  list-style-position: inside;
-} */
-
-.colors1 {
-  background: #2a5b72;
-}
-
-.colors2 {
-  background: #27742b
-}
-
-.colors3 {
-  background: #614051
-}
-
-.colors4 {
-  background: #6B6B00;
-}
-
-/* Responsiveness */
-
-@media (max-width: 850px) {
-  .resume-container {
-    padding: 2% 7%;
-  }
-
-  .skills-details {
-    width: 80%;
-  }
-
-  .exp-first-tier {
-    margin: 20px;
-  }
-
-  .exp-item>header {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-
-  .exp-item>header>h4:nth-child(even) {
-    text-align: left;
-  }
-
-  .exp-item>p,
-  ul>li {
-    font-size: 12px;
-  }
-
-  .exp-item>header>h4 {
-    font-size: .9em;
-  }
-
-}
-
-@media (max-width: 700px) {
-  .skills-head {
-    flex-direction: row-reverse;
-  }
-
-  .skill-item {
-    flex-direction: column;
-  }
-
-  .skill-item>* {
-    margin: auto;
-  }
-
-  .skills-head {
-    width: 65%;
-    justify-content: space-between;
-  }
-
-  .skills-head>img {
-    width: initial;
-  }
 }

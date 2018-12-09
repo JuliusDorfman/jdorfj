@@ -6,7 +6,7 @@
 
 .contact-form-wrapper {
   position: relative;
-  padding: 70px;
+  padding: 30px;
   min-height: 350px;
   border-radius: 12px;
   background: #0b2247;
@@ -121,6 +121,15 @@ textarea::placeholder {
   font-style: italic;
   line-height: 1.75rem;
   font-weight: 100;
+  width: 60%;
+  border-right: 1.5px solid ghostwhite;
+}
+
+.contact-form-footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
 
 @media (max-width: 750px) {
@@ -151,5 +160,4 @@ textarea::placeholder {
     margin: auto;
     width: 100%;
   }
-
 }

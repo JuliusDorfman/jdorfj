@@ -38,10 +38,9 @@ export default class Contact extends Component {
           <div className="card-title">
             <h1>Contact Me</h1>
           </div>
+          <div className="contact-form-body">
           {(this.state.render) ? (
-            <div className="contact-form-body">
               <form id="contact-form" onSubmit={this.handleSubmit}>
-
                 <h2>Drop Me A Line...</h2>
 
                 <input id="name" name="name" type="text" placeholder="*Name" autoComplete="new-password" value={this.state.name} onChange={this.handleChange} required />
@@ -51,8 +50,15 @@ export default class Contact extends Component {
                 <textarea id="message" name="message" type="textarea" placeholder="*Say Hi!" autoComplete="new-password" value={this.state.message} onChange={this.handleChange} required />
 
                 <input className="submit" type="submit" value="- Fire Away -" href="mailto: juliusgcd@gmail.com"/>
-
               </form>
+              )
+            :
+              (<div className="thank-you-submit">
+                Thank you! 
+                <br />
+                Please expect to hear from me within the day!
+              </div>
+              )}
               <div className="contact-form-details">
                 <h3>The Details</h3>
                 <p className="my-dealings">
@@ -61,20 +67,17 @@ export default class Contact extends Component {
                 <ul>
                   <li>e. juliusgcd@gmail.com</li>
                   <li>w. jdorfj.herokuapp.com</li>
-                  <li>p. contact me for phone #</li>
+                  <li>p. use the contact form on this page for my digits</li>
                 </ul>
               </div>
-            </div>)
-            :
-            (<div className="thank-you-submit">
-              Thank you! 
-              <br />
-              Please expect to hear from me within the day!
-            </div>)
-          }
+            </div>
+
+            <div className="contact-form-footer">
+              
+            </div>
 
         </div>
-      </div >
+      </div>
     )
   }
 }

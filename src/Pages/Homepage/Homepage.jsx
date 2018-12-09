@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Navbar from '../../Components/Navbar';
 // import DigitalCard from '../../Components/DigitalCard';
 // import './Homepage.css';
-import './Homepage_New.css';
+import './Homepage.css';
 
 export default class Homepage extends Component {
   constructor(props) {
@@ -103,14 +103,11 @@ export default class Homepage extends Component {
           </section>
         </div>
         
-        
         <h1 className="skills-header">
             SKILLS
         </h1>
 
         <div className="skills-row">
-
-
           <section className="skills-container resume-container">
             <ul className="skill-list">
               <li className="skill-item">
