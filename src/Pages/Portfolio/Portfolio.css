@@ -156,6 +156,20 @@
   color: white;
 }
 
+
+@media(min-width: 2270px) {
+  .column h1 {
+    font-size: 7rem;
+    margin-top: 2rem;
+    line-height: 7rem;
+  }
+  
+  .column p {
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
+}
+
 @media(max-width: 1050px) {
   .column h1 {
     font-size: 1.5em;

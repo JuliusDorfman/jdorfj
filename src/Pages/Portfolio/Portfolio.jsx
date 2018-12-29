@@ -19,7 +19,7 @@ export default class Portfolio extends Component {
               <a href="https://hstone-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                 <h1>hStone Addiction</h1>
               </a>
-              <p>Quantify the sunk cost of your addiction. Then go do something more productive. It's what future you would have wanted.</p>
+              <p>Quantify the sunk cost of your addiction. Then, go do something more productive. It's the future you would have wanted.</p>
             </div>
             <div className="vertical-flip-container">
               {/* <button className="vertical-flip flip1"></button> */}

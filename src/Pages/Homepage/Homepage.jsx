@@ -144,10 +144,10 @@ export default class Homepage extends Component {
                   <p>DevOps</p></div>
                 <div className="skills-details">
                   <ul>
-                    <li className="colors4">version control</li>
+                    <li className="colors1">big picture project awareness</li>
                     <li className="colors3">cloud services</li>
                     <li className="colors2">testing</li>
-                    <li className="colors1">big picture project awareness</li>
+                    <li className="colors4">version control</li>
                   </ul>
                 </div>
               </li>
