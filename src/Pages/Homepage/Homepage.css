@@ -264,7 +264,7 @@ a {
   display: inherit;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: 30%;
   font-size: 1.3rem;
   font-weight: 700;
@@ -335,6 +335,10 @@ ul.skill-list {
     flex-direction: column;
   }
 
+  .skills-head {
+    align-items: center;
+  }
+
   .skills-details ul>li {
     max-width: 75px;
     font-size: .8rem;
@@ -343,11 +347,13 @@ ul.skill-list {
   .experience-flavor {
     -webkit-clip-path: polygon(50% 50%, 0% 100%, 0 0%);
     clip-path: polygon(50% 50%, 0% 100%, 0 0%);
+    background-position-x: -600px;
   }
 
   .skills-flavor {
     -webkit-clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%, 50% 50%);
     clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%, 50% 50%);
+    background-position-x: -1100px;
   }
 
   .skill-item:nth-child(1) {
