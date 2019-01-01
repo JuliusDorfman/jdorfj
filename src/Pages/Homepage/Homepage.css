@@ -189,10 +189,10 @@ a {
 .skills-flavor {
   -webkit-clip-path: polygon(100% 0, 82% 0, 0% 100%, 100% 100%);
   clip-path: polygon(100% 0, 82% 0, 0% 100%, 100% 100%);
-  background: url('/assets/images/Jade_cabbage_closeup.jpg');
+  background: url('/assets/images/taipei101.jpg');
   min-width: 50vw;
-  background-position-x: -250px;
-  background-position-y: -100px;
+  background-position: center;
+  background-size: cover;
 }
 
 .skills-flavor:after {
@@ -216,19 +216,19 @@ a {
 }
 
 .colors1 {
-  background: #2a5b72;
+  background: #1E3345;
 }
 
 .colors2 {
-  background: #27742b
+  background: #225522
 }
 
 .colors3 {
-  background: #614051
+  background: #6B2B2B
 }
 
 .colors4 {
-  background: #6B6B00;
+  background: #6B502B;
 }
 
 
@@ -243,6 +243,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   list-style: none;
   min-height: 150px;
 }
@@ -266,8 +267,8 @@ a {
   align-items: center;
   width: 30%;
   font-size: 1.3rem;
-  font-weight: 600;
-  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-family: 'Comfortaa', cursive;
 }
 
 .skills-head>p {
@@ -285,7 +286,7 @@ a {
   text-align: center;
 }
 
-.skills-details>ul {
+.skills-details ul {
   display: flex;
   align-items: center;
   padding: 10px 0;
@@ -294,7 +295,7 @@ a {
   list-style: none;
 }
 
-.skills-details>ul>li {
+.skills-details ul li {
   position: relative;
   flex: 1 0 auto;
   padding: .8rem;
@@ -309,7 +310,12 @@ a {
   max-width: 150px;
 }
 
-.skills-details>ul>li:after {
+.skills-details ul span {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-details ul li:after {
   position: absolute;
   top: 0;
   left: 0;
@@ -321,18 +327,15 @@ a {
 }
 
 ul.skill-list {
-  padding: 0;
+  padding: 0 0 0 100px;
 }
 
-@media(max-width: 1050px) {
-  .skills-flavor {
-    background-position-x: -400px;
-    background-position-y: 100px;
+@media(max-width: 650px) {
+  .skill-item {
+    flex-direction: column;
   }
-}
 
-@media(max-width: 550px) {
-  .skills-details>ul>li {
+  .skills-details ul>li {
     max-width: 75px;
     font-size: .8rem;
   }
@@ -343,11 +346,20 @@ ul.skill-list {
   }
 
   .skills-flavor {
-    -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 50%);
-    clip-path: polygon(100% 0, 100% 100%, 50% 50%);
+    -webkit-clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%, 50% 50%);
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%, 50% 50%);
   }
+
+  .skill-item:nth-child(1) {
+    margin-right: 0;
+  }
+  
+  .skill-item:nth-child(2) {
+    margin-right: 0;
+  }
+  
   .skill-item:nth-child(3) {
-    margin-right: -53%;
+    margin-right: 0;
   }
 
   .exp-first-tier:nth-child(3) {

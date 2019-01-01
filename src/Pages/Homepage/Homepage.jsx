@@ -102,9 +102,9 @@ export default class Homepage extends Component {
             </div>
           </section>
         </div>
-        
+
         <h1 className="skills-header">
-            SKILLS
+          SKILLS
         </h1>
 
         <div className="skills-row">
@@ -112,42 +112,55 @@ export default class Homepage extends Component {
             <ul className="skill-list">
               <li className="skill-item">
                 <div className="skills-head">
-                  <img src="/assets/images/development.svg" alt="Development Icon" />
-                  <p>Development</p>
+                  {/* <img src="/assets/images/development.svg" alt="Development Icon" /> */}
+                  <h2>Development</h2>
                 </div>
                 <div className="skills-details">
                   <ul>
-                    <li className="colors1">html5 &amp; css3 </li>
-                    <li className="colors2">javascript (es6)</li>
-                    <li className="colors3">jquery</li>
-                    <li className="colors4">react</li>
+                    <span>
+                      <li className="colors1">html5 &amp; css3 </li>
+                      <li className="colors2">javascript (es6)</li>
+                    </span>
+                    <span>
+                      <li className="colors3">jquery</li>
+                      <li className="colors4">react</li>
+                    </span>
                   </ul>
                 </div>
               </li>
               <li className="skill-item">
                 <div className="skills-head">
-                  <img src='/assets/images/ux.svg' alt='placeholder' />
-                  <p>UX</p>
+                  {/* <img src='/assets/images/ux.svg' alt='User Experience' /> */}
+                  <h2>UX</h2>
                 </div>
                 <div className="skills-details">
                   <ul>
-                    <li className="colors2">accessibility</li>
-                    <li className="colors1">user workflows</li>
-                    <li className="colors4">wire framing</li>
-                    <li className="colors3">client empathy</li>
+                    <span>
+                      <li className="colors2">accessibility</li>
+                      <li className="colors1">user workflows</li>
+                    </span>
+                    <span>
+                      <li className="colors4">wire framing</li>
+                      <li className="colors3">client empathy</li>
+                    </span>
                   </ul>
                 </div>
               </li>
               <li className="skill-item">
                 <div className="skills-head">
-                  <img src='/assets/images/devops.svg' alt='placeholder' />
-                  <p>DevOps</p></div>
+                  {/* <img src='/assets/images/devops.svg' alt='placeholder' /> */}
+                  <h2>DevOps</h2>
+                </div>
                 <div className="skills-details">
                   <ul>
-                    <li className="colors1">big picture project awareness</li>
-                    <li className="colors3">cloud services</li>
-                    <li className="colors2">testing</li>
-                    <li className="colors4">version control</li>
+                    <span>
+                      <li className="colors1">big picture project awareness</li>
+                      <li className="colors3">cloud services</li>
+                    </span>
+                    <span>
+                      <li className="colors2">testing</li>
+                      <li className="colors4">version control</li>
+                    </span>
                   </ul>
                 </div>
               </li>
