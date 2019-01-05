@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from '../../Components/Navbar';
-
 import Parallax from 'parallax-js';
-import Tilt from 'react-tilt';
 import './Portfolio.css';
 
 export default class Portfolio extends Component {
@@ -10,16 +8,15 @@ export default class Portfolio extends Component {
   componentDidMount() {
     var scene = document.getElementById('scene');
     new Parallax(scene);
+
+
   }
 
   render() {
-
-
-
     return (
       <div className="portfolio-component">
         <Navbar />
-        <div className="intro-block">
+        <div data-depth=".3" className="intro-block">
           <div id="scene" className="intro-focus-wrapper">
             <div className="intro-focus" data-depth=".2">
             </div>
