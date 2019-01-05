@@ -21,8 +21,35 @@ export default class Portfolio extends Component {
             </div>
           </Tilt>
         </div>
-        <section className="grid-container-homepage">
 
+        <section className="meet-me">
+          <div className="accolades clearfix">
+            <div className="roles">
+              <h2 className="list-header">Roles</h2>
+              <ul>
+                <li>Client Support Coach</li>
+              </ul>
+            </div>
+            <div className="roles-awards-dates">
+              <h2 className="list-header">Dates</h2>
+              <ul>
+                <li>12/16/2018</li>
+              </ul>
+            </div>
+            <div className="awards">
+              <h2 className="list-header">Awards</h2>
+              <ul>
+                <li>Rising Star</li>
+              </ul>
+            </div>
+          </div>
+          <div className="introduction">
+            <h2>I Build</h2>
+            <p>Hello.</p>
+          </div>
+        </section>
+
+        <section className="grid-container-homepage">
           <div className="proj1 column">
             <div className="project-intro">
               <small className="date">August 2018</small>

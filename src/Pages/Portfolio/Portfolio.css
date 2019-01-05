@@ -1,5 +1,5 @@
 .grid-container-homepage {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   padding: 0 70px;
 }
@@ -25,14 +25,14 @@
 }
 
 .intro-block {
-  display: block;
+  display: inline-block;
   width: 100%;
   height: 100vh;
   overflow: hidden;
   background: url('/assets/images/piano_lighted.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 20vh;
+  margin-bottom: 10vh;
 }
 
 .intro-focus-wrapper {
@@ -42,26 +42,67 @@
   height: 100%;
 }
 
-.intro-focus { 
+.intro-focus {
   position: relative;
   border: 10px solid black;
   border-left: 5px solid black;
   border-right: 5px solid black;
-  width: 14%;
-  height: 48%;
+  width: 200px;
+  height: 380px;
 }
 
 .intro-announcement {
   position: absolute;
-  left: -70%;
-  font-size: 3rem;
+  left: -200px;
+  font-size: 3.3rem;
   z-index: 10;
   color: rgb(28, 69, 131);
   padding: 5%;
+  letter-spacing: .5rem;
 }
 
 .project-intro {
   text-align: left;
+}
+
+.meet-me {
+  display: block;
+  position: relative;
+  margin: 0 auto 20vh auto;
+  font-family: 'Source Code Pro', monospace;
+  font-size: .875em;
+  line-height: 1.4;
+  color: #02010a;
+  max-width: 80vw;
+}
+
+.accolades {
+  margin-bottom: 10vh;
+}
+
+.accolades>div {
+  float: left;
+  width: 33.333%;
+}
+
+.accolades h2, .introduction h2 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(28, 69, 131);
+}
+
+.accolades li {
+  list-style: none;
+}
+
+.accolades ul {
+  margin: 0;
+  padding: 0;
+}
+
+.introduction {
 }
 
 .date {
@@ -144,6 +185,13 @@
   color: inherit;
 }
 
+/* Layout */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 
 @media(min-width: 2270px) {
   .column h1 {
@@ -151,7 +199,7 @@
     margin-top: 2rem;
     line-height: 7rem;
   }
-  
+
   .column p {
     font-size: 2rem;
     margin-top: 4rem;
