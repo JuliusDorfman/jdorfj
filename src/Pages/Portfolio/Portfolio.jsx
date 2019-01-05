@@ -1,25 +1,39 @@
 import React, { Component } from 'react';
-import Tilt from 'react-tilt';
 import Navbar from '../../Components/Navbar';
+
+import Parallax from 'parallax-js';
+import Tilt from 'react-tilt';
 import './Portfolio.css';
 
 export default class Portfolio extends Component {
+
+  componentDidMount() {
+    var scene = document.getElementById('scene');
+    new Parallax(scene);
+  }
+
   render() {
+
+
+
     return (
       <div className="portfolio-component">
         <Navbar />
         <div className="intro-block">
-          <Tilt className="tilt-wrapper">
-            <div className="intro-focus-wrapper">
-              <div className="intro-focus">
-                <h1 className="intro-announcement">
-                  Personal
-                <br />
-                  Portfolio
-              </h1>
-              </div>
+          <div id="scene" className="intro-focus-wrapper">
+            <div className="intro-focus" data-depth=".2">
             </div>
-          </Tilt>
+            <div data-depth=".4">
+              <h1 className="intro-announcement">
+                Personal
+                <br />
+                Portfolio
+              </h1>
+            </div>
+            <div className="flavor-circle" data-depth=".4">
+
+            </div>
+          </div>
         </div>
 
         <section className="meet-me">
@@ -45,7 +59,11 @@ export default class Portfolio extends Component {
           </div>
           <div className="introduction">
             <h2>I Build</h2>
-            <p>Hello.</p>
+            <p>
+              Hello. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ad blanditiis odit exercitationem quis vel ipsa cumque, facilis culpa recusandae perspiciatis nobis ea doloremque? Aut harum atque fugiat excepturi fugit!
+              <br />
+              <br />
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde distinctio nesciunt tempora ullam dolorum autem assumenda sint! Quo officia, doloribus magni accusantium vel ipsa provident numquam iste reiciendis id quasi?</p>
           </div>
         </section>
 

@@ -1,11 +1,13 @@
 .navbar-component {
   display: flex;
-  position: relative;
+  position: fixed;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  background-color: ghostwhite;
+  background-color: transparent;
   overflow: hidden;
   max-height: 61px;
+  z-index: 1000;
 }
 
 .main-nav {

@@ -6,13 +6,14 @@
 
 .contact-form-wrapper {
   position: relative;
+  height: 70%;
+  margin-top: 10vh;
+  flex-direction: row;
   padding: 30px;
   min-height: 350px;
   border-radius: 12px;
   background: #0b2247;
-  flex-direction: row;
   color: ghostwhite;
-  height: 70%;
 }
 
 .card-title>h1 {

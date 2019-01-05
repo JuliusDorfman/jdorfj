@@ -36,20 +36,20 @@ export default class Homepage extends Component {
   }
 
   render() {
-    let resumeComponent;
-    let jumpMenu = (
-      <ul className="resume-jump-menu">
-        <li>
-          <p onClick={this.handleNavigate} value="experience">Experience</p>
-        </li>
-        <li>
-          <p onClick={this.handleNavigate} value="skills">Skills</p>
-        </li>
-        <li>
-          <a href="https://docs.google.com/document/d/1ZbzSmXuALwGpeg-Q3dKr6_nORTJO9zYK88fklaZUjE0/export?format=pdf">Download Professional Ver.&nbsp;<i className="fas fa-download"></i></a>
-        </li>
-      </ul>
-    )
+    // let resumeComponent;
+    // let jumpMenu = (
+    //   <ul className="resume-jump-menu">
+    //     <li>
+    //       <p onClick={this.handleNavigate} value="experience">Experience</p>
+    //     </li>
+    //     <li>
+    //       <p onClick={this.handleNavigate} value="skills">Skills</p>
+    //     </li>
+    //     <li>
+    //       <a href="https://docs.google.com/document/d/1ZbzSmXuALwGpeg-Q3dKr6_nORTJO9zYK88fklaZUjE0/export?format=pdf">Download Professional Ver.&nbsp;<i className="fas fa-download"></i></a>
+    //     </li>
+    //   </ul>
+    // )
     return (
       <div className="homepage-component">
         <Navbar />
