@@ -8,8 +8,6 @@ export default class Portfolio extends Component {
   componentDidMount() {
     var scene = document.getElementById('scene');
     new Parallax(scene);
-
-
   }
 
   render() {
@@ -27,8 +25,19 @@ export default class Portfolio extends Component {
                 Portfolio
               </h1>
             </div>
-            <div className="flavor-circle" data-depth=".4">
-
+            <div data-depth=".8">
+              <div className="flavor-line">
+                <svg height="100" width="310">
+                  <line x1="0" y1="0" x2="400" y2="0" stroke="rgba(164, 186, 215)" stroke-width="8" />
+                </svg>
+              </div>
+            </div>
+            <div data-depth="4">
+              <div className="flavor-circle">
+                <svg width="100" height="100">
+                  <circle cx="50" cy="50" r="20" stroke="rgba(164, 186, 215)" stroke-width="4" fill="transparent" />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
