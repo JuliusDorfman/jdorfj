@@ -56,6 +56,7 @@ a {
   position: relative;
   display: flex;
   flex-direction: row;
+  background: url('/assets/images/jojo_decolored_diamonds_edited.png');
 }
 
 .experience-flavor {
@@ -171,6 +172,7 @@ a {
   position: relative;
   display: flex;
   flex-direction: row;
+  background: url('/assets/images/jojo_San_Giorgio_Maggiore.png');
 }
 
 .skills-header {
@@ -284,6 +286,7 @@ a {
   width: 62%;
   justify-content: space-around;
   text-align: center;
+  opacity: .9;
 }
 
 .skills-details ul {

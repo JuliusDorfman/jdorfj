@@ -3,19 +3,23 @@
   position: relative;
   justify-content: center;
   align-items: center;
-  background-color: gainsboro;
+  background-color: ghostwhite;
   overflow: hidden;
   max-height: 61px;
+}
+
+.main-nav {
+  width: 70%;
 }
 
 .main-nav>ul {
   display: inline-flex;
   position: relative;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin: 0 0 20px 0;
   padding: 20px 0 0 0;
-  width: 325px;
+  width: 100%;
   transition-duration: .3s;
 }
 
