@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from '../../Components/Navbar';
+import Footer from '../../Components/Footer';
 import Parallax from 'parallax-js';
 import './Portfolio.css';
 
@@ -15,7 +16,7 @@ export default class Portfolio extends Component {
       <div className="portfolio-component">
         <Navbar />
         <div data-depth=".3" className="intro-block">
-          <div id="scene" className="intro-focus-wrapper">
+          <div id="scene" data-hover-only="true" className="intro-focus-wrapper">
             <div className="intro-focus" data-depth=".2">
             </div>
             <div data-depth=".4">
@@ -25,20 +26,27 @@ export default class Portfolio extends Component {
                 Portfolio
               </h1>
             </div>
-            <div data-depth=".8">
+            <div data-depth=".7">
               <div className="flavor-line">
-                <svg height="100" width="310">
-                  <line x1="0" y1="0" x2="400" y2="0" stroke="rgba(164, 186, 215)" stroke-width="8" />
+                <svg>
+                  <line x1="0" y1="0" x2="1000" y2="0" stroke="rgba(164, 186, 215)" />
                 </svg>
               </div>
             </div>
-            <div data-depth="4">
+            <div data-depth="2">
               <div className="flavor-circle">
-                <svg width="100" height="100">
-                  <circle cx="50" cy="50" r="20" stroke="rgba(164, 186, 215)" stroke-width="4" fill="transparent" />
+                <svg>
+                  <circle cx="50" cy="50" r="20" stroke="rgba(164, 186, 215)" />
                 </svg>
               </div>
             </div>
+            {/* <div data-depth="10">
+              <div className="flavor-triangle">
+                <svg width="50" height="50">
+                  <polygon points="0,0 0,50 25,50"  fill="transparent" stroke="rgba(164, 186, 215)" stroke-width="5" />
+                </svg>
+              </div>
+            </div> */}
           </div>
         </div>
 
@@ -119,6 +127,7 @@ export default class Portfolio extends Component {
             </div>
           </div>
         </section>
+        <Footer />
       </div>
     )
   }

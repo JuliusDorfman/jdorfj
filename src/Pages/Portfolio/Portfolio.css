@@ -62,7 +62,7 @@
   z-index: 10;
   color: rgb(28, 69, 131);
   letter-spacing: .5rem;
-} 
+}
 
 .project-intro {
   text-align: left;
@@ -83,14 +83,25 @@
   position: absolute;
   left: 70vw;
   top: 65vh;
-  cursor: pointer;
+  stroke-width: 4;
+  fill: transparent;
+  /* cursor: pointer; */
 }
 
 .flavor-line {
   position: absolute;
   left: 30vw;
   top: 50vh;
+  stroke-width: 8;
+  height: 100px;
+  width: 310px;
 }
+
+/* .flavor-triangle {
+  position: absolute;
+  left: 100vw;
+  top: 70vh;
+} */
 
 .accolades {
   margin-bottom: 10vh;
@@ -101,7 +112,8 @@
   width: 33.333%;
 }
 
-.accolades h2, .introduction h2 {
+.accolades h2,
+.introduction h2 {
   margin-top: 0;
   margin-bottom: .5rem;
   font-size: 1rem;
@@ -210,7 +222,44 @@
   clear: both;
 }
 
-@media(min-width: 2270px) {
+@media(min-width: 2000px) {
+  .intro-announcement {
+    left: 30vw;
+    top: 25vh;
+    font-size: 7rem;
+    z-index: 10;
+    color: rgb(28, 69, 131);
+    letter-spacing: .5rem;
+  }
+
+  .intro-focus {
+    width: 450px;
+    height: 900px;
+  }
+
+  .flavor-line {
+    left: 30vw;
+    top: 50vh;
+    stroke-width: 32;
+  }
+
+  .flavor-line>svg {
+    width: 600px;
+  }
+
+  .flavor-circle {
+    left: 70vw;
+    top: 65vh;
+    stroke-width: 4;
+    fill: transparent;
+    /* cursor: pointer; */
+  }
+
+  .flavor-circle>svg {
+    width: 400px;
+    height: 400px;
+  }
+
   .column h1 {
     font-size: 7rem;
     margin-top: 2rem;
@@ -221,11 +270,67 @@
     font-size: 2rem;
     margin-top: 4rem;
   }
+
+  .meet-me {
+    font-size: 2rem;
+    max-width: 50em;
+  }
+
+  .meet-me h2 {
+    font-size: 2rem;
+  }
 }
 
 @media(max-width: 1050px) {
+  .intro-announcement {
+    position: absolute;
+    left: 30vw;
+    top: 25vh;
+    font-size: 2.8rem;
+    z-index: 10;
+    color: rgb(28, 69, 131);
+    letter-spacing: .5rem;
+  }
+
+  .intro-focus {
+    width: 200px;
+    height: 380px;
+  }
+
+  .flavor-line {
+    left: 30vw;
+    top: 50vh;
+    stroke-width: 8;
+  }
+
+  .flavor-line>svg {
+    width: 320px;
+  }
+
+  .flavor-circle {
+    left: 70vw;
+    top: 65vh;
+    stroke-width: 4;
+    fill: transparent;
+    /* cursor: pointer; */
+  }
+
+  .flavor-circle>svg {
+    width: 400px;
+    height: 400px;
+  }
+
+  .meet-me {
+    font-size: .8rem;
+    max-width: 50em;
+  }
+
+  .meet-me h2 {
+    font-size: 1rem;
+  }
+
   .column h1 {
-    font-size: 1.5em;
+    font-size: 2.3em;
     line-height: 1.2em;
     margin-top: 1.2em;
   }
@@ -236,33 +341,70 @@
 }
 
 @media(max-width: 700px) {
-  .portfolio-component {
-    overflow: auto;
+
+  .intro-announcement {
+    position: absolute;
+    left: 10vw;
+    top: 30vh;
+    font-size: 1.8rem;
+    z-index: 10;
+    color: rgb(28, 69, 131);
+    letter-spacing: .5rem;
   }
 
-  .column {
-    height: 65vh;
+  .intro-focus {
+    width: 120px;
+    height: 270px;
   }
 
-  .grid-container-homepage {
-    display: flex;
-    flex-direction: column;
+  .flavor-line {
+    left: 10vw;
+    top: 43vh;
+    stroke-width: 4;
+  }
+
+  .flavor-line>svg {
+    width: 200px;
+  }
+
+  .flavor-circle {
+    left: 60vw;
+    top: 65vh;
+    stroke-width: 4;
+    fill: transparent;
+    /* cursor: pointer; */
+  }
+
+  .flavor-circle>svg {
+    width: 400px;
+    height: 400px;
+  }
+
+  .meet-me {
+    font-size: .8rem;
+    max-width: 20em;
+  }
+
+  .meet-me h2 {
+    font-size: 1rem;
+  }
+
+  .proj-flavor-text {
+    max-width: initial;
   }
 
   .column h1 {
-    font-size: 2.5em;
     text-align: center;
+    font-size: 1.8em;
+    line-height: 1.2em;
+    margin-top: 1.2em;
   }
 
   .column p {
-    width: 60%;
-    margin: 4em auto;
-    font-size: .9em;
+    font-size: .8em;
+    line-height: 1.4em;
   }
-}
-
-@media(max-width: 500px) {
-  .column p {
-    width: 90%;
+  .date {
+    left: 5%;
   }
 }

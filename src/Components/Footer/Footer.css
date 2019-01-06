@@ -1,0 +1,15 @@
+.footer-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+  border-top: 1px solid black;
+  min-height: 40vh;
+}
+
+.footer-copyright {
+  display: inline-block;
+  margin-top: 1%;
+}

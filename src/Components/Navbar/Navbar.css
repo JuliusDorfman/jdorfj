@@ -1,83 +1,33 @@
 .navbar-component {
-  display: flex;
+  display: inline-block;
   position: fixed;
+  z-index: 100;
   width: 100%;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-  overflow: hidden;
-  max-height: 61px;
-  z-index: 1000;
 }
 
 .main-nav {
-  width: 70%;
-}
-
-.main-nav>ul {
-  display: inline-flex;
   position: relative;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0 0 20px 0;
-  padding: 20px 0 0 0;
-  width: 100%;
-  transition-duration: .3s;
-}
-
-.main-nav>ul>li {
-  display: inline-block;
-  overflow: hidden;
-  text-decoration: none;
-  height: 16px;
-  line-height: 16px;
-}
-
-.main-nav>ul>li>a {
-  display: block;
-  position: relative;
-  transform: translateY(-16px);
-  text-decoration: none;
-  font-size: 18px;
-  color: #222831;
-  transition-duration: .2s;
-  transition-timing-function: ease;
-  font-weight: 600;
-}
-
-.portfolio-hover-effect:hover a {
-  transform: translateY(0px);
-}
-
-.contact-hover-effect:hover a {
-  transform: translateY(0px);
-}
-
-.main-nav>ul>li>a:nth-of-type(1) {
-  color: #f95959;
-}
-
-
-/* Contact Me */
-
-/* .contact-navbar-button {
-  display: inline-block;
-  position: absolute;
-  border: 2px solid black;
-  right: 26px;
-}
-
-.contact-navbar-button>a {
   display: flex;
+  flex-direction: row;
+  width: 60em;
+  margin: 2% auto;
+  padding: 0;
+  justify-content: space-between;
+  list-style: none;
   align-items: center;
-  text-decoration: none;
-  color: black;
 }
 
-.contact-navbar-button>a>p {
-  margin: 0;
-  padding: 7px 7px;
-} */
+.main-nav .nav-link {
+  letter-spacing: .2em;
+  font-weight: 500;
+  color: #02010a;
+  transition: .2s;
+  font-size: 1.1rem;
+}
+
+.main-nav .nav-link:hover {
+  color: rgba(164, 186, 215);
+}
 
 /* Initials */
 
@@ -89,44 +39,22 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 40px;
-  width: 40px;
+  height: 60px;
+  width: 60px;
   border: 1.5px solid rgba(100, 100, 100, 1);
   transition: .45s;
 }
-
-/* .icon-card-initials-wrapper-large {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 90px;
-  width: 90px;
-  border: 1.5px solid rgba(100, 100, 100, 1);
-  transition: .45s;
-} */
 
 .icon-card-initials {
   position: absolute;
   margin: 0;
   padding: 0;
   font-weight: 900;
-  font-size: 30px;
+  font-size: 40px;
   font-family: 'Julius Sans One', sans-serif;
   color: rgba(50, 50, 50, 1);
   transition: .55s;
 }
-
-/* 
-.icon-card-initials-large {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  font-weight: 900;
-  font-size: 70px;
-  font-family: 'Julius Sans One', sans-serif;
-  color: rgba(50, 50, 50, 1);
-  transition: .55s;
-} */
 
 .icon-card-initials-wrapper:hover {
   background: ghostwhite;
@@ -135,13 +63,86 @@
 }
 
 .icon-fill {
-  background: gainstboro;
+  background: gainsboro;
 }
 
 .icon-card-initials-wrapper:hover>.icon-card-initials {
   color: rgba(50, 50, 50, 1);
 }
 
-.active-route {
-  color: #f73859 !important;
+
+@media(min-width: 2000px) {
+  .main-nav {
+    width: 100rem;
+    margin: 2% auto;
+  }
+
+  .main-nav .nav-link {
+    letter-spacing: .2em;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
+  .icon-card-initials-wrapper {
+    height: 90px;
+    width: 90px;
+    border: 2px solid black;
+  }
+
+  .icon-card-initials {
+    font-weight: 900;
+    font-size: 70px;
+  }
+}
+
+@media(max-width: 1050px) {
+  .main-nav .nav-link {
+    letter-spacing: .2em;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+
+  .main-nav {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 40em;
+  }
+  
+  .icon-card-initials-wrapper {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+  }
+
+  .icon-card-initials {
+    font-weight: 900;
+    font-size: 40px;
+  }
+}
+
+@media(max-width: 700px) {
+  .main-nav .nav-link {
+    letter-spacing: .2em;
+    font-weight: 500;
+    font-size: .8rem;
+  }
+
+  .main-nav {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 20em;
+  }
+  
+  .icon-card-initials-wrapper {
+    height: 30px;
+    width: 30px;
+    border: 1px solid black;
+  }
+
+  .icon-card-initials {
+    font-weight: 900;
+    font-size: 20px;
+  }
 }
