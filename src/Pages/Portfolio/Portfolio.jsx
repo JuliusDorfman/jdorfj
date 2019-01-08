@@ -5,6 +5,13 @@ import Parallax from 'parallax-js';
 import './Portfolio.css';
 
 export default class Portfolio extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentPage: {}
+    }
+  }
+
 
   componentDidMount() {
     var scene = document.getElementById('scene');

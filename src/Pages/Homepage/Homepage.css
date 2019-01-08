@@ -1,7 +1,12 @@
 .homepage-component {
+  position: relative;
   background: ghostwhite;
 }
 
+.temp-position {
+  position: relative;
+  top: 13vh;
+}
 
 .resume-jump-menu {
   position: relative;
@@ -46,6 +51,7 @@ a {
 .experience-header {
   position: relative;
   display: block;
+  margin-top: 300px;
   background: linear-gradient(to right, #0b2247, 90%, #0b224700);
   margin: 0;
   color: ghostwhite;

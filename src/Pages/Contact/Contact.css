@@ -1,23 +1,20 @@
-.contact-component {
-  height: 100vh;
-  overflow: hidden;
-  background-color: gainsboro;
-}
+.contact-component {}
 
 .contact-form-wrapper {
   position: relative;
+  top: 13vh;
   height: 70%;
-  margin-top: 10vh;
   flex-direction: row;
-  padding: 30px;
+  padding: 50px 100px;
   min-height: 350px;
   border-radius: 12px;
-  background: #0b2247;
+  background: #19283A;
   color: ghostwhite;
 }
 
 .card-title>h1 {
-  padding-left: 4%;
+  padding-left: 2%;
+  font-size: 1.5rem;
 }
 
 #contact-form>input::placeholder,
@@ -32,7 +29,6 @@ textarea::placeholder {
 
 .contact-form-body>* {
   margin: 2%;
-  padding: 2%;
 }
 
 #contact-form {
@@ -43,12 +39,15 @@ textarea::placeholder {
   border-right: 1.5px solid ghostwhite;
 }
 
-#contact-form > #message, input {
+#contact-form>#message,
+input {
   font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
 }
 
 #contact-form>h2 {
   font-weight: 500;
+  font-size: 1.4rem;
 }
 
 .contact-form-details {
@@ -85,13 +84,13 @@ textarea::placeholder {
 }
 
 #contact-form>* {
-  max-width: 500px;
+  max-width: 380px;
 }
 
 #contact-form>input,
 #message {
   padding: 1%;
-  font-size: 20px;
+  font-size: 1rem;
   background: transparent;
   border: none;
   color: gainsboro;
@@ -99,15 +98,19 @@ textarea::placeholder {
   border-bottom: 1.5px solid ghostwhite;
 }
 
-#contact-form > .submit {
-  margin-top: 2%;
+#message {
+  height: 18px;
+  overflow: hidden;
+}
+
+#contact-form>.submit {
   padding: 2%;
   border: none;
   background-color: ghostwhite;
   color: black;
-  font-size: 28px;
   font-style: italic;
   cursor: pointer;
+  max-width: 200px;
 }
 
 .thank-you-submit {
@@ -131,16 +134,30 @@ textarea::placeholder {
   display: flex;
   justify-content: center;
   padding: 20px;
+  color: gainsboro;
+  font-family: 'Source Code Pro', monospace;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  color: ghostwhite;
+}
+
+.contact-form-footer>ul {
+  list-style: none;
+  padding: 0;
 }
 
 @media (max-width: 750px) {
   .contact-component {
     height: initial;
-    overflow: initial;
   }
 
   .contact-form-body {
     flex-direction: column-reverse;
+  }
+
+  .contact-form-wrapper {
+    padding: 20px 70px;
+    text-align: center;
   }
 
   .card-title {
@@ -153,12 +170,30 @@ textarea::placeholder {
     width: 100%;
   }
 
-  #contact-form > input, #message {
+  #contact-form>h2 {
+    font-size: 1.2rem;
+  }
+
+  #contact-form>input,
+  #message {
     font-size: 16px;
+  }
+
+  #contact-form>* {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 250px;
   }
 
   .contact-form-details {
     margin: auto;
     width: 100%;
+  }
+  .contact-form-details > ul {
+    text-align: left;
+  }
+
+  .contact-form-footer {
+    font-size: .7rem;
   }
 }
