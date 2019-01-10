@@ -20,6 +20,25 @@ export default class Navbar extends Component {
   }
 
   render() {
+
+    window.onscroll = function() { scrollFunction() };
+
+    function scrollFunction() {
+      const navComponentElement = document.getElementsByClassName('navbar-component')[0];
+      const mainNavElement = navComponentElement.children[0]
+      const contactText = navComponentElement.children[0].children[2].children[0];
+
+      console.log("conttext", contactText)
+      if (document.documentElement.scrollTop > 80) {
+        navComponentElement.style.backgroundColor = "rgba(255, 255, 255, .9)";
+        mainNavElement.style.margin = ".75% auto";
+      } else {
+        navComponentElement.style.backgroundColor = "transparent";
+        mainNavElement.style.margin = "2% auto";
+      }
+
+    }
+
     return (
       <div className="navbar-component">
         <ul className="main-nav">

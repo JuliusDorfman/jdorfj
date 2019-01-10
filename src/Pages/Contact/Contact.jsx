@@ -73,11 +73,11 @@ export default class Contact extends Component {
             </div>
           </div>
 
-          <div className="contact-form-footer">
+          {/* <div className="contact-form-footer">
             <ul>
               <li>I will publish a website you can resonate with</li>
             </ul>
-          </div>
+          </div> */}
           {/* <DigitalCard /> */}
 
         </div>

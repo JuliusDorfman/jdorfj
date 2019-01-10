@@ -3,6 +3,7 @@
   position: fixed;
   z-index: 100;
   width: 100%;
+  transition: .2s;
 }
 
 .main-nav {
@@ -15,6 +16,7 @@
   justify-content: space-between;
   list-style: none;
   align-items: center;
+  transition: .5s;
 }
 
 .main-nav .nav-link {

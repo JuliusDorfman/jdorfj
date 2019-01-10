@@ -89,6 +89,10 @@ export default class Portfolio extends Component {
         </section>
 
         <section className="grid-container-homepage">
+        <div className="projects-intro-wrapper">
+            <h1>Projects</h1>
+          </div>
+
           <div className="proj1 column">
             <div className="project-intro">
               <small className="date">August 2018</small>
