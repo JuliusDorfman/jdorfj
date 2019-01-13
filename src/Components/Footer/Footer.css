@@ -1,5 +1,6 @@
 .footer-component {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -9,13 +10,19 @@
   min-height: 40vh;
 }
 
-.footer-copyright {
+.footer-signature {
   display: inline-block;
   margin-top: 1%;
 }
 
-@media (max-width: 700px) {
+.copywrite {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: gray;
+}
 
+@media (max-width: 700px) {
   .thank-you {
     font-size: .8em;
     line-height: 1.4em;
