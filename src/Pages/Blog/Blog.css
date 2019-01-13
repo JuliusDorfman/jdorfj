@@ -1,0 +1,54 @@
+.blog-component {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+.blog-layout {
+  display: block;
+  position: relative;
+  width: 60em;
+  margin: 150px auto;
+}
+
+.blog-article {
+  font-family: 'Maitree', serif;
+}
+
+.blog-article > h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.blog-article > h3 {
+  margin: 0;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.blog-article > p {
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+  margin: 40px 0 0 0;
+}
+
+.blog-article > time {
+  font-size: 1rem;
+}
+
+.blog-article em {
+  font-weight: 500;
+}
+
+#daunting-architecture-wrapper {
+  float: left;
+}
+
+#daunting-architecture {
+  margin-left: -5%;
+  width: 50%;
+}
+
+figcaption {
+  color: gray;
+}

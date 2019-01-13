@@ -59,7 +59,7 @@
 }
 
 .icon-card-initials-wrapper:hover {
-  background: ghostwhite;
+  background: rgba(248, 248, 255, .9);
   cursor: pointer;
   border: 1.5px solid rgba(50, 50, 50, 1);
 }
@@ -71,7 +71,6 @@
 .icon-card-initials-wrapper:hover>.icon-card-initials {
   color: rgba(50, 50, 50, 1);
 }
-
 
 @media(min-width: 2000px) {
   .main-nav {
@@ -110,7 +109,7 @@
     flex-direction: row;
     width: 40em;
   }
-  
+
   .icon-card-initials-wrapper {
     height: 50px;
     width: 50px;
@@ -136,7 +135,7 @@
     flex-direction: row;
     width: 20em;
   }
-  
+
   .icon-card-initials-wrapper {
     height: 30px;
     width: 30px;

@@ -8,6 +8,11 @@ button {
   cursor: pointer;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 /* .App {
   text-align: center;

@@ -30,7 +30,7 @@ export default class Navbar extends Component {
 
       console.log("conttext", contactText)
       if (document.documentElement.scrollTop > 80) {
-        navComponentElement.style.backgroundColor = "rgba(255, 255, 255, .9)";
+        navComponentElement.style.backgroundColor = "rgba(248, 248, 255, .9)";
         mainNavElement.style.margin = ".75% auto";
       } else {
         navComponentElement.style.backgroundColor = "transparent";
