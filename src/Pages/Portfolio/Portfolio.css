@@ -1,7 +1,7 @@
 .grid-container-homepage {
   display: flex;
   flex-direction: column;
-  max-width: 60em;
+  width: 70%;
   margin: auto;
 }
 
@@ -268,7 +268,7 @@
   }
 
   .column h1 {
-    font-size: 7rem;
+    font-size: 6rem;
     margin-top: 2rem;
     line-height: 7rem;
   }
@@ -348,6 +348,15 @@
 }
 
 @media(max-width: 700px) {
+
+  .grid-container-homepage {
+    max-width: 70%;
+    margin: auto;
+  }
+
+  .grid-container-homepage>.column {
+    min-height: initial;
+  }
 
   .intro-announcement {
     position: absolute;

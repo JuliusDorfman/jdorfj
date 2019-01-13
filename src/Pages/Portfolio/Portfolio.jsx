@@ -81,10 +81,11 @@ export default class Portfolio extends Component {
           <div className="introduction">
             <h2>I Build</h2>
             <p>
-              Hello. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ad blanditiis odit exercitationem quis vel ipsa cumque, facilis culpa recusandae perspiciatis nobis ea doloremque? Aut harum atque fugiat excepturi fugit!
+              You've found my portfolio! I'm Julius Dorfman. I engineer ambitious applications and design them with a minimalist aesthetic. 
               <br />
               <br />
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde distinctio nesciunt tempora ullam dolorum autem assumenda sint! Quo officia, doloribus magni accusantium vel ipsa provident numquam iste reiciendis id quasi?</p>
+              This website is where I publish my works; an expression of my creativity through design, code, and writing. 
+              </p>
           </div>
         </section>
 

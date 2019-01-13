@@ -13,3 +13,12 @@
   display: inline-block;
   margin-top: 1%;
 }
+
+@media (max-width: 700px) {
+
+  .thank-you {
+    font-size: .8em;
+    line-height: 1.4em;
+    width: 70%;
+  }
+}

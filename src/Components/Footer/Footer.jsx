@@ -9,7 +9,7 @@ export default class Footer extends Component {
           <h2>
             THANK YOU!
         </h2>
-          <p>For the time and effort you've spent browsing through my projects. <br /> If you've found something you've liked, please feel free to spread the word!</p>
+          <p>...for the time and effort you've spent browsing through my projects. <br /> <br /> If you've found something you've liked, please feel free to spread the word!</p>
         </div>
         <div className="footer-copyright">
          - Julius G. Dorfman
