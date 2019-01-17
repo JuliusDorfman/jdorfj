@@ -63,18 +63,21 @@ export default class Portfolio extends Component {
               <h2 className="list-header">Roles</h2>
               <ul>
                 <li>Client Support Coach</li>
+                <li>Blacks In Tech Hackathon</li>
               </ul>
             </div>
             <div className="roles-awards-dates">
               <h2 className="list-header">Dates</h2>
               <ul>
                 <li>12/16/2018</li>
+                <li>09/09/2018</li>
               </ul>
             </div>
             <div className="awards">
               <h2 className="list-header">Awards</h2>
               <ul>
                 <li>Rising Star</li>
+                <li>Honerable Mention</li>
               </ul>
             </div>
           </div>

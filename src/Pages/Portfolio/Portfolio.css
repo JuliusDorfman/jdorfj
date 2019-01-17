@@ -130,6 +130,7 @@
 
 .accolades li {
   list-style: none;
+  margin-bottom: 3px;
 }
 
 .accolades ul {
@@ -391,6 +392,14 @@
     /* cursor: pointer; */
   }
 
+  .accolades > div > ul {
+    display: grid;
+  }
+
+  .accolades > div > ul > li {
+    min-height: 70px;
+  }
+
   .flavor-circle>svg {
     width: 400px;
     height: 400px;
@@ -407,6 +416,10 @@
 
   .proj-flavor-text {
     max-width: initial;
+  }
+
+  .column {
+    max-height: 182px;
   }
 
   .column h1 {

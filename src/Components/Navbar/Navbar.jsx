@@ -28,7 +28,6 @@ export default class Navbar extends Component {
       const mainNavElement = navComponentElement.children[0]
       const contactText = navComponentElement.children[0].children[2].children[0];
 
-      console.log("conttext", contactText)
       if (document.documentElement.scrollTop > 80) {
         navComponentElement.style.backgroundColor = "rgba(248, 248, 255, .9)";
         mainNavElement.style.margin = ".75% auto";
