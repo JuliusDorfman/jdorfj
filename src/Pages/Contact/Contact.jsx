@@ -73,11 +73,19 @@ export default class Contact extends Component {
             </div>
           </div>
 
-          {/* <div className="contact-form-footer">
-            <ul>
-              <li>I will publish a website you can resonate with</li>
+          <div className="contact-form-footer">
+            <ul className="contact-form-social-media">
+              <li>
+                <a href="https://codepen.io/juliusgdorfman/" target="_blank" rel="noopener noreferrer" ><i class="fab fa-codepen"></i></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/juliusgdorfman" target="_blank" rel="noopener noreferrer" ><i class="fab fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="https://github.com/JuliusDorfman" target="_blank" rel="noopener noreferrer" ><i class="fab fa-github"></i></a>
+              </li>
             </ul>
-          </div> */}
+          </div>
           {/* <DigitalCard /> */}
 
         </div>

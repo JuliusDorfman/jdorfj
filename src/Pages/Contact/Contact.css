@@ -134,15 +134,24 @@ input {
   display: flex;
   justify-content: center;
   padding: 20px;
-  color: gainsboro;
   font-family: 'Source Code Pro', monospace;
   letter-spacing: 2px;
   font-size: 1rem;
   color: ghostwhite;
 }
 
+.contact-form-footer * {
+  color: ghostwhite;
+  font-size: 40px;
+}
+
 .contact-form-footer>ul {
+  display: inherit;
   list-style: none;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 200px;
+  margin-top: 40px;
   padding: 0;
 }
 
@@ -195,5 +204,6 @@ input {
 
   .contact-form-footer {
     font-size: .7rem;
+    justify-content: flex-end;
   }
 }

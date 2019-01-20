@@ -5,6 +5,19 @@
   margin: auto;
 }
 
+section.meet-me::before {
+  position: absolute;
+  top: 0px;
+  left: -45px;
+  content: "";
+  background: linear-gradient(#235391 0 25%, 
+  #5276A5 25% 50%,
+  #A7BCD6 50% 75%,
+  ghostwhite 75% 100%);
+  height: 100%;
+  width: 10px;
+}
+
 .grid-container-homepage>.column {
   position: relative;
   padding: 3em;

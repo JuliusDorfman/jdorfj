@@ -26,7 +26,7 @@ export default class Navbar extends Component {
     function scrollFunction() {
       const navComponentElement = document.getElementsByClassName('navbar-component')[0];
       const mainNavElement = navComponentElement.children[0]
-      const contactText = navComponentElement.children[0].children[2].children[0];
+      // const contactText = navComponentElement.children[0].children[2].children[0];
 
       if (document.documentElement.scrollTop > 80) {
         navComponentElement.style.backgroundColor = "rgba(248, 248, 255, .9)";
