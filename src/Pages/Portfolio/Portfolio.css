@@ -363,6 +363,10 @@ section.meet-me::before {
 
 @media(max-width: 700px) {
 
+  .intro-block {
+    background-position-x: -300px;
+  }
+
   .grid-container-homepage {
     max-width: 70%;
     margin: auto;
