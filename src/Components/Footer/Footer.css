@@ -22,6 +22,15 @@
   color: gray;
 }
 
+@media(min-width: 2000px) {
+  .footer-component h2 {
+    font-size: 4rem;
+  }
+  .footer-component p {
+    font-size: 2rem;
+  }
+}
+
 @media (max-width: 700px) {
   .thank-you {
     font-size: .8em;

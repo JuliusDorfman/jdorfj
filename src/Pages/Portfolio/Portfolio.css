@@ -372,10 +372,6 @@ section.meet-me::before {
     margin: auto;
   }
 
-  .grid-container-homepage>.column {
-    min-height: initial;
-  }
-
   .intro-announcement {
     position: absolute;
     left: 10vw;

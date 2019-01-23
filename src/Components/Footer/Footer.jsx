@@ -11,9 +11,9 @@ export default class Footer extends Component {
         </h2>
           <p>...for the time and effort you've spent browsing through my projects. <br /> <br /> If you've found something you've liked, please feel free to spread the word!</p>
         </div>
-        <div className="footer-signature">
+        <p className="footer-signature">
          - Julius G. Dorfman
-        </div>
+        </p>
         <div className="copywrite">&copy; 2019 Julius G. Dorfman</div>
       </div>
     )
