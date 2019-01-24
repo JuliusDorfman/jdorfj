@@ -52,24 +52,24 @@ a {
   position: relative;
   display: block;
   margin-top: 300px;
-  background: linear-gradient(to right, #0b2247, 90%, #0b224700);
+  background: linear-gradient(to right, #0b2247 25%, #425779 25% 50%, #758298 50% 75%, ghostwhite 75% 100%);
   margin: 0;
   color: ghostwhite;
-  padding: 20px 30px;
+  padding: 1px 80px;
 }
 
 .experience-row {
   position: relative;
   display: flex;
   flex-direction: row;
-  background: url('/assets/images/jojo_decolored_diamonds_edited.png');
+  background: url('/assets/images/fontana_de_trevi_desaturated_chromad.jpg');
+  background-size: contain;
 }
 
 .experience-flavor {
-  -webkit-clip-path: polygon(0 0, 18% 0, 100% 100%, 0% 100%);
-  clip-path: polygon(0 0, 18% 0, 100% 100%, 0% 100%);
-  background: url('/assets/images/fontana_de_trevi.jpg');
-  min-width: 50vw;
+  /* -webkit-clip-path: polygon(0 0, 18% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 18% 0, 100% 100%, 0% 100%); */
+  min-width: 15vw;
   background-size: cover;
 }
 
@@ -80,7 +80,7 @@ a {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #0b224750;
+  background: linear-gradient(to right, transparent 0%, #FFF8FF 15%);
 }
 
 
@@ -95,21 +95,11 @@ a {
   text-align: left;
   margin: 40px;
   position: relative;
-  padding-left: 1%;
+  padding: 40px;
+  background: #FFFFFF99;
+  color: black;
+  letter-spacing: 2px;
 }
-
-.exp-first-tier:nth-child(1) {
-  margin-left: -53%;
-}
-
-.exp-first-tier:nth-child(2) {
-  margin-left: -25%;
-}
-
-.exp-first-tier:nth-child(3) {
-  margin-left: 0;
-}
-
 
 .exp-first-tier:before {
   content: '';
@@ -144,8 +134,9 @@ a {
 }
 
 .exp-item {
+  font-size: 1rem;
+  font-weight: 600;
   font-family: 'Roboto Slab', serif;
-  font-weight: 300;
 }
 
 .exp-item>header {
@@ -162,7 +153,7 @@ a {
 .exp-item>p {
   margin: 0;
   padding-left: 1%;
-  line-height: 1.2rem;
+  line-height: 1.7rem;
   padding-bottom: 16px;
 }
 
@@ -178,66 +169,39 @@ a {
   position: relative;
   display: flex;
   flex-direction: row;
-  background: url('/assets/images/jojo_San_Giorgio_Maggiore.png');
 }
 
 .skills-header {
   position: relative;
   display: block;
-  background: linear-gradient(to right, #470b16, 90%, #470b1600);
+  text-align: right;
+  background: linear-gradient(to left, #421124 0% 25%, #4F1E31 25% 50%, #704857 50% 75%, #FFF8FF 75% 100%);
   margin: 0;
   color: ghostwhite;
-  padding: 20px 30px;
+  padding: 1px 120px;
 }
 
 .skills-container {
-  width: 50vw;
-}
-
-.skills-flavor {
-  -webkit-clip-path: polygon(100% 0, 82% 0, 0% 100%, 100% 100%);
-  clip-path: polygon(100% 0, 82% 0, 0% 100%, 100% 100%);
-  background: url('/assets/images/taipei101.jpg');
-  min-width: 50vw;
-  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 80vh;
+  z-index: 1;
+  background: url('/assets/images/taipei101_flattened_blue.jpg');
   background-size: cover;
+  background-position: bottom;
 }
 
-.skills-flavor:after {
+/* .skills-container:after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #0b224750;
-}
-
-.skills-flavor:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #470b1620;
-}
-
-.colors1 {
-  background: #1E3345;
-}
-
-.colors2 {
-  background: #225522
-}
-
-.colors3 {
-  background: #6B2B2B
-}
-
-.colors4 {
-  background: #6B502B;
-}
+  background: linear-gradient(to left, transparent 0%, #FFF8FF 90%);
+} */
 
 
 /* Copied Skill */
@@ -249,34 +213,24 @@ a {
 .skill-item {
   position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   list-style: none;
   min-height: 150px;
 }
 
-.skill-item:nth-child(1) {
-  margin-right: -53%;
-}
-
-.skill-item:nth-child(2) {
-  margin-right: -25%;
-}
-
-.skill-item:nth-child(3) {
-  margin-right: 0;
-}
 
 .skills-head {
   display: inherit;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  width: 30%;
+  align-items: center;
+  width: 90px;
   font-size: 1.3rem;
   font-weight: 700;
   font-family: 'Comfortaa', cursive;
+  background: dodgerblue;
 }
 
 .skills-head>p {
@@ -289,7 +243,6 @@ a {
 
 .skills-details {
   display: inherit;
-  width: 62%;
   justify-content: space-around;
   text-align: center;
   opacity: .9;
@@ -308,14 +261,13 @@ a {
   position: relative;
   flex: 1 0 auto;
   padding: .8rem;
-  /* background-color: #888; */
+  background-color: #888;
   margin: .8rem;
   min-width: 100px;
   color: ghostwhite;
   font-size: 1rem;
   font-weight: 600;
   font-family: 'Roboto Slab', serif;
-  cursor: pointer;
   max-width: 150px;
 }
 
@@ -324,18 +276,11 @@ a {
   flex-direction: column;
 }
 
-.skills-details ul li:after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  content: " ";
-  box-shadow: 5px 5px black;
-  animation: floating-items 2s ease-in-out 0s infinite alternate;
-}
 
 ul.skill-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
   padding: 0 0 0 100px;
 }
 
@@ -353,31 +298,4 @@ ul.skill-list {
     font-size: .8rem;
   }
 
-  .experience-flavor {
-    -webkit-clip-path: polygon(50% 50%, 0% 100%, 0 0%);
-    clip-path: polygon(50% 50%, 0% 100%, 0 0%);
-    background-position-x: -600px;
-  }
-
-  .skills-flavor {
-    -webkit-clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%, 50% 50%);
-    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%, 50% 50%);
-    background-position-x: -1100px;
-  }
-
-  .skill-item:nth-child(1) {
-    margin-right: 0;
-  }
-  
-  .skill-item:nth-child(2) {
-    margin-right: 0;
-  }
-  
-  .skill-item:nth-child(3) {
-    margin-right: 0;
-  }
-
-  .exp-first-tier:nth-child(3) {
-    margin-left: -53%;
-  }
 }

@@ -17,10 +17,6 @@ export default class Homepage extends Component {
         </h1>
 
           <div className="experience-row">
-
-            <section className="experience-flavor">
-            </section>
-
             <section className="experience-container resume-container">
 
               <div id="imatrix" className="exp-first-tier">
@@ -74,12 +70,12 @@ export default class Homepage extends Component {
                   <div className="skills-details">
                     <ul>
                       <span>
-                        <li className="colors1">html5 &amp; css3 </li>
-                        <li className="colors2">javascript (es6)</li>
+                        <li className="colors">html5 &amp; css3 </li>
+                        <li className="colors">javascript (es6)</li>
                       </span>
                       <span>
-                        <li className="colors3">jquery</li>
-                        <li className="colors4">react</li>
+                        <li className="colors">jquery</li>
+                        <li className="colors">react</li>
                       </span>
                     </ul>
                   </div>
@@ -91,12 +87,12 @@ export default class Homepage extends Component {
                   <div className="skills-details">
                     <ul>
                       <span>
-                        <li className="colors2">accessibility</li>
-                        <li className="colors1">user workflows</li>
+                        <li className="colors">accessibility</li>
+                        <li className="colors">user workflows</li>
                       </span>
                       <span>
-                        <li className="colors4">wire framing</li>
-                        <li className="colors3">client empathy</li>
+                        <li className="colors">wire framing</li>
+                        <li className="colors">client empathy</li>
                       </span>
                     </ul>
                   </div>
@@ -108,20 +104,19 @@ export default class Homepage extends Component {
                   <div className="skills-details">
                     <ul>
                       <span>
-                        <li className="colors1">big picture project awareness</li>
-                        <li className="colors3">cloud services</li>
+                        <li className="colors">big picture project awareness</li>
+                        <li className="colors">cloud services</li>
                       </span>
                       <span>
-                        <li className="colors2">testing</li>
-                        <li className="colors4">version control</li>
+                        <li className="colors">testing</li>
+                        <li className="colors">version control</li>
                       </span>
                     </ul>
                   </div>
                 </li>
               </ul>
             </section>
-            <section className="skills-flavor">
-            </section>
+
 
           </div>
         </span>
