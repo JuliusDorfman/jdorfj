@@ -43,12 +43,12 @@ export default class Portfolio extends Component {
               {/* <img src='/assets/images/toriigate_ghostwhite.jpg' alt=''/> */}
             </div>
             <div data-depth="1">
-              <div className="flavor-lines">
+              {/* <div className="flavor-lines">
                 <p>///</p>
-              </div>
+              </div> */}
             </div>
             <div id="scene2">
-              <div data-depth="2"  className=".flavor-pluses-wrapper">
+              {/* <div data-depth="2"  className=".flavor-pluses-wrapper">
                 <ul className="flavor-pluses">
                   <li>+</li>
                   <li>+</li>
@@ -69,7 +69,7 @@ export default class Portfolio extends Component {
                   <li>+</li>
                   <li>+</li>
                 </ul>
-              </div>
+              </div> */}
             </div>
             {/* <div data-depth="10">
               <div className="flavor-triangle">

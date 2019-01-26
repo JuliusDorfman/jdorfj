@@ -97,8 +97,8 @@ section.meet-me::before {
 
 .intro-announcement {
   position: absolute;
-  left: 35vw;
-  top: 30vh;
+  left: 40vw;
+  top: 35vh;
   font-size: 2rem;
   z-index: 2;
   /* color: rgb(28, 69, 131); */
@@ -361,7 +361,7 @@ section.meet-me::before {
   .intro-announcement {
     position: absolute;
     left: 30vw;
-    top: 25vh;
+    top: 35vh;
     z-index: 10;
     letter-spacing: .5rem;
   }
@@ -409,7 +409,7 @@ section.meet-me::before {
   .intro-announcement {
     position: absolute;
     left: 10vw;
-    top: 30vh;
+    top: 35vh;
     font-size: 1.8rem;
     z-index: 10;
     letter-spacing: .5rem;
