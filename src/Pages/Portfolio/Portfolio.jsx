@@ -106,7 +106,7 @@ export default class Portfolio extends Component {
           <div className="introduction">
             <h2>I Build</h2>
             <p>
-              You've found my portfolio! I'm Julius Dorfman. I engineer ambitious applications and design them with a minimalist aesthetic. 
+              You've found my portfolio! I'm Julius Dorfman. I engineer ambitious applications and design them with a minimalist aesthetic.
               <br />
               <br />
               This website is where I publish my works; an expression of my creativity through design, code, and writing. This site will hold the bookmarks of my life in: projects, articles, and career history. While you're here, thank you for being a part of it.
@@ -115,7 +115,7 @@ export default class Portfolio extends Component {
         </section>
 
         <section className="grid-container-homepage">
-        <div className="projects-intro-wrapper">
+          <div className="projects-intro-wrapper">
             <h1>Projects</h1>
           </div>
 
@@ -163,9 +163,12 @@ export default class Portfolio extends Component {
               <p>This is a "fun" browser based number addition game with a "fun" theme and very simple premise.</p>
             </div>
           </div>
+          <a href="/homepage">
+            <h4 className="experience-page-prompt">See My Experience and Work History</h4>
+          </a>
         </section>
         <Footer />
-      </div>
+      </div >
     )
   }
 }

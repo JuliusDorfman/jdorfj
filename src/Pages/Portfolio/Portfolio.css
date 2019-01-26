@@ -10,10 +10,10 @@ section.meet-me::before {
   top: 0px;
   left: -45px;
   content: "";
-  background: linear-gradient(#235391 0 25%, 
-  #5276A5 25% 50%,
-  #A7BCD6 50% 75%,
-  ghostwhite 75% 100%);
+  background: linear-gradient(#235391 0 25%,
+    #5276A5 25% 50%,
+    #A7BCD6 50% 75%,
+    ghostwhite 75% 100%);
   height: 100%;
   width: 10px;
 }
@@ -105,6 +105,7 @@ section.meet-me::before {
   color: black;
   letter-spacing: .5rem;
 }
+
 /* 
 .intro-announcement::after {
   content: "";
@@ -131,7 +132,7 @@ section.meet-me::before {
   /* background: rgba(255, 255, 255, .7); */
 }
 
-.intro-image-wrapper > img {
+.intro-image-wrapper>img {
   position: absolute;
   left: 0;
   right: 0;
@@ -173,7 +174,7 @@ section.meet-me::before {
   cursor: pointer;
 }
 
-.flavor-pluses > li {
+.flavor-pluses>li {
   margin-top: 4em;
 }
 
@@ -296,6 +297,24 @@ section.meet-me::before {
   grid-area: "directional-right";
 }
 
+.experience-page-prompt {
+  position: relative;
+  text-align: right;
+  cursor: pointer;
+  margin-top: 0;
+  margin-bottom: 1.5em;
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(28, 69, 131);
+  transition: .2s;
+}
+
+
+.experience-page-prompt:hover {
+  color: rgba(164, 186, 215);
+}
+
+
 
 /* Panel CSS Hover */
 .grid-container-homepage>.column:hover h1,
@@ -318,7 +337,7 @@ section.meet-me::before {
     z-index: 10;
     letter-spacing: .5rem;
   }
-  
+
   .intro-focus-flavor {
     width: 500px;
     height: 500px;
@@ -366,9 +385,7 @@ section.meet-me::before {
     letter-spacing: .5rem;
   }
 
-  .flavor-lines {
-
-  }
+  .flavor-lines {}
 
   .flavor-pluses {
     left: 70vw;
@@ -415,20 +432,18 @@ section.meet-me::before {
     letter-spacing: .5rem;
   }
 
-  .flavor-lines {
-
-  }
+  .flavor-lines {}
 
   .flavor-pluses {
     left: 60vw;
     /* cursor: pointer; */
   }
 
-  .accolades > div > ul {
+  .accolades>div>ul {
     display: grid;
   }
 
-  .accolades > div > ul > li {
+  .accolades>div>ul>li {
     min-height: 70px;
   }
 
