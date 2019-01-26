@@ -51,10 +51,10 @@ section.meet-me::before {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: url('/assets/images/piano_lighted.jpg');
+  background: url('/assets/images/toriigatewater_altered_blued_ghosted_paletted.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top: 7vh;
+  margin-top: 0vh;
   margin-bottom: 10vh;
 }
 
@@ -63,25 +63,84 @@ section.meet-me::before {
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 100%;
 }
 
-.intro-focus {
-  position: relative;
-  border: 10px solid black;
-  border-left: 5px solid black;
-  border-right: 5px solid black;
-  width: 200px;
-  height: 380px;
+.intro-focus-flavor-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.intro-focus-flavor {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  /* border: 10px solid black; */
+  /* border-left: 5px solid black; */
+  /* border-right: 5px solid black; */
+  width: 20rem;
+  height: 20rem;
+  background: rgba(255, 255, 255, .9);
+  transform: rotate(45deg);
+}
+
+
+.intro-announcement-wrapper {
+  z-index: 10;
 }
 
 .intro-announcement {
   position: absolute;
-  left: 30vw;
-  top: 25vh;
-  font-size: 3.3rem;
-  z-index: 10;
-  color: rgb(28, 69, 131);
+  left: 35vw;
+  top: 30vh;
+  font-size: 2rem;
+  z-index: 2;
+  /* color: rgb(28, 69, 131); */
+  color: black;
   letter-spacing: .5rem;
+}
+/* 
+.intro-announcement::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  z-index: -1;
+  border: 5px solid #235391;
+  left: 0;
+  right: 0;
+  top: 10px;
+  bottom: 0;
+  margin: auto;
+} */
+
+.intro-image-wrapper {
+  width: 50%;
+  height: 50%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  /* background: rgba(255, 255, 255, .7); */
+}
+
+.intro-image-wrapper > img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 400px;
+  height: 400px;
+  z-index: -1;
 }
 
 .project-intro {
@@ -99,29 +158,37 @@ section.meet-me::before {
   max-width: 60em;
 }
 
-.flavor-circle {
-  position: absolute;
+.flavor-pluses-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.flavor-pluses {
+  position: relative;
+  padding: 0;
   left: 70vw;
-  top: 65vh;
-  stroke-width: 4;
-  fill: transparent;
-  /* cursor: pointer; */
+  top: -35vh;
+  margin: 0;
+  list-style-type: none;
+  cursor: pointer;
 }
 
-.flavor-line {
-  position: absolute;
-  left: 30vw;
-  top: 50vh;
-  stroke-width: 8;
-  height: 100px;
-  width: 310px;
+.flavor-pluses > li {
+  margin-top: 4em;
 }
 
-/* .flavor-triangle {
+.flavor-lines {
   position: absolute;
-  left: 100vw;
-  top: 70vh;
-} */
+  left: 15vw;
+  top: 60vh;
+  font-size: 1rem;
+}
+
+.flavor-triangle {
+  position: absolute;
+  left: 150vw;
+  top: 150vh;
+}
 
 .accolades {
   margin-bottom: 10vh;
@@ -245,40 +312,28 @@ section.meet-me::before {
 
 @media(min-width: 2000px) {
   .intro-announcement {
-    left: 30vw;
-    top: 25vh;
-    font-size: 7rem;
+    left: 35vw;
+    top: 35vh;
+    font-size: 3.5rem;
     z-index: 10;
-    color: rgb(28, 69, 131);
     letter-spacing: .5rem;
   }
-
-  .intro-focus {
-    width: 450px;
-    height: 900px;
+  
+  .intro-focus-flavor {
+    width: 500px;
+    height: 500px;
   }
 
-  .flavor-line {
+  .flavor-lines {
     left: 30vw;
     top: 50vh;
-    stroke-width: 32;
+    font-size: 3rem;
   }
 
-  .flavor-line>svg {
-    width: 600px;
-  }
-
-  .flavor-circle {
+  .flavor-pluses {
     left: 70vw;
-    top: 65vh;
-    stroke-width: 4;
-    fill: transparent;
+    font-size: 2rem;
     /* cursor: pointer; */
-  }
-
-  .flavor-circle>svg {
-    width: 400px;
-    height: 400px;
   }
 
   .column h1 {
@@ -307,38 +362,17 @@ section.meet-me::before {
     position: absolute;
     left: 30vw;
     top: 25vh;
-    font-size: 2.8rem;
     z-index: 10;
-    color: rgb(28, 69, 131);
     letter-spacing: .5rem;
   }
 
-  .intro-focus {
-    width: 200px;
-    height: 380px;
+  .flavor-lines {
+
   }
 
-  .flavor-line {
-    left: 30vw;
-    top: 50vh;
-    stroke-width: 8;
-  }
-
-  .flavor-line>svg {
-    width: 320px;
-  }
-
-  .flavor-circle {
+  .flavor-pluses {
     left: 70vw;
-    top: 65vh;
-    stroke-width: 4;
-    fill: transparent;
     /* cursor: pointer; */
-  }
-
-  .flavor-circle>svg {
-    width: 400px;
-    height: 400px;
   }
 
   .meet-me {
@@ -378,30 +412,15 @@ section.meet-me::before {
     top: 30vh;
     font-size: 1.8rem;
     z-index: 10;
-    color: rgb(28, 69, 131);
     letter-spacing: .5rem;
   }
 
-  .intro-focus {
-    width: 120px;
-    height: 270px;
+  .flavor-lines {
+
   }
 
-  .flavor-line {
-    left: 10vw;
-    top: 43vh;
-    stroke-width: 4;
-  }
-
-  .flavor-line>svg {
-    width: 200px;
-  }
-
-  .flavor-circle {
+  .flavor-pluses {
     left: 60vw;
-    top: 65vh;
-    stroke-width: 4;
-    fill: transparent;
     /* cursor: pointer; */
   }
 
@@ -411,11 +430,6 @@ section.meet-me::before {
 
   .accolades > div > ul > li {
     min-height: 70px;
-  }
-
-  .flavor-circle>svg {
-    width: 400px;
-    height: 400px;
   }
 
   .meet-me {

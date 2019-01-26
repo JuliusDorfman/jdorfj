@@ -16,6 +16,9 @@ export default class Portfolio extends Component {
   componentDidMount() {
     var scene = document.getElementById('scene');
     new Parallax(scene);
+
+    var scene2 = document.getElementById('scene2');
+    new Parallax(scene2);
   }
 
   render() {
@@ -24,34 +27,53 @@ export default class Portfolio extends Component {
         <Navbar />
         <div data-depth=".3" className="intro-block">
           <div id="scene" data-hover-only="true" className="intro-focus-wrapper">
-            <div className="intro-focus" data-depth=".2">
+            <div className="intro-focus-flavor-wrapper" data-depth=".2">
+              <div className="intro-focus-flavor">
+
+              </div>
             </div>
-            <div data-depth=".4">
+            <div data-depth=".4" className="intro-announcement-wrapper">
               <h1 className="intro-announcement">
                 Personal
                 <br />
                 Portfolio
               </h1>
             </div>
-            <div data-depth=".7">
-              <div className="flavor-line">
-                <svg>
-                  <line x1="0" y1="0" x2="1000" y2="0" stroke="rgba(164, 186, 215)" />
-                </svg>
+            <div data-depth=".25" className="intro-image-wrapper">
+              {/* <img src='/assets/images/toriigate_ghostwhite.jpg' alt=''/> */}
+            </div>
+            <div data-depth="1">
+              <div className="flavor-lines">
+                <p>///</p>
               </div>
             </div>
-            <div data-depth="2">
-              <div className="flavor-circle">
-                <svg>
-                  <circle cx="50" cy="50" r="20" stroke="rgba(164, 186, 215)" />
-                </svg>
+            <div id="scene2">
+              <div data-depth="2"  className=".flavor-pluses-wrapper">
+                <ul className="flavor-pluses">
+                  <li>+</li>
+                  <li>+</li>
+                  <li>+</li>
+                  <li>+</li>
+                  <li>+</li>                  
+                  <li>+</li>
+                  <li>+</li>
+                  <li>+</li>
+                  <li>+</li>
+                  <li>+</li>
+                  <li>+</li>
+                  <li>+</li>
+                  <li>+</li>
+                  <li>+</li>
+                  <li>+</li>
+                  <li>+</li>
+                  <li>+</li>
+                  <li>+</li>
+                </ul>
               </div>
             </div>
             {/* <div data-depth="10">
               <div className="flavor-triangle">
-                <svg width="50" height="50">
-                  <polygon points="0,0 0,50 25,50"  fill="transparent" stroke="rgba(164, 186, 215)" stroke-width="5" />
-                </svg>
+                ///&nbsp;Haha, ///&nbsp;caught ///&nbsp;you ///&nbsp;Playing ///&nbsp;with ///&nbsp;Parallax
               </div>
             </div> */}
           </div>
