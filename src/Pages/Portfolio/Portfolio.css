@@ -92,13 +92,16 @@ section.meet-me::before {
 
 
 .intro-announcement-wrapper {
-  z-index: 10;
+    height: 100%;
+    width: 100%;
 }
 
 .intro-announcement {
-  position: absolute;
-  left: 40vw;
-  top: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
   font-size: 2rem;
   z-index: 2;
   /* color: rgb(28, 69, 131); */
@@ -331,8 +334,6 @@ section.meet-me::before {
 
 @media(min-width: 2000px) {
   .intro-announcement {
-    left: 35vw;
-    top: 35vh;
     font-size: 3.5rem;
     z-index: 10;
     letter-spacing: .5rem;
@@ -377,15 +378,6 @@ section.meet-me::before {
 }
 
 @media(max-width: 1050px) {
-  .intro-announcement {
-    position: absolute;
-    left: 30vw;
-    top: 35vh;
-    z-index: 10;
-    letter-spacing: .5rem;
-  }
-
-  .flavor-lines {}
 
   .flavor-pluses {
     left: 70vw;
@@ -424,15 +416,13 @@ section.meet-me::before {
   }
 
   .intro-announcement {
-    position: absolute;
-    left: 10vw;
-    top: 35vh;
     font-size: 1.8rem;
-    z-index: 10;
-    letter-spacing: .5rem;
   }
 
-  .flavor-lines {}
+  .intro-focus-flavor {
+    width: 175px;
+    height: 175px;
+  }
 
   .flavor-pluses {
     left: 60vw;

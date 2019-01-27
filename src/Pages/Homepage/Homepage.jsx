@@ -10,7 +10,6 @@ export default class Homepage extends Component {
     return (
       <div className="homepage-component">
         <Navbar />
-
         <span className="temp-position">
           <h1 className="experience-header">
             EXPERIENCE

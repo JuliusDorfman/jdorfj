@@ -26,7 +26,6 @@ export default class Navbar extends Component {
     function scrollFunction() {
       const navComponentElement = document.getElementsByClassName('navbar-component')[0];
       const mainNavElement = navComponentElement.children[0]
-      // const contactText = navComponentElement.children[0].children[2].children[0];
 
       if (document.documentElement.scrollTop > 80) {
         navComponentElement.style.backgroundColor = "rgba(248, 248, 255, .9)";
@@ -45,8 +44,8 @@ export default class Navbar extends Component {
             <a className="nav-link" href="/portfolio" value="portfolio" onClick={this.handleClick}>Portfolio</a>
           </li>
           <li className="initials-icon">
-            <a href="/homepage" className="icon-card-initials-wrapper" value="homepage" onClick={this.handleClick}>
-              <p className="icon-card-initials" value="homepage">
+            <a href="/portfolio" className="icon-card-initials-wrapper" value="portfolio" onClick={this.handleClick}>
+              <p className="icon-card-initials" value="portfolio">
                 J
               </p>
               <p className="icon-card-initials" value="homepage">
@@ -55,7 +54,7 @@ export default class Navbar extends Component {
             </a>
           </li>
           <li>
-            <a className="nav-link" href="/contact" value="contact" onClick={this.handleClick}>Contact</a>
+            <a className="nav-link" href="/homepage" value="homepage" onClick={this.handleClick}>Experience</a>
           </li>
         </ul>
       </div>

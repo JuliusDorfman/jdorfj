@@ -62,8 +62,9 @@ a {
   position: relative;
   display: flex;
   flex-direction: row;
-  background: url('/assets/images/fontana_de_trevi_desaturated_chromad.jpg');
+  /* background: url('/assets/images/fontana_de_trevi_desaturated_chromad.jpg'); */
   background-size: contain;
+  margin: 0 4rem;
 }
 
 .experience-flavor {
@@ -96,7 +97,6 @@ a {
   margin: 40px;
   position: relative;
   padding: 40px;
-  background: #FFFFFF99;
   color: black;
   letter-spacing: 2px;
 }
@@ -173,7 +173,7 @@ a {
   position: relative;
   display: block;
   text-align: right;
-  background: linear-gradient(to left, #421124 0% 25%, #4F1E31 25% 50%, #704857 50% 75%, #FFF8FF 75% 100%);
+  background: linear-gradient(to left, #421124 0% 25%, #4F1E31 25% 50%, #704857 50% 75%, #f8f8ff 75% 100%);
   margin: 0;
   color: ghostwhite;
   padding: 1px 120px;
@@ -283,6 +283,29 @@ ul.skill-list {
 }
 
 @media(max-width: 650px) {
+
+  .experience-row {
+    margin: 0;
+  }
+
+  .exp-item > p {
+    font-size: .8rem;
+  }
+
+  .exp-item > header {
+    font-size: 1rem;
+  }
+  .exp-item>header>h4:nth-child(even) {
+    text-align: left;
+  }
+  .experience-header {
+    text-align: center;
+  }
+
+  .skills-header {
+    text-align: center;
+  }
+
   .skill-item {
     flex-direction: column;
   }
