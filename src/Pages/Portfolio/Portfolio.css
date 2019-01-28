@@ -418,9 +418,11 @@ section.meet-me::before {
   .tagline>span:nth-child(1) {
     font-size: 7rem;
   }
+
   .tagline>span:nth-child(2) {
     font-size: 4rem;
   }
+
   .tagline>span:nth-child(3) {
     font-size: 4rem;
   }
@@ -471,6 +473,10 @@ section.meet-me::before {
 
 @media(max-width: 1050px) {
 
+  main {
+    grid-template-columns: auto 740px auto;
+  }
+
   .flavor-pluses {
     left: 70vw;
     /* cursor: pointer; */
@@ -498,6 +504,10 @@ section.meet-me::before {
 
 @media(max-width: 700px) {
 
+  main {
+    grid-template-columns: auto 90% auto;
+  }
+
   .intro-block {
     background-position-x: -300px;
   }
@@ -510,9 +520,11 @@ section.meet-me::before {
   .tagline>span:nth-child(1) {
     font-size: 3rem;
   }
+
   .tagline>span:nth-child(2) {
     font-size: 1.5rem;
   }
+
   .tagline>span:nth-child(3) {
     font-size: 1.5rem;
   }
