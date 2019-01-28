@@ -523,10 +523,12 @@ section.meet-me::before {
 
   .tagline>span:nth-child(2) {
     font-size: 1.5rem;
+    margin-left: 4rem;
   }
 
   .tagline>span:nth-child(3) {
     font-size: 1.5rem;
+    margin-left: 6rem;
   }
 
   .intro-announcement {
