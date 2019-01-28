@@ -12,7 +12,6 @@ export default class Portfolio extends Component {
     }
   }
 
-
   componentDidMount() {
     var scene = document.getElementById('scene');
     new Parallax(scene);
@@ -25,6 +24,21 @@ export default class Portfolio extends Component {
     return (
       <div className="portfolio-component">
         <Navbar />
+        <main>
+          <section className="big-intro">
+            <div className="tagline">
+              <span>Julius</span>
+              <span>G.</span>
+              <span>Dorfman</span>
+            </div>
+          </section>
+          {/* <section className="small-intro">
+            <div className="small-intro-content"></div>
+            <div className="small-intro-flavor"></div>
+          </section> */}
+        </main>
+
+
         <div data-depth=".3" className="intro-block">
           <div id="scene" data-hover-only="true" className="intro-focus-wrapper">
             <div className="intro-focus-flavor-wrapper" data-depth=".2">
@@ -34,9 +48,8 @@ export default class Portfolio extends Component {
             </div>
             <div data-depth=".4" className="intro-announcement-wrapper">
               <h1 className="intro-announcement">
-                Personal
+                About Me
                 <br />
-                Portfolio
               </h1>
             </div>
             <div data-depth=".25" className="intro-image-wrapper">
