@@ -20,7 +20,10 @@ export default class Portfolio extends Component {
     new Parallax(scene2);
   }
 
+
+
   render() {
+
     return (
       <div className="portfolio-component">
         <Navbar />
@@ -32,15 +35,33 @@ export default class Portfolio extends Component {
               <span>Dorfman</span>
             </div>
           </section>
-          {/* <section className="small-intro">
-            <div className="small-intro-content"></div>
-            <div className="small-intro-flavor"></div>
-          </section> */}
+          <section className="small-intro">
+            <div className="small-intro-content">
+            </div>
+            <div className="small-intro-flavor">
+              <div className="left">
+                <p>Web Developer</p>
+              </div>
+              {/* <div className="right">
+                <div id="wrapD3Cube">
+                  <div id="D3Cube">
+                    <div id="side1"></div>
+                    <div id="side2"></div>
+                    <div id="side3"></div>
+                    <div id="side4"></div>
+                    <div id="side5"></div>
+                    <div id="side6"></div>
+                  </div>
+                </div>
+              </div> */}
+            </div>
+            {/* <div className="expanding-div"></div> */}
+          </section>
         </main>
 
 
         <div data-depth=".3" className="intro-block">
-          <div id="scene" data-hover-only="true" className="intro-focus-wrapper">
+          <div id="scene" className="intro-focus-wrapper">
             <div className="intro-focus-flavor-wrapper" data-depth=".2">
               <div className="intro-focus-flavor">
 
