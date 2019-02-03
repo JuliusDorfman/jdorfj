@@ -37,13 +37,7 @@ export default class Portfolio extends Component {
           </section>
           <section className="small-intro">
             <div className="small-intro-content">
-            </div>
-            <div className="small-intro-flavor">
-              <div className="left">
-                <p>Web Developer</p>
-              </div>
-              {/* <div className="right">
-                <div id="wrapD3Cube">
+            <div id="wrapD3Cube">
                   <div id="D3Cube">
                     <div id="side1"></div>
                     <div id="side2"></div>
@@ -53,7 +47,14 @@ export default class Portfolio extends Component {
                     <div id="side6"></div>
                   </div>
                 </div>
-              </div> */}
+            </div>
+            <div className="small-intro-flavor">
+              <div className="left">
+                <p>Web Developer</p>
+              </div>
+              <div className="right">
+
+              </div>
             </div>
             {/* <div className="expanding-div"></div> */}
           </section>
