@@ -77,6 +77,7 @@ main>.small-intro {
   justify-content: center;
   align-items: center;
   padding: 1rem 3rem;
+  /* background: linear-gradient(to right top, #23539199, #235391 20%); */
   background: #235391;
   color: ghostwhite;
   transition: .75s;

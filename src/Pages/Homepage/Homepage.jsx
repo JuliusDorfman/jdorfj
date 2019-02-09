@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Navbar from '../../Components/Navbar';
+import ReviewsCarousel from '../../Components/ReviewsCarousel';
 // import DigitalCard from '../../Components/DigitalCard';
 // import './Homepage.css';
 import './Homepage.css';
@@ -29,6 +30,9 @@ export default class Homepage extends Component {
                   <p>My first technical position in the field! I began at iMatrix as a Support Coach. My role was to assist clients with website management. My patrons were not technically savvy and I became an expert in explaining the field, both verbal and written on topics that included: Aesthetic, SEO, Domains, Photoshop.
                 </p>
                 </article>
+                <section className="reviews-section">
+                  <ReviewsCarousel />
+                </section>
               </div>
               <div id="trilogy-bootcamp" className="exp-first-tier">
                 <article className="exp-item">
@@ -54,7 +58,6 @@ export default class Homepage extends Component {
               </div>
             </section>
           </div>
-
           <h1 className="skills-header">
             SKILLS
         </h1>
@@ -116,7 +119,13 @@ export default class Homepage extends Component {
               </ul>
             </section>
 
-
+            {/* <section className='reviews-row'>
+              <ul className='reviews-gallery-module'>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </section> */}
           </div>
         </span>
       </div>

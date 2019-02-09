@@ -46,6 +46,11 @@ a {
   width: 100%;
 }
 
+.reviews-section {
+  width: 60%;
+  margin: auto;
+}
+
 /* Experience Layout */
 
 .experience-header {
