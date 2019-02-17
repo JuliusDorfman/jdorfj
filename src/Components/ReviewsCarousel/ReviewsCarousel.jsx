@@ -7,13 +7,13 @@ export default class ReviewsCarousel extends Component {
     return (
       <Carousel className="review-carousel" autoPlay>
         <div className="review-slide">
-          <img src="/assets/images/iMatrix_2019-01-30.png" />
+          <img src="/assets/images/iMatrix_2019-01-30.png" alt="Patient Review"/>
         </div>
         <div className="review-slide">
-          <img src="/assets/images/iMatrix2_2019-01-30.png" />
+          <img src="/assets/images/iMatrix2_2019-01-30.png" alt="Good Listener Review"/>
         </div>
         <div className="review-slide">
-          <img src="/assets/images/iMatrix3_2019-01-30.png" />
+          <img src="/assets/images/iMatrix3_2019-01-30.png" alt="Prompt Review"/>
         </div>
       </Carousel>
     )

@@ -153,8 +153,20 @@ export default class Portfolio extends Component {
           <div className="projects-intro-wrapper">
             <h1>Projects</h1>
           </div>
+{/* 
+          <div className="proj-hstone column">
+            <div className="project-intro">
+              <small className="date">August 2018</small>
+              <a href="https://hstone-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                <h1>hStone Addiction</h1>
+              </a>
+            </div>
+            <div className="proj-flavor-text">
+              <p>Quantify the sunk cost of your addiction. Then, go do something more productive. It's the future you would have wanted.</p>
+            </div>
+          </div> */}
 
-          <div className="proj1 column">
+          <div className="proj-hstone column">
             <div className="project-intro">
               <small className="date">August 2018</small>
               <a href="https://hstone-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
@@ -165,7 +177,7 @@ export default class Portfolio extends Component {
               <p>Quantify the sunk cost of your addiction. Then, go do something more productive. It's the future you would have wanted.</p>
             </div>
           </div>
-          <div className="proj2 column">
+          <div className="proj-news-from column">
             <div className="project-intro">
               <small className="date">July 2018</small>
               <a href="https://news-from.herokuapp.com/" target="_blank" rel="noopener noreferrer">
@@ -176,7 +188,7 @@ export default class Portfolio extends Component {
               <p>Search the headlines of your beloved/loathed news organizations for celebrity/business/topic mentions.</p>
             </div>
           </div>
-          <div className="proj3 column">
+          <div className="proj-imagedits column">
             <div className="project-intro">
               <small className="date">June 2018</small>
               <a href="https://juliusdorfman.github.io/imagEdits/" target="_blank" rel="noopener noreferrer">
@@ -187,7 +199,7 @@ export default class Portfolio extends Component {
               <p>This is a simple browser based image editor.</p>
             </div>
           </div>
-          <div className="proj4 column">
+          <div className="proj-crystal-game column">
             <div className="project-intro">
               <small className="date">March 2018</small>
               <a href="https://crystal-numbers.herokuapp.com/" target="_blank" rel="noopener noreferrer">

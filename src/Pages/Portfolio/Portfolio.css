@@ -480,41 +480,41 @@ section.meet-me::before {
   letter-spacing: 1px;
 }
 
-.proj1 {
-  grid-area: "proj1";
+.proj-hstone {
+  grid-area: "proj-hstone";
   background-color: transparent;
   border: 1px solid black;
 }
 
-.proj1>h1 {
+.proj-hstone>h1 {
   display: inline-block;
 }
 
-.proj2 {
-  grid-area: "proj2";
+.proj-news-from {
+  grid-area: "proj-news-from";
   background-color: #192A3B;
 }
 
-.proj2 * {
+.proj-news-from * {
   color: ghostwhite;
 }
 
-.proj3 {
-  grid-area: "proj3";
+.proj-imagedits {
+  grid-area: "proj-imagedits";
   background-color: transparent;
   border: 7px solid rgba(64, 86, 115);
 }
 
-.proj3 * {
+.proj-imagedits * {
   color: rgba(64, 86, 115);
 }
 
-.proj4 {
-  grid-area: "proj4";
+.proj-crystal-game {
+  grid-area: "proj-crystal-game";
   background-color: #4F1E31;
 }
 
-.proj4 * {
+.proj-crystal-game * {
   color: ghostwhite;
 }
 
