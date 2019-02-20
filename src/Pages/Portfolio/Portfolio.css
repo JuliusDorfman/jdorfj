@@ -662,7 +662,7 @@ section.meet-me::before {
   }
 
   .intro-block {
-    background-position-x: -300px;
+    background-position-x: center;
   }
 
   .grid-container-homepage {
