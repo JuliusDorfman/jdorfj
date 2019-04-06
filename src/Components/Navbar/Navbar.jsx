@@ -42,10 +42,10 @@ export default class Navbar extends Component {
       <div className="navbar-component">
         <ul className="main-nav">
           <li>
-            <a className="nav-link" href="https://juliusdorfman.com/portfolio" value="portfolio" onClick={this.handleClick}>Portfolio</a>
+            <a className="nav-link" href="/portfolio" value="portfolio" onClick={this.handleClick}>Portfolio</a>
           </li>
           <li className="initials-icon">
-            <a href="https://juliusdorfman.com/portfolio" className="icon-card-initials-wrapper" value="portfolio" onClick={this.handleClick}>
+            <a href="/portfolio" className="icon-card-initials-wrapper" value="portfolio" onClick={this.handleClick}>
               <p className="icon-card-initials" value="portfolio">
                 J
               </p>
@@ -55,7 +55,7 @@ export default class Navbar extends Component {
             </a>
           </li>
           <li>
-            <a className="nav-link" href="https://juliusdorfman.com/homepage" value="homepage" onClick={this.handleClick}>Experience</a>
+            <a className="nav-link" href="/homepage" value="homepage" onClick={this.handleClick}>Experience</a>
           </li>
         </ul>
       </div>
