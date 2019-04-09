@@ -35,7 +35,16 @@
 
 .initials-icon {
   display: inline-block;
+  position: relative;
 }
+
+/* 
+.initials-icon:after {
+  position: absolute;
+  content: "Julius Dorfman";
+  font-size: 9px;
+  left: 1px;
+} */
 
 .icon-card-initials-wrapper {
   display: flex;

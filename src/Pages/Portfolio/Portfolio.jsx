@@ -12,13 +12,13 @@ export default class Portfolio extends Component {
     }
   }
 
-  componentDidMount() {
-    var scene = document.getElementById('scene');
-    new Parallax(scene);
+  // componentDidMount() {
+  //   var scene = document.getElementById('scene');
+  //   new Parallax(scene);
 
-    var scene2 = document.getElementById('scene2');
-    new Parallax(scene2);
-  }
+  //   var scene2 = document.getElementById('scene2');
+  //   new Parallax(scene2);
+  // }
 
 
 
@@ -35,18 +35,18 @@ export default class Portfolio extends Component {
               <span>Dorfman</span>
             </div>
           </section>
-          <section className="small-intro">
+          {/* <section className="small-intro">
             <div className="small-intro-content">
-            <div id="wrapD3Cube">
-                  <div id="D3Cube">
-                    <div id="side1"></div>
-                    <div id="side2"></div>
-                    <div id="side3"></div>
-                    <div id="side4"></div>
-                    <div id="side5"></div>
-                    <div id="side6"></div>
-                  </div>
+              <div id="wrapD3Cube">
+                <div id="D3Cube">
+                  <div id="side1"></div>
+                  <div id="side2"></div>
+                  <div id="side3"></div>
+                  <div id="side4"></div>
+                  <div id="side5"></div>
+                  <div id="side6"></div>
                 </div>
+              </div>
             </div>
             <div className="small-intro-flavor">
               <div className="left">
@@ -56,12 +56,11 @@ export default class Portfolio extends Component {
 
               </div>
             </div>
-            {/* <div className="expanding-div"></div> */}
-          </section>
+          </section> */}
         </main>
 
 
-        <div data-depth=".3" className="intro-block">
+        {/* <div data-depth=".3" className="intro-block">
           <div id="scene" className="intro-focus-wrapper">
             <div className="intro-focus-flavor-wrapper" data-depth=".2">
               <div className="intro-focus-flavor">
@@ -75,44 +74,16 @@ export default class Portfolio extends Component {
               </h1>
             </div>
             <div data-depth=".25" className="intro-image-wrapper">
-              {/* <img src='/assets/images/toriigate_ghostwhite.jpg' alt=''/> */}
             </div>
             <div data-depth="1">
-              {/* <div className="flavor-lines">
-                <p>///</p>
-              </div> */}
+
             </div>
             <div id="scene2">
-              {/* <div data-depth="2"  className=".flavor-pluses-wrapper">
-                <ul className="flavor-pluses">
-                  <li>+</li>
-                  <li>+</li>
-                  <li>+</li>
-                  <li>+</li>
-                  <li>+</li>                  
-                  <li>+</li>
-                  <li>+</li>
-                  <li>+</li>
-                  <li>+</li>
-                  <li>+</li>
-                  <li>+</li>
-                  <li>+</li>
-                  <li>+</li>
-                  <li>+</li>
-                  <li>+</li>
-                  <li>+</li>
-                  <li>+</li>
-                  <li>+</li>
-                </ul>
-              </div> */}
+
             </div>
-            {/* <div data-depth="10">
-              <div className="flavor-triangle">
-                ///&nbsp;Haha, ///&nbsp;caught ///&nbsp;you ///&nbsp;Playing ///&nbsp;with ///&nbsp;Parallax
-              </div>
-            </div> */}
+
           </div>
-        </div>
+        </div> */}
 
         <section className="meet-me">
           <div className="accolades clearfix">
@@ -120,12 +91,14 @@ export default class Portfolio extends Component {
               <h2 className="list-header">Roles</h2>
               <ul>
                 <li>Client Support Coach</li>
+                <li>Client Support Coach</li>
                 <li>Blacks In Tech Hackathon</li>
               </ul>
             </div>
             <div className="roles-awards-dates">
               <h2 className="list-header">Dates</h2>
               <ul>
+                <li>03/24/2019</li>
                 <li>12/16/2018</li>
                 <li>09/09/2018</li>
               </ul>
@@ -133,6 +106,7 @@ export default class Portfolio extends Component {
             <div className="awards">
               <h2 className="list-header">Awards</h2>
               <ul>
+                <li>Perfect Net Promoter Score</li>
                 <li>Rising Star</li>
                 <li>Honerable Mention</li>
               </ul>
@@ -153,7 +127,7 @@ export default class Portfolio extends Component {
           <div className="projects-intro-wrapper">
             <h1>Projects</h1>
           </div>
-{/* 
+          {/* 
           <div className="proj-hstone column">
             <div className="project-intro">
               <small className="date">August 2018</small>
@@ -199,7 +173,7 @@ export default class Portfolio extends Component {
               <p>This is a simple browser based image editor.</p>
             </div>
           </div>
-          <div className="proj-crystal-game column">
+          {/* <div className="proj-crystal-game column">
             <div className="project-intro">
               <small className="date">March 2018</small>
               <a href="https://crystal-numbers.herokuapp.com/" target="_blank" rel="noopener noreferrer">
@@ -209,7 +183,7 @@ export default class Portfolio extends Component {
             <div className="proj-flavor-text">
               <p>This is a "fun" browser based number addition game with a "fun" theme and very simple premise.</p>
             </div>
-          </div>
+          </div> */}
           <a href="/homepage">
             <h4 className="experience-page-prompt">See My Experience and Work History</h4>
           </a>

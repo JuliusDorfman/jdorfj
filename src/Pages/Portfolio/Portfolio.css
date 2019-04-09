@@ -6,7 +6,7 @@ main {
 
 main>.big-intro {
   display: block;
-  padding: 14rem 0 7rem;
+  padding: 12rem 0 7rem;
   font-family: 'Julius Sans One', sans-serif;
   font-weight: 700;
   letter-spacing: .1rem;
@@ -175,6 +175,7 @@ main>.small-intro {
   opacity: 0.85;
 }
 
+/* 
 #side1 {
   transform: rotatex(90deg) translateX(0px) translateY(0px) translateZ(56px);
   -moz-transform: rotatex(90deg) translateX(0px) translateY(0px) translateZ(56px);
@@ -215,7 +216,7 @@ main>.small-intro {
   -moz-transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(56px);
   -webkit-transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(56px);
   background-color: #5276A5;
-}
+} */
 
 /* CUBE END */
 
@@ -226,7 +227,7 @@ main>.small-intro {
   margin: auto;
 }
 
-section.meet-me::before {
+.meet-me::before {
   position: absolute;
   top: 0px;
   left: -45px;
@@ -242,7 +243,7 @@ section.meet-me::before {
 .grid-container-homepage>.column {
   position: relative;
   padding: 3em;
-  min-height: 40vh;
+  min-height: 35vh;
   margin-bottom: 20vh;
   display: flex;
   justify-content: center;
@@ -492,30 +493,31 @@ section.meet-me::before {
 
 .proj-news-from {
   grid-area: "proj-news-from";
-  background-color: #192A3B;
+  background-color: transparent;
+  border: 1px solid black;
 }
 
 .proj-news-from * {
-  color: ghostwhite;
+  color: #235391;
 }
 
 .proj-imagedits {
   grid-area: "proj-imagedits";
   background-color: transparent;
-  border: 7px solid rgba(64, 86, 115);
+  border: 1px solid black;
 }
 
 .proj-imagedits * {
-  color: rgba(64, 86, 115);
+  color: #5276A5;
 }
 
 .proj-crystal-game {
   grid-area: "proj-crystal-game";
-  background-color: #4F1E31;
+  background-color: #A7BCD6;
 }
 
 .proj-crystal-game * {
-  color: ghostwhite;
+  color: rgba(50, 50, 50, 1);
 }
 
 .directional-left {
@@ -739,6 +741,7 @@ section.meet-me::before {
     min-height: 70px;
   }
 
+
   .meet-me {
     font-size: .8rem;
     max-width: 20em;
@@ -772,6 +775,7 @@ section.meet-me::before {
     left: 5%;
   }
 
+  /* 
 
   #side1 {
     transform: rotatex(90deg) translateX(0px) translateY(0px) translateZ(40px);
@@ -813,6 +817,6 @@ section.meet-me::before {
     -moz-transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(40px);
     -webkit-transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(40px);
     background-color: #5276A5;
-  }
+  } */
 
 }

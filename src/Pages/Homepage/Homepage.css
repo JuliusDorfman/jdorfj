@@ -178,7 +178,7 @@ a {
   position: relative;
   display: block;
   text-align: right;
-  background: linear-gradient(to left, #421124 0% 25%, #4F1E31 25% 50%, #704857 50% 75%, #f8f8ff 75% 100%);
+  background: linear-gradient(to left, #0b2247 25%, #425779 25% 50%, #758298 50% 75%, ghostwhite 75% 100%);
   margin: 0;
   color: ghostwhite;
   padding: 1px 120px;
@@ -191,7 +191,7 @@ a {
   width: 100%;
   min-height: 80vh;
   z-index: 1;
-  background: url('/assets/images/taipei101_flattened_blue.jpg');
+  /* background: url('/assets/images/taipei101_flattened_blue.jpg'); */
   background-size: cover;
   background-position: bottom;
 }
@@ -233,7 +233,7 @@ a {
   font-size: 1.3rem;
   font-weight: 700;
   font-family: 'Comfortaa', cursive;
-  background: dodgerblue;
+  background: #758298;
 }
 
 .skills-head>p {
@@ -264,7 +264,7 @@ a {
   position: relative;
   flex: 1 0 auto;
   padding: .8rem;
-  background-color: #888;
+  background-color: #0b2247;
   margin: .8rem;
   min-width: 100px;
   color: ghostwhite;
@@ -287,22 +287,30 @@ ul.skill-list {
   padding: 0;
 }
 
+@media(max-width: 1200px) {
+  .reviews-section {
+    display: none;
+  }
+}
+
 @media(max-width: 650px) {
 
   .experience-row {
     margin: 0;
   }
 
-  .exp-item > p {
+  .exp-item>p {
     font-size: .8rem;
   }
 
-  .exp-item > header {
+  .exp-item>header {
     font-size: 1rem;
   }
+
   .exp-item>header>h4:nth-child(even) {
     text-align: left;
   }
+
   .experience-header {
     text-align: center;
   }

@@ -30,7 +30,7 @@ export default class Navbar extends Component {
       if (document.documentElement.scrollTop > 80) {
         navComponentElement.style.backgroundColor = "rgba(248, 248, 255, .9)";
         navComponentElement.style.borderBottom = "1px solid black";
-        mainNavElement.style.margin = ".75% auto";
+        mainNavElement.style.margin = "1% auto";
       } else {
         navComponentElement.style.backgroundColor = "transparent";
         navComponentElement.style.borderBottom = "none";
