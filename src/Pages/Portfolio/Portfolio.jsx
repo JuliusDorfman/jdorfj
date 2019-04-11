@@ -181,7 +181,6 @@ export default class Portfolio extends Component {
                 <p>This is a simple browser based image editor.</p>
               </div>
               <a href="https://juliusdorfman.github.io/imagEdits/" target="_blank" rel="noopener noreferrer">
-
                 <div className="overlay-plus">
                   <div className="overlay-text">
                     <p>Passion Project</p>
@@ -190,7 +189,7 @@ export default class Portfolio extends Component {
                   </div>
                 </div>
               </a>
-              <img className="plus-icon" src="/assets/images/juliusdorfman_plus_icon.png" alt="plus-icon" />
+              <img className="plus-icon" src="./assets/images/juliusdorfman_plus_icon.png" alt="plus-icon" />
             </div>
             <div className="new-proj-crystal-game ind-proj">
               <div className="new-project-intro">
