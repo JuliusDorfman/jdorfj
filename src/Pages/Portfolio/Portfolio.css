@@ -731,6 +731,18 @@ main>.small-intro {
     font-size: 4rem;
   }
 
+  .overlay-text p {
+    font-size: 2em;
+  }
+
+  .ind-proj .overlay-plus {
+    border-bottom: 100px solid #A7BCD6;
+    border-left: 100px solid transparent;
+  }
+
+  .plus-icon {
+    height: 20px;
+  }
 
   .new-grid-container-homepage {
     margin: auto;
