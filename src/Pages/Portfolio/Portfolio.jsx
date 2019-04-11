@@ -87,12 +87,12 @@ export default class Portfolio extends Component {
 
         <section className="meet-me">
           <div className="accolades clearfix">
-            <div className="roles">
-              <h2 className="list-header">Roles</h2>
+            <div className="awards">
+              <h2 className="list-header">Awards</h2>
               <ul>
-                <li>Client Support Coach</li>
-                <li>Client Support Coach</li>
-                <li>Blacks In Tech Hackathon</li>
+                <li>Perfect Net Promoter Score</li>
+                <li>Rising Star</li>
+                <li>Honerable Mention</li>
               </ul>
             </div>
             <div className="roles-awards-dates">
@@ -103,12 +103,12 @@ export default class Portfolio extends Component {
                 <li>09/09/2018</li>
               </ul>
             </div>
-            <div className="awards">
-              <h2 className="list-header">Awards</h2>
+            <div className="roles">
+              <h2 className="list-header">Roles</h2>
               <ul>
-                <li>Perfect Net Promoter Score</li>
-                <li>Rising Star</li>
-                <li>Honerable Mention</li>
+                <li>Client Support Coach</li>
+                <li>Client Support Coach</li>
+                <li>Blacks In Tech Hackathon</li>
               </ul>
             </div>
           </div>
@@ -123,23 +123,67 @@ export default class Portfolio extends Component {
           </div>
         </section>
 
+        <section className="projects">
+          <div className="new-projects-intro-wrapper">
+            <h1>Projects</h1>
+          </div>
+          <div className="new-grid-container-homepage">
+            <div className="new-proj-hstone ind-proj">
+              <div className="new-project-intro">
+                <small className="new-date">August 2018</small>
+                <a href="https://hstone-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                  <h1>hStone Addiction</h1>
+                </a>
+              </div>
+              <div className="new-proj-flavor-text">
+                <p>Quantify the sunk cost of your addiction. Then, go do something more productive. It's the future you would have wanted.</p>
+              </div>
+            </div>
+            <div className="new-proj-news-from ind-proj">
+              <div className="new-project-intro">
+                <small className="new-date">July 2018</small>
+                <a href="https://news-from.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                  <h1>News-From</h1>
+                </a>
+              </div>
+              <div className="new-proj-flavor-text">
+                <p>Search the headlines of your beloved/loathed news organizations for celebrity/business/topic mentions.</p>
+              </div>
+            </div>
+            <div className="new-proj-imagedits ind-proj">
+              <div className="new-project-intro">
+                <small className="new-date">June 2018</small>
+                <a href="https://juliusdorfman.github.io/imagEdits/" target="_blank" rel="noopener noreferrer">
+                  <h1>imagEdits</h1>
+                </a>
+              </div>
+              <div className="new-proj-flavor-text">
+                <p>This is a simple browser based image editor.</p>
+              </div>
+            </div>
+            <div className="new-proj-crystal-game ind-proj">
+              <div className="new-project-intro">
+                <small className="new-date">March 2018</small>
+                <a href="https://crystal-numbers.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                  <h1>Crystal Game</h1>
+                </a>
+              </div>
+              <div className="new-proj-flavor-text">
+                <p>This is a "fun" browser based number addition game with a "fun" theme and very simple premise.</p>
+              </div>
+            </div>
+            <div className="experience-link-wrapper">
+              <a href="/homepage">
+                <h4 className="new-experience-page-prompt">See My Experience and Work History</h4>
+              </a>
+            </div>
+          </div>
+        </section>
+        {/* 
         <section className="grid-container-homepage">
           <div className="projects-intro-wrapper">
             <h1>Projects</h1>
           </div>
-          {/* 
-          <div className="proj-hstone column">
-            <div className="project-intro">
-              <small className="date">August 2018</small>
-              <a href="https://hstone-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                <h1>hStone Addiction</h1>
-              </a>
-            </div>
-            <div className="proj-flavor-text">
-              <p>Quantify the sunk cost of your addiction. Then, go do something more productive. It's the future you would have wanted.</p>
-            </div>
-          </div> */}
-
           <div className="proj-hstone column">
             <div className="project-intro">
               <small className="date">August 2018</small>
@@ -173,7 +217,7 @@ export default class Portfolio extends Component {
               <p>This is a simple browser based image editor.</p>
             </div>
           </div>
-          {/* <div className="proj-crystal-game column">
+          <div className="proj-crystal-game column">
             <div className="project-intro">
               <small className="date">March 2018</small>
               <a href="https://crystal-numbers.herokuapp.com/" target="_blank" rel="noopener noreferrer">
@@ -183,11 +227,11 @@ export default class Portfolio extends Component {
             <div className="proj-flavor-text">
               <p>This is a "fun" browser based number addition game with a "fun" theme and very simple premise.</p>
             </div>
-          </div> */}
+          </div>
           <a href="/homepage">
             <h4 className="experience-page-prompt">See My Experience and Work History</h4>
           </a>
-        </section>
+        </section> */}
         <Footer />
       </div >
     )
