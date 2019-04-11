@@ -138,6 +138,16 @@ export default class Portfolio extends Component {
               <div className="new-proj-flavor-text">
                 <p>Quantify the sunk cost of your addiction. Then, go do something more productive. It's the future you would have wanted.</p>
               </div>
+              <a href="https://hstone-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                <div className="overlay-plus">
+                  <div className="overlay-text">
+                    <p>Passion Project</p>
+                    <hr />
+                    <p className="text-italics">Web Application</p>
+                  </div>
+                </div>
+              </a>
+              <img className="plus-icon" src="/assets/images/juliusdorfman_plus_icon.png" alt="plus-icon" />
             </div>
             <div className="new-proj-news-from ind-proj">
               <div className="new-project-intro">
@@ -149,6 +159,16 @@ export default class Portfolio extends Component {
               <div className="new-proj-flavor-text">
                 <p>Search the headlines of your beloved/loathed news organizations for celebrity/business/topic mentions.</p>
               </div>
+              <a href="https://news-from.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                <div className="overlay-plus">
+                  <div className="overlay-text">
+                    <p>Passion Project</p>
+                    <hr />
+                    <p className="text-italics">Web Application</p>
+                  </div>
+                </div>
+              </a>
+              <img className="plus-icon" src="/assets/images/juliusdorfman_plus_icon.png" alt="plus-icon" />
             </div>
             <div className="new-proj-imagedits ind-proj">
               <div className="new-project-intro">
@@ -160,6 +180,17 @@ export default class Portfolio extends Component {
               <div className="new-proj-flavor-text">
                 <p>This is a simple browser based image editor.</p>
               </div>
+              <a href="https://juliusdorfman.github.io/imagEdits/" target="_blank" rel="noopener noreferrer">
+
+                <div className="overlay-plus">
+                  <div className="overlay-text">
+                    <p>Passion Project</p>
+                    <hr />
+                    <p className="text-italics">Web Application</p>
+                  </div>
+                </div>
+              </a>
+              <img className="plus-icon" src="/assets/images/juliusdorfman_plus_icon.png" alt="plus-icon" />
             </div>
             <div className="new-proj-crystal-game ind-proj">
               <div className="new-project-intro">
@@ -171,6 +202,16 @@ export default class Portfolio extends Component {
               <div className="new-proj-flavor-text">
                 <p>This is a "fun" browser based number addition game with a "fun" theme and very simple premise.</p>
               </div>
+              <a href="https://crystal-numbers.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                <div className="overlay-plus">
+                  <div className="overlay-text">
+                    <p>Passion Project</p>
+                    <hr />
+                    <p className="text-italics">Web Application</p>
+                  </div>
+                </div>
+              </a>
+              <img className="plus-icon" src="/assets/images/juliusdorfman_plus_icon.png" alt="plus-icon" />
             </div>
             <div className="experience-link-wrapper">
               <a href="/homepage">

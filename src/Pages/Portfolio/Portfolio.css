@@ -255,6 +255,60 @@ main>.small-intro {
   max-width: 30%;
 }
 
+.ind-proj {
+  position: relative;
+  overflow: hidden;
+}
+
+.ind-proj .overlay-plus {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-bottom: 50px solid #A7BCD6;
+  border-left: 50px solid transparent;
+  transition: .3s cubic-bezier(.63, .08, .35, .92);
+  color: transparent;
+}
+
+.ind-proj:hover .overlay-plus {
+  height: 100%;
+  width: 100%;
+  background: #A7BCD6;
+  border-bottom: initial;
+}
+
+.ind-proj:hover .overlay-text {
+  color: ghostwhite;
+}
+
+.overlay-text {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: .5s cubic-bezier(.63, .08, .35, .92);
+}
+
+.overlay-text hr {
+  width: 70%;
+  border: 1px solid ghostwhite;
+}
+
+.plus-icon {
+  position: absolute;
+  height: 10px;
+  right: 2%;
+  bottom: 2%;
+}
+
+.text-italics {
+  font-style: italic;
+}
+
 .ind-proj .new-date {
   top: 7%;
   left: 7%;
