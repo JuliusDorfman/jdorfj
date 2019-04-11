@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from '../../Components/Navbar';
 import Footer from '../../Components/Footer';
-import Parallax from 'parallax-js';
+// import Parallax from 'parallax-js';
 import './Portfolio.css';
 
 export default class Portfolio extends Component {
@@ -191,7 +191,7 @@ export default class Portfolio extends Component {
               </a>
               <img className="plus-icon" src="./assets/images/juliusdorfman_plus_icon.png" alt="plus-icon" />
             </div>
-            <div className="new-proj-crystal-game ind-proj">
+            {/* <div className="new-proj-crystal-game ind-proj">
               <div className="new-project-intro">
                 <small className="new-date">March 2018</small>
                 <a href="https://crystal-numbers.herokuapp.com/" target="_blank" rel="noopener noreferrer">
@@ -211,7 +211,7 @@ export default class Portfolio extends Component {
                 </div>
               </a>
               <img className="plus-icon" src="/assets/images/juliusdorfman_plus_icon.png" alt="plus-icon" />
-            </div>
+            </div> */}
             <div className="experience-link-wrapper">
               <a href="/homepage">
                 <h4 className="new-experience-page-prompt">See My Experience and Work History</h4>

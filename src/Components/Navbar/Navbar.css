@@ -36,7 +36,13 @@
 .initials-icon {
   display: inline-block;
   position: relative;
+  transition: .55s;
 }
+
+.initials-icon:hover {
+  background: #A7BCD6;
+}
+
 
 /* 
 .initials-icon:after {
@@ -67,18 +73,25 @@
   transition: .55s;
 }
 
+
+
 .icon-card-initials-wrapper:hover {
-  background: rgba(248, 248, 255, .9);
+  /* background: rgba(248, 248, 255, .9); */
   cursor: pointer;
-  border: 1.5px solid rgba(50, 50, 50, 1);
+  border: 1.5px solid ghostwhite;
 }
 
 .icon-fill {
   background: gainsboro;
 }
 
+/* 
 .icon-card-initials-wrapper:hover>.icon-card-initials {
   color: rgba(50, 50, 50, 1);
+} */
+
+.initials-icon:hover .icon-card-initials {
+  color: ghostwhite !important;
 }
 
 @media(min-width: 2000px) {

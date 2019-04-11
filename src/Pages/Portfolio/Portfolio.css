@@ -281,6 +281,14 @@ main>.small-intro {
   color: ghostwhite;
 }
 
+.ind-proj:hover .plus-icon {
+  opacity: 0;
+}
+
+.ind-proj:hover hr {
+  width: 70%;
+}
+
 .overlay-text {
   display: flex;
   flex-direction: column;
@@ -294,8 +302,9 @@ main>.small-intro {
 }
 
 .overlay-text hr {
-  width: 70%;
+  width: 0;
   border: 1px solid ghostwhite;
+  transition: .75s;
 }
 
 .plus-icon {

@@ -42,7 +42,7 @@ export default class Navbar extends Component {
       <div className="navbar-component">
         <ul className="main-nav">
           <li>
-            <a className="nav-link" href="/portfolio" value="portfolio" onClick={this.handleClick}>Portfolio</a>
+            <a className="nav-link" href="/portfolio" value="portfolio" onClick={this.handleClick}>Home</a>
           </li>
           <li className="initials-icon">
             <a href="/portfolio" className="icon-card-initials-wrapper" value="portfolio" onClick={this.handleClick}>
