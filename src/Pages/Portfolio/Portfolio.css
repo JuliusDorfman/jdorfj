@@ -293,6 +293,7 @@ main>.small-intro {
   display: flex;
   flex-direction: column;
   margin: 0;
+  color: transparent;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -337,6 +338,12 @@ main>.small-intro {
   color: #A7BCD6;
 }
 
+.new-proj-hstone {
+  /* background: url('/assets/images/hearthstone-bg_opaque.jpg'); */
+  background-size: cover;
+  background-position: center;
+}
+
 .new-experience-page-prompt {
   position: relative;
   display: inline-block;
@@ -353,6 +360,12 @@ main>.small-intro {
 
 .new-experience-page-prompt:hover {
   color: rgba(164, 186, 215);
+}
+
+.new-proj-imagedits {
+  /* background: url('/assets/images/imagedits_opaque.png'); */
+  background-size: contain;
+  background-position: center;
 }
 
 .experience-link-wrapper {
@@ -418,7 +431,7 @@ main>.small-intro {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: url('/assets/images/toriigatewater_altered_blued_ghosted_paletted.jpg');
+  /* background: url('/assets/images/toriigatewater_altered_blued_ghosted_paletted.jpg'); */
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 0vh;
@@ -645,6 +658,11 @@ main>.small-intro {
   grid-area: "proj-news-from";
   background-color: transparent;
   border: 1px solid black;
+}
+
+.new-proj-news-from {
+  /* background: url('/assets/images/news-from-snap_opaque.png'); */
+  background-size: cover;
 }
 
 .proj-news-from * {

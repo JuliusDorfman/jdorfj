@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import Navbar from '../../Components/Navbar';
 import ReviewsCarousel from '../../Components/ReviewsCarousel';
 // import DigitalCard from '../../Components/DigitalCard';
-// import './Homepage.css';
 import './Homepage.css';
 
 export default class Homepage extends Component {
@@ -14,11 +13,10 @@ export default class Homepage extends Component {
         <span className="temp-position">
           <h1 className="experience-header">
             EXPERIENCE
-        </h1>
+          </h1>
 
           <div className="experience-row">
             <section className="experience-container resume-container">
-
               <div id="imatrix" className="exp-first-tier">
                 <article className="exp-item">
                   <header>

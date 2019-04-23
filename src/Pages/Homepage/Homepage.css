@@ -166,6 +166,10 @@ a {
   text-align: right;
 }
 
+.exp-item * {
+  font-family: Source Code Pro, monospace !important;
+}
+
 /* Skills Layout */
 
 .skills-row {

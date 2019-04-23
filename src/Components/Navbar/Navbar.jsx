@@ -41,9 +41,9 @@ export default class Navbar extends Component {
     return (
       <div className="navbar-component">
         <ul className="main-nav">
-          <li>
+          {/* <li>
             <a className="nav-link" href="/portfolio" value="portfolio" onClick={this.handleClick}>Home</a>
-          </li>
+          </li> */}
           <li className="initials-icon">
             <a href="/portfolio" className="icon-card-initials-wrapper" value="portfolio" onClick={this.handleClick}>
               <p className="icon-card-initials" value="portfolio">
@@ -54,10 +54,16 @@ export default class Navbar extends Component {
               </p>
             </a>
           </li>
-          <li>
+          {/* <li>
             <a className="nav-link" href="/homepage" value="homepage" onClick={this.handleClick}>Experience</a>
-          </li>
+          </li> */}
         </ul>
+        <div className="fixed-media-bar-wrapper">
+          <ul className="fixed-media-bar">
+            <li title="Linkedin"><a href="https://www.linkedin.com/in/juliusgdorfman" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li title="Resume"><a href="/assets/documents/JuliusDorfman_Resume_2019.pdf" download="JuliusDorfman_Resume_2019.pdf"><i class="far fa-file-pdf"></i></a></li>
+          </ul>
+        </div>
       </div>
     )
   }
