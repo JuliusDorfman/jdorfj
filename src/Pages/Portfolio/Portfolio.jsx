@@ -123,6 +123,9 @@ export default class Portfolio extends Component {
           </div>
         </section>
 
+        <div className="mid-page-fullwidth">
+        </div>
+
         <section className="projects">
           <div className="new-projects-intro-wrapper">
             <h1>Projects</h1>

@@ -220,6 +220,15 @@ main>.small-intro {
 
 /* CUBE END */
 
+.mid-page-fullwidth {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background: #235391;
+  margin-bottom: 120px;
+}
+
 /* New Projects */
 
 .projects {
