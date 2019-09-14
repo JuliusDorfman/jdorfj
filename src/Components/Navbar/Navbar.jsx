@@ -61,7 +61,7 @@ export default class Navbar extends Component {
         <div className="fixed-media-bar-wrapper">
           <ul className="fixed-media-bar">
             <li title="Linkedin"><a href="https://www.linkedin.com/in/juliusgdorfman" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></li>
-            <li title="Resume"><a href="/assets/documents/JuliusGDorfman_Resume_2019.pdf" download="JuliusGDorfman_Resume_2019.pdf"><i class="far fa-file-pdf"></i></a></li>
+            <li title="Resume"><a href="/assets/documents/JuliusGDorfman_Resume_2019_Sept.pdf" download="JuliusGDorfman_Resume_2019_Sept.pdf"><i class="far fa-file-pdf"></i></a></li>
           </ul>
         </div>
       </div>
