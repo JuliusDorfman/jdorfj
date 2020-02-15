@@ -52,7 +52,9 @@ export default class Navbar extends Component {
             </a>
           </li>
           <li>
-            <a className="nav-link" href="/portfolio" value="portfolio" onClick={this.handleClick}></a>
+            {/* <a className="nav-link" href="/portfolio" value="portfolio" onClick={this.handleClick}></a>
+             */}
+             <span></span>
           </li>
           {/* <li>
             <a className="nav-link" href="/homepage" value="homepage" onClick={this.handleClick}>Experience</a>

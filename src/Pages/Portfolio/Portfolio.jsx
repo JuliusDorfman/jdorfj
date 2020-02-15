@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from '../../Components/Navbar';
 import Footer from '../../Components/Footer';
-import DigitalCard from '../../Components/DigitalCard';
+// import DigitalCard from '../../Components/DigitalCard';
 // import Parallax from 'parallax-js';
 import './Portfolio.css';
 
@@ -127,7 +127,7 @@ export default class Portfolio extends Component {
           <div className="introduction">
             <h2>About Me</h2>
             <p>
-              You've found my portfolio! I'm Julius Dorfman. I engineer ambitious applications and design them with a minimalist aesthetic.
+              I'm Julius. I engineer applications and favor a clean minimalist aesthetic.
               <br />
               <br />
               This website is where I publish my works; an expression of my creativity through design, code, and writing. This site will hold the bookmarks of my life in: projects, articles, and career history. While you're here, thank you for being a part of it.
@@ -161,8 +161,8 @@ export default class Portfolio extends Component {
                     <p></p>
                   </div>
                 </div>
+                <img className="plus-icon" src="/assets/images/juliusdorfman_plus_icon.png" alt="plus-icon" />
               </a>
-              <img className="plus-icon" src="/assets/images/juliusdorfman_plus_icon.png" alt="plus-icon" />
             </div>
             <div className="new-proj-hstone ind-proj">
               <div className="new-project-intro">
@@ -182,8 +182,8 @@ export default class Portfolio extends Component {
                     <p></p>
                   </div>
                 </div>
+                <img className="plus-icon" src="/assets/images/juliusdorfman_plus_icon.png" alt="plus-icon" />
               </a>
-              <img className="plus-icon" src="/assets/images/juliusdorfman_plus_icon.png" alt="plus-icon" />
             </div>
             <div className="new-proj-news-from ind-proj">
               <div className="new-project-intro">
@@ -203,8 +203,8 @@ export default class Portfolio extends Component {
                     <p></p>
                   </div>
                 </div>
+                <img className="plus-icon" src="/assets/images/juliusdorfman_plus_icon.png" alt="plus-icon" />
               </a>
-              <img className="plus-icon" src="/assets/images/juliusdorfman_plus_icon.png" alt="plus-icon" />
             </div>
             <div className="new-proj-imagedits ind-proj">
               <div className="new-project-intro">
@@ -224,8 +224,8 @@ export default class Portfolio extends Component {
                     <p></p>
                   </div>
                 </div>
+                <img className="plus-icon" src="./assets/images/juliusdorfman_plus_icon.png" alt="plus-icon" />
               </a>
-              <img className="plus-icon" src="./assets/images/juliusdorfman_plus_icon.png" alt="plus-icon" />
             </div>
             {/* <div className="new-proj-crystal-game ind-proj">
               <div className="new-project-intro">

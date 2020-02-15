@@ -10,7 +10,7 @@
   position: relative;
   display: flex;
   flex-direction: row;
-  width: 60em;
+  width: 80%;
   margin: 2% auto;
   padding: 0;
   /* justify-content: space-between; */
@@ -162,7 +162,7 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    width: 40em;
+    width: 80%;
   }
 
   .icon-card-initials-wrapper {
@@ -188,7 +188,7 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    width: 20em;
+    width: 90%;
   }
 
   .icon-card-initials-wrapper {

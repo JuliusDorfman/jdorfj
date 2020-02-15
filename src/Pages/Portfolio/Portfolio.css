@@ -23,6 +23,7 @@ main>.big-intro {
 .tagline {
   margin-top: 30px;
   font-size: 30px;
+  line-height: normal;
 }
 
 /* .tagline {
@@ -114,6 +115,7 @@ main>.small-intro {
   color: #235391;
   padding-top: 20px;
   animation: indicators 1s infinite alternate ease;
+  cursor: default;
 }
 
 @keyframes indicators {
@@ -309,7 +311,7 @@ main>.small-intro {
   bottom: 0;
   border-bottom: 50px solid #A7BCD6;
   border-left: 50px solid transparent;
-  transition: .3s cubic-bezier(.63, .08, .35, .92);
+  /* transition: .3s cubic-bezier(.63, .08, .35, .92); */
   color: transparent;
 }
 
