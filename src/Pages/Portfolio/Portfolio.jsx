@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from '../../Components/Navbar';
 import Footer from '../../Components/Footer';
+import DigitalCard from '../../Components/DigitalCard';
 // import Parallax from 'parallax-js';
 import './Portfolio.css';
 
@@ -29,13 +30,17 @@ export default class Portfolio extends Component {
         <Navbar />
         <main>
           <section className="big-intro">
-            <div className="tagline">
-              <span>Julius</span>
-              <span>G.</span>
-              <span>Dorfman</span>
+
+            <div>
+              <p>Julius G. Dorfman</p>
+              <p className="blue-text">Software Developer</p>
             </div>
+            <div className='tagline blue-text'>
+              <p>I build, design, and enhance applications.</p>
+            </div>
+
           </section>
-          {/* <section className="small-intro">
+          <section className="small-intro">
             <div className="small-intro-content">
               <div id="wrapD3Cube">
                 <div id="D3Cube">
@@ -48,15 +53,22 @@ export default class Portfolio extends Component {
                 </div>
               </div>
             </div>
-            <div className="small-intro-flavor">
-              <div className="left">
-                <p>Web Developer</p>
-              </div>
-              <div className="right">
-
-              </div>
-            </div>
-          </section> */}
+            <ul className="small-intro-flavor">
+              <li className="menu-item right">
+                <span className='menu-indicators'>></span>
+                <p><a href='#about-me'>About Me</a></p>
+              </li>
+              <li className="menu-item right">
+                <span className='menu-indicators'>></span>
+                <p><a href='#projects'>Projects</a></p>
+              </li>
+              <li className="menu-item right">
+                <span className='menu-indicators'>></span>
+                <p><a href='mailto:juliusdorfman@gmail.com'>Let's Chat</a></p>
+              </li>
+            </ul>
+          </section>
+          {/* <DigitalCard /> */}
         </main>
 
 
@@ -85,8 +97,8 @@ export default class Portfolio extends Component {
           </div>
         </div> */}
 
-        <section className="meet-me">
-          <div className="accolades clearfix">
+        <section id="about-me" className="meet-me">
+          {/* <div className="accolades clearfix">
             <div className="awards">
               <h2 className="list-header">Awards</h2>
               <ul>
@@ -111,9 +123,9 @@ export default class Portfolio extends Component {
                 <li>Blacks In Tech Hackathon</li>
               </ul>
             </div>
-          </div>
+          </div> */}
           <div className="introduction">
-            <h2>I Build</h2>
+            <h2>About Me</h2>
             <p>
               You've found my portfolio! I'm Julius Dorfman. I engineer ambitious applications and design them with a minimalist aesthetic.
               <br />
@@ -123,17 +135,38 @@ export default class Portfolio extends Component {
           </div>
         </section>
 
-        <div className="mid-page-fullwidth">
-        </div>
+        {/* <div className="mid-page-fullwidth">
+        </div> */}
 
-        <section className="projects">
+        <section id="projects" className="projects">
           <div className="new-projects-intro-wrapper">
             <h1>Projects</h1>
           </div>
           <div className="new-grid-container-homepage">
+            <div className="new-proj-twitrewriter ind-proj">
+              <div className="new-project-intro">
+                {/* <small className="new-date">August 2018</small> */}
+                <a href="https://rewritertwit.herokuapp.com/Home" target="_blank" rel="noopener noreferrer">
+                  <h1>Rewriter, Twit</h1>
+                </a>
+              </div>
+              <div className="new-proj-flavor-text">
+                <p>A novel Twitter bot that rewrites unsuspecting users' tweets.</p>
+              </div>
+              <a href="https://rewritertwit.herokuapp.com/Home" target="_blank" rel="noopener noreferrer">
+                <div className="overlay-plus">
+                  <div className="overlay-text">
+                    <p className="text-italics">Twitter Bot</p>
+                    <hr />
+                    <p></p>
+                  </div>
+                </div>
+              </a>
+              <img className="plus-icon" src="/assets/images/juliusdorfman_plus_icon.png" alt="plus-icon" />
+            </div>
             <div className="new-proj-hstone ind-proj">
               <div className="new-project-intro">
-                <small className="new-date">August 2018</small>
+                {/* <small className="new-date">August 2018</small> */}
                 <a href="https://hstone-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                   <h1>hStone Addiction</h1>
                 </a>
@@ -144,9 +177,9 @@ export default class Portfolio extends Component {
               <a href="https://hstone-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                 <div className="overlay-plus">
                   <div className="overlay-text">
-                    <p>Passion Project</p>
-                    <hr />
                     <p className="text-italics">Web Application</p>
+                    <hr />
+                    <p></p>
                   </div>
                 </div>
               </a>
@@ -154,7 +187,7 @@ export default class Portfolio extends Component {
             </div>
             <div className="new-proj-news-from ind-proj">
               <div className="new-project-intro">
-                <small className="new-date">July 2018</small>
+                {/* <small className="new-date">July 2018</small> */}
                 <a href="https://news-from.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                   <h1>News-From</h1>
                 </a>
@@ -165,9 +198,9 @@ export default class Portfolio extends Component {
               <a href="https://news-from.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                 <div className="overlay-plus">
                   <div className="overlay-text">
-                    <p>Passion Project</p>
-                    <hr />
                     <p className="text-italics">Web Application</p>
+                    <hr />
+                    <p></p>
                   </div>
                 </div>
               </a>
@@ -175,7 +208,7 @@ export default class Portfolio extends Component {
             </div>
             <div className="new-proj-imagedits ind-proj">
               <div className="new-project-intro">
-                <small className="new-date">June 2018</small>
+                {/* <small className="new-date">June 2018</small> */}
                 <a href="https://juliusdorfman.github.io/imagEdits/" target="_blank" rel="noopener noreferrer">
                   <h1>imagEdits</h1>
                 </a>
@@ -186,9 +219,9 @@ export default class Portfolio extends Component {
               <a href="https://juliusdorfman.github.io/imagEdits/" target="_blank" rel="noopener noreferrer">
                 <div className="overlay-plus">
                   <div className="overlay-text">
-                    <p>Passion Project</p>
-                    <hr />
                     <p className="text-italics">Web Application</p>
+                    <hr />
+                    <p></p>
                   </div>
                 </div>
               </a>
@@ -215,11 +248,11 @@ export default class Portfolio extends Component {
               </a>
               <img className="plus-icon" src="/assets/images/juliusdorfman_plus_icon.png" alt="plus-icon" />
             </div> */}
-            <div className="experience-link-wrapper">
+            {/* <div className="experience-link-wrapper">
               <a href="/homepage">
                 <h4 className="new-experience-page-prompt">See My Experience and Work History</h4>
               </a>
-            </div>
+            </div> */}
           </div>
         </section>
         {/* 

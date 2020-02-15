@@ -1,6 +1,6 @@
 .navbar-component {
   display: inline-block;
-  position: fixed;
+  position: relative;
   z-index: 100;
   width: 100%;
   transition: .2s;
@@ -14,7 +14,7 @@
   margin: 2% auto;
   padding: 0;
   /* justify-content: space-between; */
-  justify-content: center;
+  justify-content: space-between;
   list-style: none;
   align-items: center;
   transition: .5s;
