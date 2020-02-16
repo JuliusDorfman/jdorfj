@@ -6,6 +6,54 @@
   transition: .2s;
 }
 
+
+/* 
+New Nav-Bar
+*/
+
+.nav-main {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 1000;
+}
+
+.btn-toggle-nav {
+  width: 60px;
+  height: 100%;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 12px; 
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: bold;
+  transition: .5s ease;
+}
+
+.nav-main .nav-links a{
+  margin-left: -20px;
+  color: ghostwhite;
+  transition: .2s ease;
+}
+
+.nav-main:hover .nav-links a{
+  margin-left: 0px;
+  color: black;
+}
+
+.nav-main:hover .nav-links a:hover{
+  color: #235391;
+}
+
+/*
+New Nav-bar end
+*/
+
 .main-nav {
   position: relative;
   display: flex;

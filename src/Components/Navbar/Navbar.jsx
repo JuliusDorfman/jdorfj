@@ -5,21 +5,22 @@ export default class Navbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      pageValue: {}
+      // pageValue: {}
     }
-    this.handleClick = this.handleClick.bind(this);
+    // this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick(e) {
-    // e.preventDefault();
-    let newPageValue = e.target.getAttribute('value');
+  // handleClick(e) {
+  //   // e.preventDefault();
+  //   let newPageValue = e.target.getAttribute('value');
 
-    this.setState({ pageValue: newPageValue }, () => {
-      console.log("newPageValue", newPageValue)
-    });
-  }
+  //   this.setState({ pageValue: newPageValue }, () => {
+  //     console.log("newPageValue", newPageValue)
+  //   });
+  // }
 
   render() {
+
 
     // window.onscroll = function() { scrollFunction() };
 
@@ -41,7 +42,7 @@ export default class Navbar extends Component {
     return (
       <div className="navbar-component">
         <ul className="main-nav">
-          <li className="initials-icon">
+          {/* <li className="initials-icon">
             <a href="/portfolio" className="icon-card-initials-wrapper" value="portfolio" onClick={this.handleClick}>
               <p className="icon-card-initials" value="portfolio">
                 J
@@ -50,11 +51,29 @@ export default class Navbar extends Component {
                 D
               </p>
             </a>
-          </li>
+          </li> */}
           <li>
             {/* <a className="nav-link" href="/portfolio" value="portfolio" onClick={this.handleClick}></a>
              */}
-             <span></span>
+            <nav className='nav-main'>
+              <div className='btn-toggle-nav'>
+                <li className="initials-icon">
+                  <a href="/portfolio" className="icon-card-initials-wrapper" value="portfolio" onClick={this.handleClick}>
+                    <p className="icon-card-initials" value="portfolio">
+                      J
+                    </p>
+                    <p className="icon-card-initials" value="homepage">
+                      D
+                    </p>
+                  </a>
+                </li>
+              </div>
+              <ul className='nav-links'>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="mailto:juliusdorfman@gmail.com">Contact Me</a></li>
+              </ul>
+            </nav>
           </li>
           {/* <li>
             <a className="nav-link" href="/homepage" value="homepage" onClick={this.handleClick}>Experience</a>

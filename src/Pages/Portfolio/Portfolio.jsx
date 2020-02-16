@@ -55,20 +55,21 @@ export default class Portfolio extends Component {
             </div>
             <ul className="small-intro-flavor">
               <li className="menu-item right">
-                <span className='menu-indicators'>></span>
+                <span id='menu-indicators1' className='menu-indicators'>></span>
                 <p><a href='#about-me'>About Me</a></p>
               </li>
               <li className="menu-item right">
-                <span className='menu-indicators'>></span>
+                <span id='menu-indicators2' className='menu-indicators'>></span>
                 <p><a href='#projects'>Projects</a></p>
               </li>
               <li className="menu-item right">
-                <span className='menu-indicators'>></span>
+                <span id='menu-indicators3' className='menu-indicators'>></span>
                 <p><a href='mailto:juliusdorfman@gmail.com'>Let's Chat</a></p>
               </li>
             </ul>
           </section>
           {/* <DigitalCard /> */}
+          
         </main>
 
 
