@@ -113,6 +113,92 @@ main>.small-intro {
   color: #A7BCD6;
 }
 
+/* User Guide */
+
+.user-guide {
+  position: absolute;
+  display: flex;
+  bottom: 10px;
+  width: 5%;
+  height: 10%;
+  text-align: center;
+}
+
+/* 
+.user-guide:before {
+  position: inherit;
+  content: "";
+  height: 68%;
+  background: #235391;
+  width: 3px;
+}
+
+.user-guide:after {
+  position: inherit;
+  content: "";
+  height: 68%;
+  background: #235391;
+  width: 3px;
+  right: 0px;
+} */
+
+.user-guide-arrow {
+  position: inherit;
+  width: 100%;
+  animation: usherdown 2s infinite;
+}
+
+.user-guide a {
+  height: 100%;
+  width: 100%;
+  position: inherit;
+}
+
+.user-guide-arrow:before {
+  position: inherit;
+  content: "";
+  background: #235391;
+  height: 3px;
+  width: 59.5%;
+  transform: rotateZ(135deg);
+  right: 0;
+  border-top-right-radius: 25%;
+}
+
+.user-guide-arrow:after {
+  position: inherit;
+  content: "";
+  background: #235391;
+  height: 3px;
+  width: 59.5%;
+  transform: rotateZ(45deg);
+  left: 0;
+  border-bottom-right-radius: 25%;
+}
+
+@keyframes usherdown {
+  0% {
+    /* bottom: initial; */
+    transform: translateY(initial);
+    opacity: 0%;
+  }
+
+  50% {
+    opacity: 100%;
+  }
+
+  70% {
+    opacity: 100%;
+  }
+
+  100% {
+    /* bottom: -7%; */
+    transform: translateY(5vh);
+    opacity: 0%;
+  }
+}
+
+
 .menu-item>.menu-indicators {
   position: absolute;
   left: 0px;

@@ -41,6 +41,11 @@ export default class Portfolio extends Component {
 
           </section>
           <section className="small-intro">
+            <div className="user-guide">
+              <a href="#about-me">
+              <div className="user-guide-arrow"></div>
+              </a>
+            </div>
             <div className="small-intro-content">
               <div id="wrapD3Cube">
                 <div id="D3Cube">
@@ -69,7 +74,7 @@ export default class Portfolio extends Component {
             </ul>
           </section>
           {/* <DigitalCard /> */}
-          
+
         </main>
 
 
