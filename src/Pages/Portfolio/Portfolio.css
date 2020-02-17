@@ -193,7 +193,7 @@ main>.small-intro {
 
   100% {
     /* bottom: -7%; */
-    transform: translateY(5vh);
+    transform: translateY(15vh);
     opacity: 0%;
   }
 }
@@ -1142,6 +1142,14 @@ main>.small-intro {
 
   .new-grid-container-homepage>.ind-proj {
     padding: 15%;
+  }
+
+  .user-guide-arrow:before {
+    height: 1px;
+  }
+
+  .user-guide-arrow:after {
+    height: 1px;
   }
 
   /* .tagline>span:nth-child(1) {
