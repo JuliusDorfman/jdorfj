@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
-import Navbar from '../../Components/Navbar';
-import Footer from '../../Components/Footer';
+import React, { Component } from "react";
+import Navbar from "../../Components/Navbar";
+import Footer from "../../Components/Footer";
 // import DigitalCard from '../../Components/DigitalCard';
 // import Parallax from 'parallax-js';
-import './Portfolio.css';
+import "./Portfolio.css";
 
 export default class Portfolio extends Component {
   constructor(props) {
     super(props);
     this.state = {
       currentPage: {}
-    }
+    };
   }
 
   // componentDidMount() {
@@ -21,31 +21,26 @@ export default class Portfolio extends Component {
   //   new Parallax(scene2);
   // }
 
-
-
   render() {
-
     return (
       <div className="portfolio-component">
         <Navbar />
         <main>
           <section className="big-intro">
-
             <div>
               <p>Julius G. Dorfman</p>
               <p className="blue-text">Software Developer</p>
             </div>
-            <div className='tagline blue-text'>
+            <div className="tagline blue-text">
               <p>I build, design, and enhance applications.</p>
             </div>
-
           </section>
           <section className="small-intro">
-            <div className="user-guide">
-              <a href="#about-me">
-              <div className="user-guide-arrow"></div>
-              </a>
-            </div>
+            <a href="#about-me">
+              <div className="user-guide">
+                <div className="user-guide-arrow"></div>
+              </div>
+            </a>
             <div className="small-intro-content">
               <div id="wrapD3Cube">
                 <div id="D3Cube">
@@ -60,23 +55,33 @@ export default class Portfolio extends Component {
             </div>
             <ul className="small-intro-flavor">
               <li className="menu-item right">
-                <span id='menu-indicators1' className='menu-indicators'>></span>
-                <p><a href='#about-me'>About Me</a></p>
+                <span id="menu-indicators1" className="menu-indicators">
+                  >
+                </span>
+                <p>
+                  <a href="#about-me">About Me</a>
+                </p>
               </li>
               <li className="menu-item right">
-                <span id='menu-indicators2' className='menu-indicators'>></span>
-                <p><a href='#projects'>Projects</a></p>
+                <span id="menu-indicators2" className="menu-indicators">
+                  >
+                </span>
+                <p>
+                  <a href="#projects">Projects</a>
+                </p>
               </li>
               <li className="menu-item right">
-                <span id='menu-indicators3' className='menu-indicators'>></span>
-                <p><a href='mailto:juliusdorfman@gmail.com'>Let's Chat</a></p>
+                <span id="menu-indicators3" className="menu-indicators">
+                  >
+                </span>
+                <p>
+                  <a href="mailto:juliusdorfman@gmail.com">Let's Chat</a>
+                </p>
               </li>
             </ul>
           </section>
           {/* <DigitalCard /> */}
-
         </main>
-
 
         {/* <div data-depth=".3" className="intro-block">
           <div id="scene" className="intro-focus-wrapper">
@@ -133,11 +138,15 @@ export default class Portfolio extends Component {
           <div className="introduction">
             <h2>About Me</h2>
             <p>
-              I'm Julius. I engineer applications and favor a clean minimalist aesthetic.
+              I'm Julius. I engineer applications and favor a clean minimalist
+              aesthetic.
               <br />
               <br />
-              This website is where I publish my works; an expression of my creativity through design, code, and writing. This site will hold the bookmarks of my life in: projects, articles, and career history. While you're here, thank you for being a part of it.
-              </p>
+              This website is where I publish my works; an expression of my
+              creativity through design, code, and writing. This site will hold
+              the bookmarks of my life in: projects, articles, and career
+              history. While you're here, thank you for being a part of it.
+            </p>
           </div>
         </section>
 
@@ -152,14 +161,24 @@ export default class Portfolio extends Component {
             <div className="new-proj-twitrewriter ind-proj">
               <div className="new-project-intro">
                 {/* <small className="new-date">August 2018</small> */}
-                <a href="https://rewritertwit.herokuapp.com/Home" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://rewritertwit.herokuapp.com/Home"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <h1>Rewriter, Twit</h1>
                 </a>
               </div>
               <div className="new-proj-flavor-text">
-                <p>A novel Twitter bot that rewrites unsuspecting users' tweets.</p>
+                <p>
+                  A novel Twitter bot that rewrites unsuspecting users' tweets.
+                </p>
               </div>
-              <a href="https://rewritertwit.herokuapp.com/Home" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://rewritertwit.herokuapp.com/Home"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <div className="overlay-plus">
                   <div className="overlay-text">
                     <p className="text-italics">Twitter Bot</p>
@@ -167,20 +186,36 @@ export default class Portfolio extends Component {
                     <p></p>
                   </div>
                 </div>
-                <img className="plus-icon" src="/assets/images/juliusdorfman_plus_icon.png" alt="plus-icon" />
+                <img
+                  className="plus-icon"
+                  src="/assets/images/juliusdorfman_plus_icon.png"
+                  alt="plus-icon"
+                />
               </a>
             </div>
             <div className="new-proj-hstone ind-proj">
               <div className="new-project-intro">
                 {/* <small className="new-date">August 2018</small> */}
-                <a href="https://hstone-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://hstone-app.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <h1>hStone Addiction</h1>
                 </a>
               </div>
               <div className="new-proj-flavor-text">
-                <p>Quantify the sunk cost of your addiction. Then, go do something more productive. It's the future you would have wanted.</p>
+                <p>
+                  Quantify the sunk cost of your addiction. Then, go do
+                  something more productive. It's the future you would have
+                  wanted.
+                </p>
               </div>
-              <a href="https://hstone-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://hstone-app.herokuapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <div className="overlay-plus">
                   <div className="overlay-text">
                     <p className="text-italics">Web Application</p>
@@ -188,20 +223,35 @@ export default class Portfolio extends Component {
                     <p></p>
                   </div>
                 </div>
-                <img className="plus-icon" src="/assets/images/juliusdorfman_plus_icon.png" alt="plus-icon" />
+                <img
+                  className="plus-icon"
+                  src="/assets/images/juliusdorfman_plus_icon.png"
+                  alt="plus-icon"
+                />
               </a>
             </div>
             <div className="new-proj-news-from ind-proj">
               <div className="new-project-intro">
                 {/* <small className="new-date">July 2018</small> */}
-                <a href="https://news-from.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://news-from.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <h1>News-From</h1>
                 </a>
               </div>
               <div className="new-proj-flavor-text">
-                <p>Search the headlines of your beloved/loathed news organizations for celebrity/business/topic mentions.</p>
+                <p>
+                  Search the headlines of your beloved/loathed news
+                  organizations for celebrity/business/topic mentions.
+                </p>
               </div>
-              <a href="https://news-from.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://news-from.herokuapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <div className="overlay-plus">
                   <div className="overlay-text">
                     <p className="text-italics">Web Application</p>
@@ -209,20 +259,32 @@ export default class Portfolio extends Component {
                     <p></p>
                   </div>
                 </div>
-                <img className="plus-icon" src="/assets/images/juliusdorfman_plus_icon.png" alt="plus-icon" />
+                <img
+                  className="plus-icon"
+                  src="/assets/images/juliusdorfman_plus_icon.png"
+                  alt="plus-icon"
+                />
               </a>
             </div>
             <div className="new-proj-imagedits ind-proj">
               <div className="new-project-intro">
                 {/* <small className="new-date">June 2018</small> */}
-                <a href="https://juliusdorfman.github.io/imagEdits/" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://juliusdorfman.github.io/imagEdits/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <h1>imagEdits</h1>
                 </a>
               </div>
               <div className="new-proj-flavor-text">
                 <p>This is a simple browser based image editor.</p>
               </div>
-              <a href="https://juliusdorfman.github.io/imagEdits/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://juliusdorfman.github.io/imagEdits/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <div className="overlay-plus">
                   <div className="overlay-text">
                     <p className="text-italics">Web Application</p>
@@ -230,7 +292,11 @@ export default class Portfolio extends Component {
                     <p></p>
                   </div>
                 </div>
-                <img className="plus-icon" src="./assets/images/juliusdorfman_plus_icon.png" alt="plus-icon" />
+                <img
+                  className="plus-icon"
+                  src="./assets/images/juliusdorfman_plus_icon.png"
+                  alt="plus-icon"
+                />
               </a>
             </div>
             {/* <div className="new-proj-crystal-game ind-proj">
@@ -315,7 +381,7 @@ export default class Portfolio extends Component {
           </a>
         </section> */}
         <Footer />
-      </div >
-    )
+      </div>
+    );
   }
 }
